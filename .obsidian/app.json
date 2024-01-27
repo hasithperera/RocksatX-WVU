@@ -1,1 +1,7 @@
-{}
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Docs",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
+}
