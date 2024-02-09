@@ -1,7 +1,7 @@
 
 ## Basic testing on the RP
 
-### 08/02/2024
+## 08/02/2024
 
 - Set up manual ip to be `192.168.11.10`
 - Configure your computer to be on the same subnet ie. 192.168.11.xxx (subnet 255.255.255.0) and a unique address. you can look at the web interface by visiting [192.168.11.10](http://192.168.11.10)
@@ -20,7 +20,7 @@
 - It might be possible to run code off the processor on the board, but that would require looking into the hardware of the processor to ensure it would be capable of handling the data load
 - Another consideration is using a SATA connection to store the data on an external SSD
 
-# To-DO
+## 09/02/2024
 
 ### Internal Python api
 
