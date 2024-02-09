@@ -8,17 +8,25 @@
 - `/root/in` has the repo from redpitaya
 - to send files use `scp <src> <destination>` or `rsync`
 - refer doc for user name and password
-- compiling c code from the example failed. Possible missing library/dependancies
+- compiling c code from the example failed. Possible missing library/dependencies
 - Setting the time can be done with `data mmddHHMMYYYY`. Note this is in UTC time (EST +5 h) may required to do on restart since NTP is not operational in the current setup
-
+---
 ### Python
 - 3rd party Wifi Dongle not working (Being detected by device, not connecting, possible driver issue)
 - Able to run python script on laptop via SCPI Server
 - Communicating commands via the ethernet, so once the connection is broken the program ends
+
+---
 ### Thoughts on Roads ahead
 - We should get the RP Wifi Dongle so we can access and install libraries onto the RP (RedPitaya), We can do this via ethernet by first installing to a laptop, but this would make it easier
 - It might be possible to run code off the processor on the board, but that would require looking into the hardware of the processor to ensure it would be capable of handling the data load
-- Another consideration is using a SATA connection to store the data on an external SSD
+- [x] Another consideration is using a SATA connection to store the data on an external SSD
+	- These SATA looking connectors may not be conventional. 
+		- [Schematic](https://downloads.redpitaya.com/doc/Customer_Schematics_STEM122-16SDR_V1r1%28Series1%29.PDF) shows them as S1,S2 connectors
+		- these seems to be useful for internal clock sync and shown [here](https://redpitaya.readthedocs.io/en/latest/appsFeatures/applications/streaming/appXCStreaming.html)
+		- **Only viable option is USB drive write using the internal API**
+
+---
 
 ## 09/02/2024
 
