@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/RP.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/RP.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/RP.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docs/RP.md"
+                "file": "README.md"
               }
             }
           },
@@ -157,8 +157,11 @@
   },
   "active": "fb8cd381bee83125",
   "lastOpenFiles": [
+    "Auto fill lists.md",
+    "README.md",
     "Docs/Update - Hasith.md",
     "Docs/RP.md",
+    "Docs/().md",
     "Docs/Update - Hasith.html"
   ]
 }

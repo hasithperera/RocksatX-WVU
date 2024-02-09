@@ -19,3 +19,13 @@
 - We should get the RP Wifi Dongle so we can access and install libraries onto the RP (RedPitaya), We can do this via ethernet by first installing to a laptop, but this would make it easier
 - It might be possible to run code off the processor on the board, but that would require looking into the hardware of the processor to ensure it would be capable of handling the data load
 - Another consideration is using a SATA connection to store the data on an external SSD
+
+# To-DO
+
+### Internal Python api
+
+- [ ] confirm the operation of internal API calls without using the network interface #task
+- tutorial [here](https://redpitaya.readthedocs.io/en/latest/appsFeatures/remoteControl/API_scripts.html)
+- [ ] find the current version of the os #task 
+- [ ] Backup the original SD card as it is #task
+- [ ] Evaluate the write speed of USB/SD card. (running a benchmark) #task 

@@ -23,23 +23,24 @@
 # Things that needs to be figured out
 
 
-- [ ] Sounding mode
-	- [ ] RF input and output switching
-	- [ ] RF power amplification components
-	- [x] RF pre amp. Nillai has done this and has an ic. (Maintain v_peak constraint) ✅ 2024-01-27
-	- [ ] FPGA
-		- [ ] White noise: is this basically a random number generator ? If that is the case I have a working algorithm. But this has a finite repeatability. How long should be the seed/sequence\
+- Sounding mode
+	-  RF input and output switching
+	-  RF power amplification components
+	-  RF pre amp. Nillai has done this and has an ic. (Maintain v_peak constraint) ✅ 2024-01-27
+	-  FPGA
+		-  White noise: is this basically a random number generator ? If that is the case I have a working algorithm. But this has a finite repeatability. How long should be the seed/sequence\
 ---
-- [ ] LP mode
-	- [ ] Power supply. How are we sweeping the voltage. 
-	- [ ] Best case we would have +/- 20 V on the ADC. Can you work with this ?
-	- [ ] can we build our own ADC
-	- [ ] How many probes are going to be in there. 2 ? 
+-  LP mode
+	-  Power supply. How are we sweeping the voltage. 
+	-  Best case we would have +/- 20 V on the ADC. Can you work with this ?
+	-  can we build our own ADC
+	-  How many probes are going to be in there. 2 ? 
 		- To find How many ADC's we need at a time 
 
 ---
 
 # Order list
 
-- [ ] Get a small ethernet switch. 
+- Get a small ethernet switch. 
 	- Would be good to have since we need to be able to ssh in to the Red-pitaya. And our network is limiting to say the least.
+	- [ ] Wifi dongle #task #order
