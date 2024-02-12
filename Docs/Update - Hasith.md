@@ -10,7 +10,7 @@
 
 ---
 
-## Differences in specs
+### Differences in specs
 
 - Depending on the FPGA capability 
 	- SDRlab is a viable option but limits our ADC to -/+ .5 V_peak (more than enough for rf)
@@ -20,7 +20,7 @@
 	- Write a custom FPGA file - Should be possible but verification would take time 
 --- 
 
-# Things that needs to be figured out
+### Things that needs to be figured out
 
 
 - Sounding mode
@@ -28,7 +28,7 @@
 	-  RF power amplification components
 	-  RF pre amp. Nillai has done this and has an ic. (Maintain v_peak constraint) ✅ 2024-01-27
 	-  FPGA
-		-  White noise: is this basically a random number generator ? If that is the case I have a working algorithm. But this has a finite repeatability. How long should be the seed/sequence\
+		-  White noise: is this basically a random number generator ? If that is the case I have a working algorithm. But this has a finite repeatability. How long should be the seed/sequence
 ---
 -  LP mode
 	-  Power supply. How are we sweeping the voltage. 
@@ -39,8 +39,38 @@
 
 ---
 
-# Order list
+### Order list
 
 - Get a small ethernet switch. 
 	- Would be good to have since we need to be able to ssh in to the Red-pitaya. And our network is limiting to say the least.
 	- [ ] Wifi dongle #task #order
+
+---
+
+<div style="page-break-after: always;"></div>
+
+
+## LPW - MAVEN
+
+- [x] LPW instrument paper [Anderson 2014](https://link.springer.com/article/10.1007/s11214-015-0194-3)
+- 15 ms Tx time
+- sample up to 2 MHz
+-  5 V pseudo-random sequence
+- they have passive and active modes. (Active mode is where we send out 15ms burst)
+- FPGA includes a random digital signal generator at 8.39 MHz
+	- 3.3 v White noise
+	- 4096 points at 4.19 Msamples/s 
+	- expected to be 100 $\mu W$
+	 - [ ] #task #help why at 8 M if only sampling at  2 M max
+	 - antenna length and dispersion relation discussion. they excited $k=.5$ mode
+- [ ] #task #read [Etcheto 1981](https://www.sciencedirect.com/science/article/pii/0273117781902891?via%3Dihub)
+- [ ] #task #read LPW data products[Anderson 2015](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015GL065241)
+
+--- 
+## Random noise generation
+
+- as a simpler option look at the feasibility of using an open collector amplifier to generate noise
+	- from KC3RXZ
+	![|400](res/Pasted%20image%2020240212121129.png)
+	is this a feasible design 
+---
