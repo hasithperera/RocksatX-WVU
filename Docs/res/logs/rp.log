@@ -1,0 +1,1647 @@
+Aug 21 21:11:42 rp-f0b620 systemd-journald[83]: Missed 19 kernel messages
+░░ Subject: Journal messages have been missed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Kernel messages have been lost as the journal system has been unable
+░░ to process them quickly enough.
+Aug 21 21:11:42 rp-f0b620 kernel: Kernel command line: console=ttyPS0,115200 root=/dev/mmcblk0p2 ro rootfstype=ext4 earlyprintk rootwait uio_pdrv_genirq.of_id=generic-uio
+Aug 21 21:11:42 rp-f0b620 kernel: Unknown command line parameters: earlyprintk
+Aug 21 21:11:42 rp-f0b620 kernel: Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Aug 21 21:11:42 rp-f0b620 kernel: Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Aug 21 21:11:42 rp-f0b620 kernel: mem auto-init: stack:off, heap alloc:off, heap free:off
+Aug 21 21:11:42 rp-f0b620 kernel: Memory: 455080K/524288K available (8192K kernel code, 369K rwdata, 2608K rodata, 1024K init, 130K bss, 52824K reserved, 16384K cma-reserved, 0K highmem)
+Aug 21 21:11:42 rp-f0b620 kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 01 05:25:13 rp-f0b620 kernel: rcu:         RCU event tracing is enabled.
+Oct 01 05:25:13 rp-f0b620 kernel: rcu:         RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+Oct 01 05:25:13 rp-f0b620 kernel:         Trampoline variant of Tasks RCU enabled.
+Oct 01 05:25:13 rp-f0b620 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+Oct 01 05:25:13 rp-f0b620 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Oct 01 05:25:13 rp-f0b620 kernel: NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+Oct 01 05:25:13 rp-f0b620 kernel: efuse mapped to (ptrval)
+Oct 01 05:25:13 rp-f0b620 kernel: slcr mapped to (ptrval)
+Oct 01 05:25:13 rp-f0b620 kernel: GIC physical location is 0xf8f01000
+Oct 01 05:25:13 rp-f0b620 kernel: L2C: platform modifies aux control register: 0x72360000 -> 0x72760000
+Oct 01 05:25:13 rp-f0b620 kernel: L2C: DT/platform modifies aux control register: 0x72360000 -> 0x72760000
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310 erratum 769419 enabled
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310 enabling early BRESP for Cortex-A9
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310 full line of zeros enabled for Cortex-A9
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310 ID prefetch enabled, offset 1 lines
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310 dynamic clock gating enabled, standby mode enabled
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310 cache controller enabled, 8 ways, 512 kB
+Oct 01 05:25:13 rp-f0b620 kernel: L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x76760001
+Oct 01 05:25:13 rp-f0b620 kernel: random: get_random_bytes called from start_kernel+0x36c/0x5dc with crng_init=0
+Oct 01 05:25:13 rp-f0b620 kernel: zynq_clock_init: clkc starts at (ptrval)
+Oct 01 05:25:13 rp-f0b620 kernel: Zynq clock init
+Oct 01 05:25:13 rp-f0b620 kernel: sched_clock: 64 bits at 166MHz, resolution 6ns, wraps every 4398046511103ns
+Oct 01 05:25:13 rp-f0b620 kernel: clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x26703d7dd8, max_idle_ns: 440795208065 ns
+Oct 01 05:25:13 rp-f0b620 kernel: Switching to timer-based delay loop, resolution 6ns
+Oct 01 05:25:13 rp-f0b620 kernel: Console: colour dummy device 80x30
+Oct 01 05:25:13 rp-f0b620 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 333.33 BogoMIPS (lpj=1666666)
+Oct 01 05:25:13 rp-f0b620 kernel: pid_max: default: 32768 minimum: 301
+Oct 01 05:25:13 rp-f0b620 kernel: Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: CPU: Testing write buffer coherency: ok
+Oct 01 05:25:13 rp-f0b620 kernel: CPU0: Spectre v2: using BPIALL workaround
+Oct 01 05:25:13 rp-f0b620 kernel: CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Oct 01 05:25:13 rp-f0b620 kernel: Setting up static identity map for 0x100000 - 0x100060
+Oct 01 05:25:13 rp-f0b620 kernel: rcu: Hierarchical SRCU implementation.
+Oct 01 05:25:13 rp-f0b620 kernel: smp: Bringing up secondary CPUs ...
+Oct 01 05:25:13 rp-f0b620 kernel: CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Oct 01 05:25:13 rp-f0b620 kernel: CPU1: Spectre v2: using BPIALL workaround
+Oct 01 05:25:13 rp-f0b620 kernel: smp: Brought up 1 node, 2 CPUs
+Oct 01 05:25:13 rp-f0b620 kernel: SMP: Total of 2 processors activated (666.66 BogoMIPS).
+Oct 01 05:25:13 rp-f0b620 kernel: CPU: All CPU(s) started in SVC mode.
+Oct 01 05:25:13 rp-f0b620 kernel: devtmpfs: initialized
+Oct 01 05:25:13 rp-f0b620 kernel: VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+Oct 01 05:25:13 rp-f0b620 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Oct 01 05:25:13 rp-f0b620 kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: pinctrl core: initialized pinctrl subsystem
+Oct 01 05:25:13 rp-f0b620 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 01 05:25:13 rp-f0b620 kernel: DMA: preallocated 256 KiB pool for atomic coherent allocations
+Oct 01 05:25:13 rp-f0b620 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 01 05:25:13 rp-f0b620 kernel: cpuidle: using governor menu
+Oct 01 05:25:13 rp-f0b620 kernel: amba f8801000.etb: Fixing up cyclic dependency with replicator
+Oct 01 05:25:13 rp-f0b620 kernel: amba f8803000.tpiu: Fixing up cyclic dependency with replicator
+Oct 01 05:25:13 rp-f0b620 kernel: amba f8804000.funnel: Fixing up cyclic dependency with replicator
+Oct 01 05:25:13 rp-f0b620 kernel: amba f889c000.ptm: Fixing up cyclic dependency with f8804000.funnel
+Oct 01 05:25:13 rp-f0b620 kernel: amba f889d000.ptm: Fixing up cyclic dependency with f8804000.funnel
+Oct 01 05:25:13 rp-f0b620 kernel: hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+Oct 01 05:25:13 rp-f0b620 kernel: hw-breakpoint: maximum watchpoint size is 4 bytes.
+Oct 01 05:25:13 rp-f0b620 kernel: e0000000.serial: ttyPS0 at MMIO 0xe0000000 (irq = 33, base_baud = 6249999) is a xuartps
+Oct 01 05:25:13 rp-f0b620 kernel: printk: console [ttyPS0] enabled
+Oct 01 05:25:13 rp-f0b620 kernel: e0001000.serial: ttyPS1 at MMIO 0xe0001000 (irq = 34, base_baud = 6249999) is a xuartps
+Oct 01 05:25:13 rp-f0b620 kernel: vgaarb: loaded
+Oct 01 05:25:13 rp-f0b620 kernel: SCSI subsystem initialized
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver usbfs
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver hub
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new device driver usb
+Oct 01 05:25:13 rp-f0b620 kernel: mc: Linux media interface: v0.10
+Oct 01 05:25:13 rp-f0b620 kernel: videodev: Linux video capture interface: v2.00
+Oct 01 05:25:13 rp-f0b620 kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 01 05:25:13 rp-f0b620 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 01 05:25:13 rp-f0b620 kernel: PTP clock support registered
+Oct 01 05:25:13 rp-f0b620 kernel: EDAC MC: Ver: 3.0.0
+Oct 01 05:25:13 rp-f0b620 kernel: FPGA manager framework
+Oct 01 05:25:13 rp-f0b620 kernel: Advanced Linux Sound Architecture Driver Initialized.
+Oct 01 05:25:13 rp-f0b620 kernel: clocksource: Switched to clocksource arm_global_timer
+Oct 01 05:25:13 rp-f0b620 kernel: NET: Registered PF_INET protocol family
+Oct 01 05:25:13 rp-f0b620 kernel: IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: TCP: Hash tables configured (established 4096 bind 4096)
+Oct 01 05:25:13 rp-f0b620 kernel: UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+Oct 01 05:25:13 rp-f0b620 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 01 05:25:13 rp-f0b620 kernel: RPC: Registered named UNIX socket transport module.
+Oct 01 05:25:13 rp-f0b620 kernel: RPC: Registered udp transport module.
+Oct 01 05:25:13 rp-f0b620 kernel: RPC: Registered tcp transport module.
+Oct 01 05:25:13 rp-f0b620 kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Oct 01 05:25:13 rp-f0b620 kernel: PCI: CLS 0 bytes, default 64
+Oct 01 05:25:13 rp-f0b620 kernel: armv7-pmu f8891000.pmu: hw perfevents: no interrupt-affinity property, guessing.
+Oct 01 05:25:13 rp-f0b620 kernel: hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+Oct 01 05:25:13 rp-f0b620 kernel: Initialise system trusted keyrings
+Oct 01 05:25:13 rp-f0b620 kernel: workingset: timestamp_bits=30 max_order=17 bucket_order=0
+Oct 01 05:25:13 rp-f0b620 kernel: jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+Oct 01 05:25:13 rp-f0b620 kernel: Key type asymmetric registered
+Oct 01 05:25:13 rp-f0b620 kernel: Asymmetric key parser 'x509' registered
+Oct 01 05:25:13 rp-f0b620 kernel: io scheduler mq-deadline registered
+Oct 01 05:25:13 rp-f0b620 kernel: io scheduler kyber registered
+Oct 01 05:25:13 rp-f0b620 kernel: zynq-pinctrl 700.pinctrl: zynq pinctrl initialized
+Oct 01 05:25:13 rp-f0b620 kernel: dma-pl330 f8003000.dmac: Loaded driver for PL330 DMAC-241330
+Oct 01 05:25:13 rp-f0b620 kernel: dma-pl330 f8003000.dmac:         DBUFF-128x8bytes Num_Chans-8 Num_Peri-4 Num_Events-16
+Oct 01 05:25:13 rp-f0b620 kernel: brd: module loaded
+Oct 01 05:25:13 rp-f0b620 kernel: loop: module loaded
+Oct 01 05:25:13 rp-f0b620 kernel: libphy: Fixed MDIO Bus: probed
+Oct 01 05:25:13 rp-f0b620 kernel: CAN device driver interface
+Oct 01 05:25:13 rp-f0b620 kernel: libphy: MACB_mii_bus: probed
+Oct 01 05:25:13 rp-f0b620 kernel: macb e000b000.ethernet eth0: Cadence GEM rev 0x00020118 at 0xe000b000 irq 37 (00:26:32:f0:b6:20)
+Oct 01 05:25:13 rp-f0b620 kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Oct 01 05:25:13 rp-f0b620 kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver brcmfmac
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver rt2800usb
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver rtl8xxxu
+Oct 01 05:25:13 rp-f0b620 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Oct 01 05:25:13 rp-f0b620 kernel: ehci-pci: EHCI PCI platform driver
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver cdc_acm
+Oct 01 05:25:13 rp-f0b620 kernel: cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver usb-storage
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver usbserial_generic
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for generic
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver ch341
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for ch341-uart
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver cp210x
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for cp210x
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver ftdi_sio
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for FTDI USB Serial Device
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver pl2303
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for pl2303
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver usb_serial_simple
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for carelink
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for zio
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for funsoft
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for flashloader
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for google
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for libtransistor
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for vivopay
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for moto_modem
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for motorola_tetra
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for novatel_gps
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for hp4x
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for suunto
+Oct 01 05:25:13 rp-f0b620 kernel: usbserial: USB Serial support registered for siemens_mpi
+Oct 01 05:25:13 rp-f0b620 kernel: ULPI transceiver vendor/product ID 0x0424/0x0007
+Oct 01 05:25:13 rp-f0b620 kernel: Found SMSC USB3320 ULPI transceiver.
+Oct 01 05:25:13 rp-f0b620 kernel: ULPI integrity check: passed.
+Oct 01 05:25:13 rp-f0b620 kernel: ci_hdrc ci_hdrc.0: EHCI Host Controller
+Oct 01 05:25:13 rp-f0b620 kernel: ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+Oct 01 05:25:13 rp-f0b620 kernel: ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+Oct 01 05:25:13 rp-f0b620 kernel: hub 1-0:1.0: USB hub found
+Oct 01 05:25:13 rp-f0b620 kernel: hub 1-0:1.0: 1 port detected
+Oct 01 05:25:13 rp-f0b620 kernel: i2c_dev: i2c /dev entries driver
+Oct 01 05:25:13 rp-f0b620 kernel: at24 0-0050: supply vcc not found, using dummy regulator
+Oct 01 05:25:13 rp-f0b620 kernel: at24 0-0050: 8192 byte 24c64 EEPROM, writable, 32 bytes/write
+Oct 01 05:25:13 rp-f0b620 kernel: at24 0-0051: supply vcc not found, using dummy regulator
+Oct 01 05:25:13 rp-f0b620 kernel: cdns-i2c e0004000.i2c: 400 kHz mmio e0004000 irq 30
+Oct 01 05:25:13 rp-f0b620 kernel: Driver for 1-wire Dallas network protocol.
+Oct 01 05:25:13 rp-f0b620 kernel: cdns-wdt f8005000.watchdog: Xilinx Watchdog Timer with timeout 10s
+Oct 01 05:25:13 rp-f0b620 kernel: EDAC MC: ECC not enabled
+Oct 01 05:25:13 rp-f0b620 kernel: Xilinx Zynq CpuIdle Driver started
+Oct 01 05:25:13 rp-f0b620 kernel: sdhci: Secure Digital Host Controller Interface driver
+Oct 01 05:25:13 rp-f0b620 kernel: sdhci: Copyright(c) Pierre Ossman
+Oct 01 05:25:13 rp-f0b620 kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Oct 01 05:25:13 rp-f0b620 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 01 05:25:13 rp-f0b620 kernel: clocksource: ttc_clocksource: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 537538477 ns
+Oct 01 05:25:13 rp-f0b620 kernel: timer #0 at (ptrval), irq=50
+Oct 01 05:25:13 rp-f0b620 kernel: usbcore: registered new interface driver usbhid
+Oct 01 05:25:13 rp-f0b620 kernel: usbhid: USB HID core driver
+Oct 01 05:25:13 rp-f0b620 kernel: fpga_manager fpga0: Xilinx Zynq FPGA Manager registered
+Oct 01 05:25:13 rp-f0b620 kernel: mmc0: SDHCI controller on e0100000.mmc [e0100000.mmc] using ADMA
+Oct 01 05:25:13 rp-f0b620 kernel: NET: Registered PF_INET6 protocol family
+Oct 01 05:25:13 rp-f0b620 kernel: Segment Routing with IPv6
+Oct 01 05:25:13 rp-f0b620 kernel: In-situ OAM (IOAM) with IPv6
+Oct 01 05:25:13 rp-f0b620 kernel: sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Oct 01 05:25:13 rp-f0b620 kernel: NET: Registered PF_PACKET protocol family
+Oct 01 05:25:13 rp-f0b620 kernel: can: controller area network core
+Oct 01 05:25:13 rp-f0b620 kernel: NET: Registered PF_CAN protocol family
+Oct 01 05:25:13 rp-f0b620 kernel: can: raw protocol
+Oct 01 05:25:13 rp-f0b620 kernel: can: broadcast manager protocol
+Oct 01 05:25:13 rp-f0b620 kernel: can: netlink gateway - max_hops=1
+Oct 01 05:25:13 rp-f0b620 kernel: zynq_pm_remap_ocm: no compatible node found for 'mmio-sram'
+Oct 01 05:25:13 rp-f0b620 kernel: zynq_pm_suspend_init: Unable to map OCM.
+Oct 01 05:25:13 rp-f0b620 kernel: Registering SWP/SWPB emulation handler
+Oct 01 05:25:13 rp-f0b620 kernel: Loading compiled-in X.509 certificates
+Oct 01 05:25:13 rp-f0b620 kernel: of-fpga-region fpga-full: FPGA Region probed
+Oct 01 05:25:13 rp-f0b620 kernel: of_cfs_init
+Oct 01 05:25:13 rp-f0b620 kernel: of_cfs_init: OK
+Oct 01 05:25:13 rp-f0b620 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Oct 01 05:25:13 rp-f0b620 kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Oct 01 05:25:13 rp-f0b620 kernel: platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Oct 01 05:25:13 rp-f0b620 kernel: ALSA device list:
+Oct 01 05:25:13 rp-f0b620 kernel:   No soundcards found.
+Oct 01 05:25:13 rp-f0b620 kernel: cfg80211: failed to load regulatory.db
+Oct 01 05:25:13 rp-f0b620 kernel: mmc0: new high speed SDXC card at address aaaa
+Oct 01 05:25:13 rp-f0b620 kernel: Waiting for root device /dev/mmcblk0p2...
+Oct 01 05:25:13 rp-f0b620 kernel: mmcblk0: mmc0:aaaa SR64G 59.5 GiB 
+Oct 01 05:25:13 rp-f0b620 kernel:  mmcblk0: p1 p2 p3 p4
+Oct 01 05:25:13 rp-f0b620 kernel: EXT4-fs (mmcblk0p2): INFO: recovery required on readonly filesystem
+Oct 01 05:25:13 rp-f0b620 kernel: EXT4-fs (mmcblk0p2): write access will be enabled during recovery
+Oct 01 05:25:13 rp-f0b620 kernel: random: fast init done
+Oct 01 05:25:13 rp-f0b620 kernel: EXT4-fs (mmcblk0p2): recovery complete
+Oct 01 05:25:13 rp-f0b620 kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null). Quota mode: disabled.
+Oct 01 05:25:13 rp-f0b620 kernel: VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+Oct 01 05:25:13 rp-f0b620 kernel: devtmpfs: mounted
+Oct 01 05:25:13 rp-f0b620 kernel: Freeing unused kernel image (initmem) memory: 1024K
+Oct 01 05:25:13 rp-f0b620 kernel: Run /sbin/init as init process
+Oct 01 05:25:13 rp-f0b620 kernel:   with arguments:
+Oct 01 05:25:13 rp-f0b620 kernel:     /sbin/init
+Oct 01 05:25:13 rp-f0b620 kernel:     earlyprintk
+Oct 01 05:25:13 rp-f0b620 kernel:   with environment:
+Oct 01 05:25:13 rp-f0b620 kernel:     HOME=/
+Oct 01 05:25:13 rp-f0b620 kernel:     TERM=linux
+Oct 01 05:25:13 rp-f0b620 systemd[1]: System time before build time, advancing clock.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Failed to find module 'autofs4'
+Oct 01 05:25:13 rp-f0b620 systemd[1]: systemd 249.11-0ubuntu3.10 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Detected architecture arm.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Hostname set to <rp-f0b620>.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Using hardware watchdog 'cdns_wdt watchdog', version 0, device /dev/watchdog
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Set hardware watchdog to 5s.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: /etc/systemd/system/jupyter.service:8: Standard output type syslog is obsolete, automatically updating to journal. Please update your unit file, and consider removing the setting altogether.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: /etc/systemd/system/jupyter.service:9: Standard output type syslog is obsolete, automatically updating to journal. Please update your unit file, and consider removing the setting altogether.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: /etc/systemd/system/jupyter.service:16: PIDFile= references a path below legacy directory /var/run/, updating /var/run/jupyter.pid → /run/jupyter.pid; please update the unit file accordingly.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Configuration file /etc/systemd/system/ahe.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Queued start job for default target Multi-User System.
+Oct 01 05:25:13 rp-f0b620 kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Created slice Slice /system/modprobe.
+Oct 01 05:25:13 rp-f0b620 kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Created slice Slice /system/serial-getty.
+Oct 01 05:25:13 rp-f0b620 kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Created slice Slice /system/systemd-fsck.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Created slice User and Session Slice.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Started ntp-systemd-netif.path.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in Arbitrary Executable File Formats File System Automount Point being skipped.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Reached target Local Encrypted Volumes.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Reached target Path Units.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Reached target Remote File Systems.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Reached target Slice Units.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Reached target Swaps.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Reached target Local Verity Protected Volumes.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on fsck to fsckd communication Socket.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on initctl Compatibility Named Pipe.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in Journal Audit Socket being skipped.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on Journal Socket (/dev/log).
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on Journal Socket.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on Network Service Netlink Socket.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on udev Control Socket.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Listening on udev Kernel Socket.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in Huge Pages File System being skipped.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in POSIX Message Queue File System being skipped.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Mounting Kernel Debug File System...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in Kernel Trace File System being skipped.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Journal Service...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Restore / save the current clock...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Set the console keyboard layout...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in Create List of Static Device Nodes being skipped.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Load Kernel Module configfs...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Load Kernel Module drm...
+Oct 01 05:25:13 rp-f0b620 systemd-journald[83]: Journal started
+░░ Subject: The journal has been started
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The system journal process has started up, opened the journal
+░░ files for writing and is now ready to process requests.
+Oct 01 05:25:13 rp-f0b620 systemd-journald[83]: Runtime Journal (/run/log/journal/ac3b0cd0df5f4765b581663541d54948) is 2.3M, max 9.2M, 6.9M free.
+░░ Subject: Disk space used by the journal
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Runtime Journal (/run/log/journal/ac3b0cd0df5f4765b581663541d54948) is currently using 2.3M.
+░░ Maximum allowed usage is set to 9.2M.
+░░ Leaving at least 4.6M free (of currently available 89.9M of disk space).
+░░ Enforced usage limit is thus 9.2M, of which 6.9M are still available.
+░░ 
+░░ The limits controlling how much disk space is used by the journal may
+░░ be configured with SystemMaxUse=, SystemKeepFree=, SystemMaxFileSize=,
+░░ RuntimeMaxUse=, RuntimeKeepFree=, RuntimeMaxFileSize= settings in
+░░ /etc/systemd/journald.conf. See journald.conf(5) for details.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Load Kernel Module efi_pstore...
+Oct 01 05:25:13 rp-f0b620 fake-hwclock[90]: Sun Oct  1 05:25:13 AM UTC 2023
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Load Kernel Module fuse...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting File System Check on Root Device...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Load Kernel Modules...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Generate network units from Kernel command line...
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Coldplug All udev Devices...
+Oct 01 05:25:13 rp-f0b620 systemd-fsck[109]: /dev/mmcblk0p2: clean, 182055/442368 files, 1203592/1769472 blocks
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Started Journal Service.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Mounted Kernel Debug File System.
+░░ Subject: A start job for unit sys-kernel-debug.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sys-kernel-debug.mount has finished successfully.
+░░ 
+░░ The job identifier is 54.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Restore / save the current clock.
+░░ Subject: A start job for unit fake-hwclock.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit fake-hwclock.service has finished successfully.
+░░ 
+░░ The job identifier is 39.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit modprobe@configfs.service has successfully entered the 'dead' state.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Load Kernel Module configfs.
+░░ Subject: A start job for unit modprobe@configfs.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@configfs.service has finished successfully.
+░░ 
+░░ The job identifier is 32.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: modprobe@drm.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit modprobe@drm.service has successfully entered the 'dead' state.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Load Kernel Module drm.
+░░ Subject: A start job for unit modprobe@drm.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@drm.service has finished successfully.
+░░ 
+░░ The job identifier is 111.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit modprobe@efi_pstore.service has successfully entered the 'dead' state.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Load Kernel Module efi_pstore.
+░░ Subject: A start job for unit modprobe@efi_pstore.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@efi_pstore.service has finished successfully.
+░░ 
+░░ The job identifier is 11.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit modprobe@fuse.service has successfully entered the 'dead' state.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Load Kernel Module fuse.
+░░ Subject: A start job for unit modprobe@fuse.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@fuse.service has finished successfully.
+░░ 
+░░ The job identifier is 47.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished File System Check on Root Device.
+░░ Subject: A start job for unit systemd-fsck-root.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-fsck-root.service has finished successfully.
+░░ 
+░░ The job identifier is 25.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Set the console keyboard layout.
+░░ Subject: A start job for unit keyboard-setup.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit keyboard-setup.service has finished successfully.
+░░ 
+░░ The job identifier is 62.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Load Kernel Modules.
+░░ Subject: A start job for unit systemd-modules-load.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-modules-load.service has finished successfully.
+░░ 
+░░ The job identifier is 56.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Generate network units from Kernel command line.
+░░ Subject: A start job for unit systemd-network-generator.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-network-generator.service has finished successfully.
+░░ 
+░░ The job identifier is 65.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+░░ Subject: A start job for unit sys-fs-fuse-connections.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sys-fs-fuse-connections.mount has finished successfully.
+░░ 
+░░ The job identifier is 46.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Mounting Kernel Configuration File System...
+░░ Subject: A start job for unit sys-kernel-config.mount has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sys-kernel-config.mount has begun execution.
+░░ 
+░░ The job identifier is 31.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Started File System Check Daemon to report status.
+░░ Subject: A start job for unit systemd-fsckd.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-fsckd.service has finished successfully.
+░░ 
+░░ The job identifier is 125.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Remount Root and Kernel File Systems...
+░░ Subject: A start job for unit systemd-remount-fs.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-remount-fs.service has begun execution.
+░░ 
+░░ The job identifier is 26.
+Oct 01 05:25:13 rp-f0b620 kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro. Quota mode: disabled.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Starting Apply Kernel Variables...
+░░ Subject: A start job for unit systemd-sysctl.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-sysctl.service has begun execution.
+░░ 
+░░ The job identifier is 48.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Mounted Kernel Configuration File System.
+░░ Subject: A start job for unit sys-kernel-config.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sys-kernel-config.mount has finished successfully.
+░░ 
+░░ The job identifier is 31.
+Oct 01 05:25:13 rp-f0b620 systemd-sysctl[118]: Couldn't write '176' to 'kernel/sysrq', ignoring: No such file or directory
+Oct 01 05:25:13 rp-f0b620 systemd-sysctl[118]: Couldn't write '1' to 'kernel/yama/ptrace_scope', ignoring: No such file or directory
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Remount Root and Kernel File Systems.
+░░ Subject: A start job for unit systemd-remount-fs.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-remount-fs.service has finished successfully.
+░░ 
+░░ The job identifier is 26.
+Oct 01 05:25:13 rp-f0b620 systemd[1]: Finished Apply Kernel Variables.
+░░ Subject: A start job for unit systemd-sysctl.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-sysctl.service has finished successfully.
+░░ 
+░░ The job identifier is 48.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+░░ Subject: A start job for unit systemd-pstore.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-pstore.service has finished successfully.
+░░ 
+░░ The job identifier is 10.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Starting Load/Save Random Seed...
+░░ Subject: A start job for unit systemd-random-seed.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-random-seed.service has begun execution.
+░░ 
+░░ The job identifier is 52.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Starting Create System Users...
+░░ Subject: A start job for unit systemd-sysusers.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-sysusers.service has begun execution.
+░░ 
+░░ The job identifier is 61.
+Oct 01 05:25:14 rp-f0b620 systemd-random-seed[119]: Kernel entropy pool is not initialized yet, waiting until it is.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Finished Coldplug All udev Devices.
+░░ Subject: A start job for unit systemd-udev-trigger.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-udev-trigger.service has finished successfully.
+░░ 
+░░ The job identifier is 35.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Finished Create System Users.
+░░ Subject: A start job for unit systemd-sysusers.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-sysusers.service has finished successfully.
+░░ 
+░░ The job identifier is 61.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Starting Create Static Device Nodes in /dev...
+░░ Subject: A start job for unit systemd-tmpfiles-setup-dev.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-tmpfiles-setup-dev.service has begun execution.
+░░ 
+░░ The job identifier is 63.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Finished Create Static Device Nodes in /dev.
+░░ Subject: A start job for unit systemd-tmpfiles-setup-dev.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-tmpfiles-setup-dev.service has finished successfully.
+░░ 
+░░ The job identifier is 63.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Reached target Preparation for Local File Systems.
+░░ Subject: A start job for unit local-fs-pre.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit local-fs-pre.target has finished successfully.
+░░ 
+░░ The job identifier is 27.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: var-log.mount: Directory /var/log to mount over is not empty, mounting anyway.
+░░ Subject: Mount point is not empty
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The directory /var/log is specified as the mount point (second field in
+░░ /etc/fstab or Where= field in systemd unit file) and is not empty.
+░░ This does not interfere with mounting, but the pre-exisiting files in
+░░ this directory become inaccessible. To see those over-mounted files,
+░░ please manually mount the underlying file system to a secondary
+░░ location.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Mounting /var/log...
+░░ Subject: A start job for unit var-log.mount has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit var-log.mount has begun execution.
+░░ 
+░░ The job identifier is 24.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Starting Rule-based Manager for Device Events and Files...
+░░ Subject: A start job for unit systemd-udevd.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-udevd.service has begun execution.
+░░ 
+░░ The job identifier is 36.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Mounted /var/log.
+░░ Subject: A start job for unit var-log.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit var-log.mount has finished successfully.
+░░ 
+░░ The job identifier is 24.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Starting Flush Journal to Persistent Storage...
+░░ Subject: A start job for unit systemd-journal-flush.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-journal-flush.service has begun execution.
+░░ 
+░░ The job identifier is 40.
+Oct 01 05:25:14 rp-f0b620 systemd-journald[83]: Runtime Journal (/run/log/journal/ac3b0cd0df5f4765b581663541d54948) is 2.3M, max 9.2M, 6.9M free.
+░░ Subject: Disk space used by the journal
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Runtime Journal (/run/log/journal/ac3b0cd0df5f4765b581663541d54948) is currently using 2.3M.
+░░ Maximum allowed usage is set to 9.2M.
+░░ Leaving at least 4.6M free (of currently available 89.9M of disk space).
+░░ Enforced usage limit is thus 9.2M, of which 6.9M are still available.
+░░ 
+░░ The limits controlling how much disk space is used by the journal may
+░░ be configured with SystemMaxUse=, SystemKeepFree=, SystemMaxFileSize=,
+░░ RuntimeMaxUse=, RuntimeKeepFree=, RuntimeMaxFileSize= settings in
+░░ /etc/systemd/journald.conf. See journald.conf(5) for details.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Finished Flush Journal to Persistent Storage.
+░░ Subject: A start job for unit systemd-journal-flush.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-journal-flush.service has finished successfully.
+░░ 
+░░ The job identifier is 40.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Started Rule-based Manager for Device Events and Files.
+░░ Subject: A start job for unit systemd-udevd.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-udevd.service has finished successfully.
+░░ 
+░░ The job identifier is 36.
+Oct 01 05:25:14 rp-f0b620 systemd[1]: Found device /dev/ttyPS0.
+░░ Subject: A start job for unit dev-ttyPS0.device has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dev-ttyPS0.device has finished successfully.
+░░ 
+░░ The job identifier is 107.
+Oct 01 05:25:14 rp-f0b620 systemd-udevd[128]: Using default interface naming scheme 'v249'.
+Oct 01 05:25:15 rp-f0b620 systemd-udevd[130]: Using default interface naming scheme 'v249'.
+Oct 01 05:25:15 rp-f0b620 systemd[1]: Found device /dev/mmcblk0p1.
+░░ Subject: A start job for unit dev-mmcblk0p1.device has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dev-mmcblk0p1.device has finished successfully.
+░░ 
+░░ The job identifier is 17.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Found device /dev/mmcblk0p4.
+░░ Subject: A start job for unit dev-mmcblk0p4.device has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dev-mmcblk0p4.device has finished successfully.
+░░ 
+░░ The job identifier is 23.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Mounting /boot...
+░░ Subject: A start job for unit boot.mount has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit boot.mount has begun execution.
+░░ 
+░░ The job identifier is 20.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting File System Check on /dev/mmcblk0p1...
+░░ Subject: A start job for unit systemd-fsck@dev-mmcblk0p1.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-fsck@dev-mmcblk0p1.service has begun execution.
+░░ 
+░░ The job identifier is 15.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting File System Check on /dev/mmcblk0p4...
+░░ Subject: A start job for unit systemd-fsck@dev-mmcblk0p4.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-fsck@dev-mmcblk0p4.service has begun execution.
+░░ 
+░░ The job identifier is 22.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Mounted /boot.
+░░ Subject: A start job for unit boot.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit boot.mount has finished successfully.
+░░ 
+░░ The job identifier is 20.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Finished File System Check on /dev/mmcblk0p1.
+░░ Subject: A start job for unit systemd-fsck@dev-mmcblk0p1.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-fsck@dev-mmcblk0p1.service has finished successfully.
+░░ 
+░░ The job identifier is 15.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Mounting /opt/redpitaya...
+░░ Subject: A start job for unit opt-redpitaya.mount has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit opt-redpitaya.mount has begun execution.
+░░ 
+░░ The job identifier is 14.
+Oct 01 05:25:16 rp-f0b620 systemd-fsck[154]: Data: recovering journal
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Mounted /opt/redpitaya.
+░░ Subject: A start job for unit opt-redpitaya.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit opt-redpitaya.mount has finished successfully.
+░░ 
+░░ The job identifier is 14.
+Oct 01 05:25:16 rp-f0b620 systemd-fsck[154]: Data: clean, 33/3055616 files, 270676/12207104 blocks
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Finished File System Check on /dev/mmcblk0p4.
+░░ Subject: A start job for unit systemd-fsck@dev-mmcblk0p4.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-fsck@dev-mmcblk0p4.service has finished successfully.
+░░ 
+░░ The job identifier is 22.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Mounting /opt/data...
+░░ Subject: A start job for unit opt-data.mount has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit opt-data.mount has begun execution.
+░░ 
+░░ The job identifier is 21.
+Oct 01 05:25:16 rp-f0b620 kernel: EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null). Quota mode: disabled.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Mounted /opt/data.
+░░ Subject: A start job for unit opt-data.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit opt-data.mount has finished successfully.
+░░ 
+░░ The job identifier is 21.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Reached target Local File Systems.
+░░ Subject: A start job for unit local-fs.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit local-fs.target has finished successfully.
+░░ 
+░░ The job identifier is 13.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting Set console font and keymap...
+░░ Subject: A start job for unit console-setup.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit console-setup.service has begun execution.
+░░ 
+░░ The job identifier is 100.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+░░ Subject: A start job for unit systemd-binfmt.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-binfmt.service has finished successfully.
+░░ 
+░░ The job identifier is 6.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting Create Volatile Files and Directories...
+░░ Subject: A start job for unit systemd-tmpfiles-setup.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-tmpfiles-setup.service has begun execution.
+░░ 
+░░ The job identifier is 28.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Finished Set console font and keymap.
+░░ Subject: A start job for unit console-setup.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit console-setup.service has finished successfully.
+░░ 
+░░ The job identifier is 100.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Finished Create Volatile Files and Directories.
+░░ Subject: A start job for unit systemd-tmpfiles-setup.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-tmpfiles-setup.service has finished successfully.
+░░ 
+░░ The job identifier is 28.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in Arbitrary Executable File Formats File System Automount Point being skipped.
+░░ Subject: A start job for unit proc-sys-fs-binfmt_misc.automount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit proc-sys-fs-binfmt_misc.automount has finished successfully.
+░░ 
+░░ The job identifier is 197.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in Huge Pages File System being skipped.
+░░ Subject: A start job for unit dev-hugepages.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dev-hugepages.mount has finished successfully.
+░░ 
+░░ The job identifier is 176.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in POSIX Message Queue File System being skipped.
+░░ Subject: A start job for unit dev-mqueue.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dev-mqueue.mount has finished successfully.
+░░ 
+░░ The job identifier is 210.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in Kernel Trace File System being skipped.
+░░ Subject: A start job for unit sys-kernel-tracing.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sys-kernel-tracing.mount has finished successfully.
+░░ 
+░░ The job identifier is 201.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in Create List of Static Device Nodes being skipped.
+░░ Subject: A start job for unit kmod-static-nodes.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit kmod-static-nodes.service has finished successfully.
+░░ 
+░░ The job identifier is 180.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting Load Kernel Module efi_pstore...
+░░ Subject: A start job for unit modprobe@efi_pstore.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@efi_pstore.service has begun execution.
+░░ 
+░░ The job identifier is 146.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting Load Kernel Module fuse...
+░░ Subject: A start job for unit modprobe@fuse.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@fuse.service has begun execution.
+░░ 
+░░ The job identifier is 193.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+░░ Subject: A start job for unit systemd-binfmt.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-binfmt.service has finished successfully.
+░░ 
+░░ The job identifier is 139.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+░░ Subject: A start job for unit systemd-update-utmp.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-update-utmp.service has begun execution.
+░░ 
+░░ The job identifier is 88.
+Oct 01 05:25:16 rp-f0b620 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit modprobe@efi_pstore.service has successfully entered the 'dead' state.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Finished Load Kernel Module efi_pstore.
+░░ Subject: A start job for unit modprobe@efi_pstore.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@efi_pstore.service has finished successfully.
+░░ 
+░░ The job identifier is 146.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit modprobe@fuse.service has successfully entered the 'dead' state.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Finished Load Kernel Module fuse.
+░░ Subject: A start job for unit modprobe@fuse.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit modprobe@fuse.service has finished successfully.
+░░ 
+░░ The job identifier is 193.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+░░ Subject: A start job for unit systemd-update-utmp.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-update-utmp.service has finished successfully.
+░░ 
+░░ The job identifier is 88.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+░░ Subject: A start job for unit sys-fs-fuse-connections.mount has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sys-fs-fuse-connections.mount has finished successfully.
+░░ 
+░░ The job identifier is 192.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+░░ Subject: A start job for unit systemd-pstore.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-pstore.service has finished successfully.
+░░ 
+░░ The job identifier is 144.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Reached target System Initialization.
+░░ Subject: A start job for unit sysinit.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sysinit.target has finished successfully.
+░░ 
+░░ The job identifier is 5.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Daily apt download activities.
+░░ Subject: A start job for unit apt-daily.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apt-daily.timer has finished successfully.
+░░ 
+░░ The job identifier is 78.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Daily apt upgrade and clean activities.
+░░ Subject: A start job for unit apt-daily-upgrade.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit apt-daily-upgrade.timer has finished successfully.
+░░ 
+░░ The job identifier is 76.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Daily dpkg database backup timer.
+░░ Subject: A start job for unit dpkg-db-backup.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dpkg-db-backup.timer has finished successfully.
+░░ 
+░░ The job identifier is 81.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+░░ Subject: A start job for unit e2scrub_all.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit e2scrub_all.timer has finished successfully.
+░░ 
+░░ The job identifier is 77.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Discard unused blocks once a week.
+░░ Subject: A start job for unit fstrim.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit fstrim.timer has finished successfully.
+░░ 
+░░ The job identifier is 80.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Message of the Day.
+░░ Subject: A start job for unit motd-news.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit motd-news.timer has finished successfully.
+░░ 
+░░ The job identifier is 82.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started Daily Cleanup of Temporary Directories.
+░░ Subject: A start job for unit systemd-tmpfiles-clean.timer has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-tmpfiles-clean.timer has finished successfully.
+░░ 
+░░ The job identifier is 79.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Reached target Timer Units.
+░░ Subject: A start job for unit timers.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit timers.target has finished successfully.
+░░ 
+░░ The job identifier is 75.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+░░ Subject: A start job for unit avahi-daemon.socket has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit avahi-daemon.socket has finished successfully.
+░░ 
+░░ The job identifier is 74.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Reached target Socket Units.
+░░ Subject: A start job for unit sockets.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sockets.target has finished successfully.
+░░ 
+░░ The job identifier is 70.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Reached target Basic System.
+░░ Subject: A start job for unit basic.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit basic.target has finished successfully.
+░░ 
+░░ The job identifier is 2.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Listening on D-Bus System Message Bus Socket.
+░░ Subject: A start job for unit dbus.socket has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dbus.socket has finished successfully.
+░░ 
+░░ The job identifier is 73.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started D-Bus System Message Bus.
+░░ Subject: A start job for unit dbus.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit dbus.service has finished successfully.
+░░ 
+░░ The job identifier is 114.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+░░ Subject: A start job for unit e2scrub_reap.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit e2scrub_reap.service has begun execution.
+░░ 
+░░ The job identifier is 95.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+░░ Subject: A start job for unit getty-static.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit getty-static.service has finished successfully.
+░░ 
+░░ The job identifier is 109.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Starting Set hostname to redpitaya-[MAC]...
+░░ Subject: A start job for unit hostname-mac.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit hostname-mac.service has begun execution.
+░░ 
+░░ The job identifier is 96.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in Packet Filtering Framework being skipped.
+░░ Subject: A start job for unit iptables.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit iptables.service has finished successfully.
+░░ 
+░░ The job identifier is 99.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Reached target Preparation for Network.
+░░ Subject: A start job for unit network-pre.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit network-pre.target has finished successfully.
+░░ 
+░░ The job identifier is 66.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Starting Service for startup wifi...
+░░ Subject: A start job for unit netstart.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit netstart.service has begun execution.
+░░ 
+░░ The job identifier is 118.
+Oct 01 05:25:17 rp-f0b620 dbus-daemon[168]: [system] Activating systemd to hand-off: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.0' (uid=0 pid=175 comm="hostnamectl set-hostname rp-f0b620 ")
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started ntp-systemd-netif.service.
+░░ Subject: A start job for unit ntp-systemd-netif.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ntp-systemd-netif.service has finished successfully.
+░░ 
+░░ The job identifier is 137.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Starting sockproc enables Lua running shell scripts...
+░░ Subject: A start job for unit sockproc.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sockproc.service has begun execution.
+░░ 
+░░ The job identifier is 115.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in SSH certificates are rebuilt on first boot being skipped.
+░░ Subject: A start job for unit ssh-reconfigure.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ssh-reconfigure.service has finished successfully.
+░░ 
+░░ The job identifier is 120.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Starting User Login Management...
+░░ Subject: A start job for unit systemd-logind.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-logind.service has begun execution.
+░░ 
+░░ The job identifier is 110.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in Wireless mode set AP being skipped.
+░░ Subject: A start job for unit wireless-mode-ap.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit wireless-mode-ap.service has finished successfully.
+░░ 
+░░ The job identifier is 97.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Condition check resulted in Wireless mode set client being skipped.
+░░ Subject: A start job for unit wireless-mode-client.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit wireless-mode-client.service has finished successfully.
+░░ 
+░░ The job identifier is 119.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Starting WPA supplicant...
+░░ Subject: A start job for unit wpa_supplicant.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit wpa_supplicant.service has begun execution.
+░░ 
+░░ The job identifier is 121.
+Oct 01 05:25:17 rp-f0b620 systemd[1]: ntp-systemd-netif.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit ntp-systemd-netif.service has successfully entered the 'dead' state.
+Oct 01 05:25:17 rp-f0b620 dbus-daemon[168]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Oct 01 05:25:17 rp-f0b620 systemd[1]: Started sockproc enables Lua running shell scripts.
+░░ Subject: A start job for unit sockproc.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit sockproc.service has finished successfully.
+░░ 
+░░ The job identifier is 115.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Starting Hostname Service...
+░░ Subject: A start job for unit systemd-hostnamed.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-hostnamed.service has begun execution.
+░░ 
+░░ The job identifier is 214.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Started WPA supplicant.
+░░ Subject: A start job for unit wpa_supplicant.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit wpa_supplicant.service has finished successfully.
+░░ 
+░░ The job identifier is 121.
+Oct 01 05:25:18 rp-f0b620 wpa_supplicant[185]: Successfully initialized wpa_supplicant
+Oct 01 05:25:18 rp-f0b620 kernel: random: crng init done
+Oct 01 05:25:18 rp-f0b620 kernel: random: 7 urandom warning(s) missed due to ratelimiting
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Finished Load/Save Random Seed.
+░░ Subject: A start job for unit systemd-random-seed.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-random-seed.service has finished successfully.
+░░ 
+░░ The job identifier is 52.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Condition check resulted in First Boot Complete being skipped.
+░░ Subject: A start job for unit first-boot-complete.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit first-boot-complete.target has finished successfully.
+░░ 
+░░ The job identifier is 53.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+░░ Subject: A start job for unit systemd-boot-system-token.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-boot-system-token.service has finished successfully.
+░░ 
+░░ The job identifier is 33.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+░░ Subject: A start job for unit systemd-machine-id-commit.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-machine-id-commit.service has finished successfully.
+░░ 
+░░ The job identifier is 57.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: netstart.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit netstart.service has successfully entered the 'dead' state.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Started Service for startup wifi.
+░░ Subject: A start job for unit netstart.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit netstart.service has finished successfully.
+░░ 
+░░ The job identifier is 118.
+Oct 01 05:25:18 rp-f0b620 systemd-logind[181]: New seat seat0.
+░░ Subject: A new seat seat0 is now available
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ Documentation: sd-login(3)
+░░ 
+░░ A new seat seat0 has been configured and is now available.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Started User Login Management.
+░░ Subject: A start job for unit systemd-logind.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-logind.service has finished successfully.
+░░ 
+░░ The job identifier is 110.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: e2scrub_reap.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit e2scrub_reap.service has successfully entered the 'dead' state.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+░░ Subject: A start job for unit e2scrub_reap.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit e2scrub_reap.service has finished successfully.
+░░ 
+░░ The job identifier is 95.
+Oct 01 05:25:18 rp-f0b620 dbus-daemon[168]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Started Hostname Service.
+░░ Subject: A start job for unit systemd-hostnamed.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-hostnamed.service has finished successfully.
+░░ 
+░░ The job identifier is 214.
+Oct 01 05:25:18 rp-f0b620 systemd-hostnamed[192]: Hostname set to <rp-f0b620> (static)
+Oct 01 05:25:18 rp-f0b620 systemd[1]: hostname-mac.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit hostname-mac.service has successfully entered the 'dead' state.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Finished Set hostname to redpitaya-[MAC].
+░░ Subject: A start job for unit hostname-mac.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit hostname-mac.service has finished successfully.
+░░ 
+░░ The job identifier is 96.
+Oct 01 05:25:18 rp-f0b620 systemd[1]: Starting Network Configuration...
+░░ Subject: A start job for unit systemd-networkd.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-networkd.service has begun execution.
+░░ 
+░░ The job identifier is 93.
+Oct 01 05:25:19 rp-f0b620 systemd-networkd[201]: /etc/systemd/network/wired.network:5: An address '192.168.11.10' is specified without prefix length. The behavior of parsing addresses without prefix length will be changed in the future release. Please specify prefix length explicitly.
+Oct 01 05:25:19 rp-f0b620 systemd-networkd[201]: /etc/systemd/network/wired.network:9: IPMasquerade=yes is deprecated, and it is handled as "ipv4" instead of "both". Please use "ipv4" or "both".
+Oct 01 05:25:19 rp-f0b620 systemd-networkd[201]: lo: Link UP
+Oct 01 05:25:19 rp-f0b620 systemd-networkd[201]: lo: Gained carrier
+Oct 01 05:25:19 rp-f0b620 systemd-networkd[201]: Enumeration completed
+Oct 01 05:25:19 rp-f0b620 systemd[1]: Started Network Configuration.
+░░ Subject: A start job for unit systemd-networkd.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-networkd.service has finished successfully.
+░░ 
+░░ The job identifier is 93.
+Oct 01 05:25:19 rp-f0b620 systemd-networkd[201]: eth0: Link UP
+Oct 01 05:25:19 rp-f0b620 kernel: macb e000b000.ethernet eth0: PHY [e000b000.ethernet-ffffffff:01] driver [Intel XWAY PHY11G (PEF 7071/PEF 7072) v1.5 / v1.6] (irq=POLL)
+Oct 01 05:25:19 rp-f0b620 kernel: macb e000b000.ethernet eth0: configuring for phy/rgmii-id link mode
+Oct 01 05:25:19 rp-f0b620 systemd[1]: Starting Wait for Network to be Configured...
+░░ Subject: A start job for unit systemd-networkd-wait-online.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-networkd-wait-online.service has begun execution.
+░░ 
+░░ The job identifier is 92.
+Oct 01 05:25:19 rp-f0b620 systemd[1]: Starting Network Name Resolution...
+░░ Subject: A start job for unit systemd-resolved.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-resolved.service has begun execution.
+░░ 
+░░ The job identifier is 83.
+Oct 01 05:25:19 rp-f0b620 systemd-resolved[203]: Positive Trust Anchors:
+Oct 01 05:25:19 rp-f0b620 systemd-resolved[203]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Oct 01 05:25:19 rp-f0b620 systemd-resolved[203]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+Oct 01 05:25:20 rp-f0b620 systemd-resolved[203]: Using system hostname 'rp-f0b620'.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Network Name Resolution.
+░░ Subject: A start job for unit systemd-resolved.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-resolved.service has finished successfully.
+░░ 
+░░ The job identifier is 83.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Reached target Network.
+░░ Subject: A start job for unit network.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit network.target has finished successfully.
+░░ 
+░░ The job identifier is 94.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Reached target Host and Network Name Lookups.
+░░ Subject: A start job for unit nss-lookup.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit nss-lookup.target has finished successfully.
+░░ 
+░░ The job identifier is 84.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+░░ Subject: A start job for unit avahi-daemon.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit avahi-daemon.service has begun execution.
+░░ 
+░░ The job identifier is 117.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Jupyter notebook server.
+░░ Subject: A start job for unit jupyter.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit jupyter.service has finished successfully.
+░░ 
+░░ The job identifier is 89.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Found user 'avahi' (UID 106) and group 'avahi' (GID 112).
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Successfully dropped root privileges.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: avahi-daemon 0.8 starting up.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Successfully called chroot().
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Successfully dropped remaining capabilities.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Loading service file /services/bazaar.service.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Loading service file /services/scpi.service.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Loading service file /services/ssh.service.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Joining mDNS multicast group on interface lo.IPv6 with address ::1.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: New relevant interface lo.IPv6 for mDNS.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Joining mDNS multicast group on interface lo.IPv4 with address 127.0.0.1.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: New relevant interface lo.IPv4 for mDNS.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Network interface enumeration completed.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Registering new address record for ::1 on lo.*.
+Oct 01 05:25:20 rp-f0b620 avahi-daemon[204]: Registering new address record for 127.0.0.1 on lo.IPv4.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Starting Network Time Service...
+░░ Subject: A start job for unit ntp.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ntp.service has begun execution.
+░░ 
+░░ The job identifier is 85.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Service for startup script Red Pitaya.
+░░ Subject: A start job for unit redpitaya_startup.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit redpitaya_startup.service has finished successfully.
+░░ 
+░░ The job identifier is 123.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Starting OpenBSD Secure Shell server...
+░░ Subject: A start job for unit ssh.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ssh.service has begun execution.
+░░ 
+░░ The job identifier is 98.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Starting Permit User Sessions...
+░░ Subject: A start job for unit systemd-user-sessions.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-user-sessions.service has begun execution.
+░░ 
+░░ The job identifier is 122.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+░░ Subject: A start job for unit avahi-daemon.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit avahi-daemon.service has finished successfully.
+░░ 
+░░ The job identifier is 117.
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: ntpd 4.2.8p15@1.3728-o Wed Feb 16 17:13:02 UTC 2022 (1): Starting
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 104:109
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: ----------------------------------------------------
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: ntp-4 is maintained by Network Time Foundation,
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: Inc. (NTF), a non-profit 501(c)(3) public-benefit
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: corporation.  Support and training for ntp-4 are
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: available at https://www.nwtime.org/support
+Oct 01 05:25:20 rp-f0b620 ntpd[207]: ----------------------------------------------------
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: proto: precision = 2.448 usec (-19)
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Finished Permit User Sessions.
+░░ Subject: A start job for unit systemd-user-sessions.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-user-sessions.service has finished successfully.
+░░ 
+░░ The job identifier is 122.
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: basedate set to 2022-02-04
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: gps base set to 2022-02-06 (week 2196)
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: leapsecond file ('/usr/share/zoneinfo/leap-seconds.list'): good hash signature
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: leapsecond file ('/usr/share/zoneinfo/leap-seconds.list'): loaded, expire=2023-12-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Serial Getty on ttyPS0.
+░░ Subject: A start job for unit serial-getty@ttyPS0.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit serial-getty@ttyPS0.service has finished successfully.
+░░ 
+░░ The job identifier is 106.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Starting Set console scheme...
+░░ Subject: A start job for unit setvtrgb.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit setvtrgb.service has begun execution.
+░░ 
+░░ The job identifier is 50.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Finished Set console scheme.
+░░ Subject: A start job for unit setvtrgb.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit setvtrgb.service has finished successfully.
+░░ 
+░░ The job identifier is 50.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Created slice Slice /system/getty.
+░░ Subject: A start job for unit system-getty.slice has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit system-getty.slice has finished successfully.
+░░ 
+░░ The job identifier is 103.
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: Listen and drop on 0 v6wildcard [::]:123
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: Listen normally on 2 lo 127.0.0.1:123
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: Listen normally on 3 lo [::1]:123
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: Listening on routing socket on fd #20 for interface updates
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+Oct 01 05:25:20 rp-f0b620 ntpd[219]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Getty on tty1.
+░░ Subject: A start job for unit getty@tty1.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit getty@tty1.service has finished successfully.
+░░ 
+░░ The job identifier is 102.
+Oct 01 05:25:20 rp-f0b620 sh[228]: mkdir: cannot create directory ‘/configfs’: File exists
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Reached target Login Prompts.
+░░ Subject: A start job for unit getty.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit getty.target has finished successfully.
+░░ 
+░░ The job identifier is 101.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started Network Time Service.
+░░ Subject: A start job for unit ntp.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ntp.service has finished successfully.
+░░ 
+░░ The job identifier is 85.
+Oct 01 05:25:20 rp-f0b620 sshd[233]: Server listening on 0.0.0.0 port 22.
+Oct 01 05:25:20 rp-f0b620 sshd[233]: Server listening on :: port 22.
+Oct 01 05:25:20 rp-f0b620 systemd[1]: Started OpenBSD Secure Shell server.
+░░ Subject: A start job for unit ssh.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ssh.service has finished successfully.
+░░ 
+░░ The job identifier is 98.
+Oct 01 05:25:20 rp-f0b620 kernel: fpga_manager fpga0: writing fpga.bit.bin to Xilinx Zynq FPGA Manager
+Oct 01 05:25:21 rp-f0b620 sh[222]: Time taken to load BIN is 176.000000 Milli Seconds
+Oct 01 05:25:21 rp-f0b620 sh[222]: [50B blob data]
+Oct 01 05:25:21 rp-f0b620 avahi-daemon[204]: Server startup complete. Host name is rp-f0b620.local. Local service cookie is 3005877584.
+Oct 01 05:25:22 rp-f0b620 avahi-daemon[204]: Service "rp-f0b620 SSH" (/services/ssh.service) successfully established.
+Oct 01 05:25:22 rp-f0b620 avahi-daemon[204]: Service "rp-f0b620 SCPI" (/services/scpi.service) successfully established.
+Oct 01 05:25:22 rp-f0b620 avahi-daemon[204]: Service "rp-f0b620 HTTP" (/services/bazaar.service) successfully established.
+Oct 01 05:25:22 rp-f0b620 systemd-networkd[201]: eth0: Gained carrier
+Oct 01 05:25:22 rp-f0b620 kernel: macb e000b000.ethernet eth0: Link is Up - 1Gbps/Full - flow control tx
+Oct 01 05:25:22 rp-f0b620 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Oct 01 05:25:22 rp-f0b620 avahi-daemon[204]: Joining mDNS multicast group on interface eth0.IPv4 with address 192.168.11.10.
+Oct 01 05:25:22 rp-f0b620 avahi-daemon[204]: New relevant interface eth0.IPv4 for mDNS.
+Oct 01 05:25:22 rp-f0b620 avahi-daemon[204]: Registering new address record for 192.168.11.10 on eth0.IPv4.
+Oct 01 05:25:22 rp-f0b620 sh[222]: 
+Oct 01 05:25:22 rp-f0b620 systemd[1]: redpitaya_startup.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit redpitaya_startup.service has successfully entered the 'dead' state.
+Oct 01 05:25:23 rp-f0b620 ntpd[219]: Listen normally on 4 eth0 192.168.11.10:123
+Oct 01 05:25:23 rp-f0b620 ntpd[219]: bind(24) AF_INET6 fe80::226:32ff:fef0:b620%2#123 flags 0x11 failed: Cannot assign requested address
+Oct 01 05:25:23 rp-f0b620 ntpd[219]: unable to create socket on eth0 (5) for fe80::226:32ff:fef0:b620%2#123
+Oct 01 05:25:23 rp-f0b620 ntpd[219]: failed to init interface for address fe80::226:32ff:fef0:b620%2
+Oct 01 05:25:23 rp-f0b620 ntpd[219]: new interface(s) found: waking up resolver
+Oct 01 05:25:23 rp-f0b620 avahi-daemon[204]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::226:32ff:fef0:b620.
+Oct 01 05:25:23 rp-f0b620 systemd-networkd[201]: eth0: Gained IPv6LL
+Oct 01 05:25:23 rp-f0b620 avahi-daemon[204]: New relevant interface eth0.IPv6 for mDNS.
+Oct 01 05:25:23 rp-f0b620 avahi-daemon[204]: Registering new address record for fe80::226:32ff:fef0:b620 on eth0.*.
+Oct 01 05:25:25 rp-f0b620 ntpd[219]: Listen normally on 6 eth0 [fe80::226:32ff:fef0:b620%2]:123
+Oct 01 05:25:25 rp-f0b620 ntpd[219]: new interface(s) found: waking up resolver
+Oct 01 05:25:25 rp-f0b620 login[220]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Oct 01 05:25:25 rp-f0b620 login[303]: ROOT LOGIN  on '/dev/ttyPS0'
+Oct 01 05:25:28 rp-f0b620 systemd[1]: Finished Wait for Network to be Configured.
+░░ Subject: A start job for unit systemd-networkd-wait-online.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-networkd-wait-online.service has finished successfully.
+░░ 
+░░ The job identifier is 92.
+Oct 01 05:25:28 rp-f0b620 systemd[1]: Reached target Network is Online.
+░░ Subject: A start job for unit network-online.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit network-online.target has finished successfully.
+░░ 
+░░ The job identifier is 91.
+Oct 01 05:25:28 rp-f0b620 systemd[1]: Starting LSB: Shell In A Box Daemon...
+░░ Subject: A start job for unit shellinabox.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit shellinabox.service has begun execution.
+░░ 
+░░ The job identifier is 90.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: Started LSB: Shell In A Box Daemon.
+░░ Subject: A start job for unit shellinabox.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit shellinabox.service has finished successfully.
+░░ 
+░░ The job identifier is 90.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: Reached target Multi-User System.
+░░ Subject: A start job for unit multi-user.target has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit multi-user.target has finished successfully.
+░░ 
+░░ The job identifier is 1.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: Started Python API calls - ahe.
+░░ Subject: A start job for unit ahe.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit ahe.service has finished successfully.
+░░ 
+░░ The job identifier is 113.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: Starting Record Runlevel Change in UTMP...
+░░ Subject: A start job for unit systemd-update-utmp-runlevel.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-update-utmp-runlevel.service has begun execution.
+░░ 
+░░ The job identifier is 87.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-update-utmp-runlevel.service has successfully entered the 'dead' state.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: Finished Record Runlevel Change in UTMP.
+░░ Subject: A start job for unit systemd-update-utmp-runlevel.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit systemd-update-utmp-runlevel.service has finished successfully.
+░░ 
+░░ The job identifier is 87.
+Oct 01 05:25:29 rp-f0b620 systemd[1]: Startup finished in 1.775s (kernel) + 18.566s (userspace) = 20.341s.
+░░ Subject: System start-up is now complete
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ All system services necessary queued for starting at boot have been
+░░ started. Note that this does not mean that the machine is now idle as services
+░░ might still be busy with completing start-up.
+░░ 
+░░ Kernel start-up required 1775053 microseconds.
+░░ 
+░░ Initial RAM disk start-up required INITRD_USEC microseconds.
+░░ 
+░░ Userspace start-up required 18566335 microseconds.
+Oct 01 05:25:29 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:29.840 ServerApp] Package jupyterlab took 0.0003s to import
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.019 ServerApp] Package jupyter_lsp took 0.1689s to import
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:30.019 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.092 ServerApp] Package jupyter_server_terminals took 0.0690s to import
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.097 ServerApp] Package notebook took 0.0002s to import
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.122 ServerApp] Package notebook_shim took 0.0002s to import
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:30.122 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.128 ServerApp] jupyter_lsp | extension was successfully linked.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.183 ServerApp] jupyter_server_terminals | extension was successfully linked.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.251 ServerApp] jupyterlab | extension was successfully linked.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:30.273 JupyterNotebookApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:30.322 ServerApp] ServerApp.allow_password_change config is deprecated in 2.0. Use PasswordIdentityProvider.allow_password_change.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:30.323 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+Oct 01 05:25:30 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:30.324 ServerApp] notebook | extension was successfully linked.
+Oct 01 05:25:30 rp-f0b620 ntpd[219]: Listen normally on 7 eth0 169.254.159.58:123
+Oct 01 05:25:30 rp-f0b620 ntpd[219]: new interface(s) found: waking up resolver
+Oct 01 05:25:30 rp-f0b620 kernel: fpga_manager fpga0: writing fpga.bit.bin to Xilinx Zynq FPGA Manager
+Oct 01 05:25:30 rp-f0b620 bash[352]: Time taken to load BIN is 176.000000 Milli Seconds
+Oct 01 05:25:30 rp-f0b620 bash[352]: [50B blob data]
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.597 ServerApp] notebook_shim | extension was successfully linked.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:33.810 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [W 2023-10-01 05:25:33.811 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.815 ServerApp] notebook_shim | extension was successfully loaded.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.841 ServerApp] jupyter_lsp | extension was successfully loaded.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.852 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.887 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.888 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.892 LabApp] Extension Manager is 'pypi'.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.931 ServerApp] jupyterlab | extension was successfully loaded.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.968 ServerApp] notebook | extension was successfully loaded.
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.972 ServerApp] Serving notebooks from local directory: /home/jupyter
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.972 ServerApp] Jupyter Server 2.7.3 is running at:
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.973 ServerApp] http://localhost:8888/jlab/lab
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.973 ServerApp]     http://127.0.0.1:8888/jlab/lab
+Oct 01 05:25:33 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:33.974 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Oct 01 05:25:34 rp-f0b620 jupyter[205]: [I 2023-10-01 05:25:34.209 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+Oct 01 05:25:41 rp-f0b620 ntpd[219]: error resolving pool 0.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Oct 01 05:25:46 rp-f0b620 systemd[1]: systemd-fsckd.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-fsckd.service has successfully entered the 'dead' state.
+Oct 01 05:25:48 rp-f0b620 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-hostnamed.service has successfully entered the 'dead' state.
+Oct 01 05:25:53 rp-f0b620 ntpd[219]: error resolving pool 1.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Oct 01 05:25:59 rp-f0b620 sshd[380]: Accepted publickey for root from 192.168.11.5 port 42422 ssh2: RSA SHA256:DO9wLXdf9o8wv04Cy8G9oJGfw47LNYpHI37rL/0aFqg
+Oct 01 05:26:00 rp-f0b620 sshd[380]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Oct 01 05:26:06 rp-f0b620 ntpd[219]: error resolving pool 2.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Oct 01 05:26:18 rp-f0b620 ntpd[219]: error resolving pool 3.ubuntu.pool.ntp.org: Temporary failure in name resolution (-3)
+Oct 01 05:26:31 rp-f0b620 ntpd[219]: error resolving pool ntp.ubuntu.com: Temporary failure in name resolution (-3)
