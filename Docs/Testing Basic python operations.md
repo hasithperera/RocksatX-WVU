@@ -37,8 +37,9 @@
 		- Currently it waits for network to come online. 
 			- During startup a new FPGA image is written.this needs to be disabled some how. 
 			![](res/Pasted%20image%2020240213030709.png)
-			I found another FPGA write sequence after my process. Needs to disable this to get it runing at the start
-	
+			I found another FPGA write sequence after my process. Needs to disable this to get it running at the start
+	- nginx is disabled 
+	- 
 ## Signal generation 
 
 - [ ] Check function generation using Python #task
