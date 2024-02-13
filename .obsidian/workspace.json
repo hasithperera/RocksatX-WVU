@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Custom FPGA image.md",
+                "file": "Docs/Testing Basic python operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/Custom FPGA image.md",
+                "file": "Docs/Testing Basic python operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/Custom FPGA image.md",
+                "file": "Docs/Testing Basic python operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docs/Custom FPGA image.md"
+                "file": "Docs/Testing Basic python operations.md"
               }
             }
           },
@@ -156,9 +156,14 @@
   },
   "active": "dcfd2c8275ea4347",
   "lastOpenFiles": [
+    "Docs/res/Pasted image 20240213030709.png",
+    "src/main.py~",
+    "src/main.py",
+    "src",
+    "Docs/res/Pasted image 20240212235307.png",
     "Docs/Update - Hasith.md",
     "Docs/RP.md",
-    "Docs/Custom FPGA image.md",
+    "Docs/Testing Basic python operations.md",
     "Docs/res/Pasted image 20240212121129.png",
     "Docs/res",
     "Auto fill lists.md",
