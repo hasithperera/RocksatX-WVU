@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "62d5e3e1a054b68a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docs/Design Specs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/Testing Basic python operations.md",
+                "file": "Docs/Design Specs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/Testing Basic python operations.md",
+                "file": "Docs/Design Specs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docs/Testing Basic python operations.md"
+                "file": "Docs/Design Specs.md"
               }
             }
           },
@@ -155,8 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dcfd2c8275ea4347",
+  "active": "62d5e3e1a054b68a",
   "lastOpenFiles": [
+    "Docs/Testing Basic python operations.md",
+    "Docs/Design Specs.md",
     "Docs/res/Pasted image 20240213030709.png",
     "src/main.py~",
     "src/main.py",
@@ -164,7 +179,6 @@
     "Docs/res/Pasted image 20240212235307.png",
     "Docs/Update - Hasith.md",
     "Docs/RP.md",
-    "Docs/Testing Basic python operations.md",
     "Docs/res/Pasted image 20240212121129.png",
     "Docs/res",
     "Auto fill lists.md",
