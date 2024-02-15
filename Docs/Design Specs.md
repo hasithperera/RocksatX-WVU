@@ -10,7 +10,7 @@
 	- TX random noise/ frequency sweeps 
 	- auto run on start
 	- respond to input even from onboard systems
-- Need to talk to Nilay #task
+- Need to talk to Nillay #task
 	- whats needed on the hw side of things
 		- Op-amps for signal amplification 
 		- 5 - 20 MHz 
