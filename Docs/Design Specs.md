@@ -16,3 +16,14 @@
 		- 5 - 20 MHz 
 	- Level shifter's for the inputs. Start putting down a schematic 
 	- Make a block diagram and divide between the two of us what parts each of us are attempting 
+## Random number generator specs
+
+- Using linear scaling from the LPW 
+- Need to generate at 80 MHz
+- [ ] for 125 ms (new spec from Thaiwan mission) [paper]() #task #help
+
+- samples needed: $150\times 10^{-3} * 80 \times 10^{6} = 1.2 \times 10^{7}$ 
+- Signal generation module supports: $16384$
+- reloads needed: $735$
+- [ ] Sweeping 5:20 MHz
+

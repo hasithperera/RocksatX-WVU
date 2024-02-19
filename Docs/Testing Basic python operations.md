@@ -46,4 +46,41 @@
 - [ ] FFT and data logging with Python  #task
 	- [ ] Save binary files 
 
+
+# 18/02/2024
+
+- Using a new SD card to update the OS. Write speed at image write `~10 MB/s` 
+- It crashed the OS and was not able to boot after 
+	- Stress test the SD cards 
+	- My previous card was able to write at 50 MB/s (this makes me suspicious)suspicious
+- Using the provided signal generator. Test the amplitudes of the generated signal
+
+| Freq | amp (pk-pk) - measured | set |
+| ---- | ---- | ---- |
+| 6 k | 19 mV | 0.5 v |
+| 10 k | 30 mV |  |
+| 20 k | 54.6 mV |  |
+| 40 k | 71 mV |  |
+| 100 k | 154 mV |  |
+| 500 k | 464 mV | .4 V |
+| 1M |  | .4 V |
+| 5 M | 760 mV | .4 V |
+| 10 M | 760 mV | .4 V |
+| 15 M | 720 mV | .4 V |
+| 20 M | 640 mV | .4 V |
+|  |  |  |
+### Basic sweep generation 
+
+- Was able to generate 5-20 M sweep
+- This was designed to be 150 ms and 800 ms delays. measurements are attached below
+
+![](res/TEK00003.png)
+![](res/TEK00004.png)
+
+- At .5 s delay a second RP was able to pick up the sweep to verify its operating as we expect it to.
+- Faster sweeps can't be verified due to limitations in triggering and the sync speed. 
+- [ ] search for ways to verify the operation of random noise generation  #task #help #Nillay 
+	- How has this been done in the past 
+
+
 ---

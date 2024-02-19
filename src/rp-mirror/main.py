@@ -3,6 +3,11 @@
 import time
 import rp
 
+#overlay (needs testing-add image needed)
+from rp_overlay import overlay
+
+
+
 period = 1e-2      # period in secodns
 
 # Initialize the interface

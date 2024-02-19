@@ -23,11 +23,10 @@
             "id": "62d5e3e1a054b68a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "Docs/Design Specs.md",
-                "mode": "source",
-                "source": false
+                "file": "Docs/res/TEK00003.png",
+                "staged": false
               }
             }
           }
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#help",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/Design Specs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/Design Specs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Docs/Design Specs.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,17 +163,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "62d5e3e1a054b68a",
+  "active": "5e0d5efa4a3bcaf9",
   "lastOpenFiles": [
+    "Docs/Testing Basic python operations.md",
+    "Docs/res/TEK00004.png",
+    "Docs/res/TEK00003.png",
+    "Docs/Design Specs.md",
+    "Docs/Update - Hasith.md",
     "Docs/res/Pasted image 20240213030709.png",
     "Docs/res/Pasted image 20240212235307.png",
     "Docs/res/Pasted image 20240212121129.png",
-    "Docs/Design Specs.md",
-    "Docs/Testing Basic python operations.md",
     "src/main.py~",
     "src/main.py",
     "src",
-    "Docs/Update - Hasith.md",
     "Docs/RP.md",
     "Docs/res",
     "Auto fill lists.md",
