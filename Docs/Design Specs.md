@@ -27,3 +27,26 @@
 - reloads needed: $735$
 - [ ] Sweeping 5:20 MHz
 
+
+
+## LP - Probe
+
+### 19/02/2024
+
+- [ ] What is the exact sequence need to the probe #task #Dylan #help
+	- set voltage
+	- do we want to get feed back after the amplification stage for the probe potential
+	- how long and what do we do with the input data.
+		- reduce it onboard on python / save time_v_step data for every second
+	- what data rates can we actually write the files: how much data do we have
+	- Space constraints. Can we put all of these on there. (Motor drive, H bridge ?)
+	- Slow ADC spec:
+		- is this compatible with our use case. doc [here](https://redpitaya.readthedocs.io/en/latest/appsFeatures/examples/analog/ana-exm2.html)
+		- external signal conditioning needed:
+			- shift to -.9 to .9 (from 0-1.5) max is 1.8 V
+			- scale up to +/- 10 V
+		- Red pitaya spec:
+			- RF in/out (SMA connectors):14 bits on STEM lab 125 M (this is a big overkill for what we need)
+			- Slow ADC: 4 channels  0-3.5V 12bit
+			- Slow DAC:  4 channels  0-1.8V 12bit
+	
