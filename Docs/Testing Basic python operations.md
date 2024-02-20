@@ -84,3 +84,24 @@
 
 
 ---
+## LP mode testing
+
+- basic sweep and triggering signal was build (`../src/lp.py`)
+- Specs specified on RP:
+	- 900 ms (sweep time)
+	- 100 ms (save delay)
+	- 1.5 and 1.8 v sweeps (measured the same outputs)
+- These were measured to be
+	- sweep time: 1.340 s
+	- sweep time (without DAC change): 1.270 s
+	- write(no write): 100 ms 
+	- Looks to be the for loop is the over head. 
+	- [ ] Test a c program and see how his compares. I have a feeling python makes execution slow. #task 
+	- [ ] How would this change if I stop web interfaces (ie. jupyter/nginx)
+	- [ ] Find a following to build a LED VI curve
+		- transimpedance amp (spec ?)
+		- op-amp (LM741 ? ) for signal rescalling
+
+	![](res/TEK0000.bmp)
+	- Blue trace: voltage sweep (Analog 3)
+	- yellow trace: trig signal during sweep
