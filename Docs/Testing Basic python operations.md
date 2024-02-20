@@ -1,3 +1,4 @@
+## Getting started - Basic setup
 ### Backup SD image
 
 - Used disk utility to graphically make an image (Image is the whole disk and it ~32 GB)
@@ -19,7 +20,7 @@
 	- left extra 1 GB space to make backing up the os easy
 	  
 ---
-## Check the API calls
+### Check the API calls
 
 - Default installed RP OS is 1.04
 - `git clone https://github.com/RedPitaya/RedPitaya.git`
@@ -40,14 +41,15 @@
 			I found another FPGA write sequence after my process. Needs to disable this to get it running at the start
 	- nginx is disabled 
 	- 
-## Signal generation 
+### Signal generation 
 
-- [ ] Check function generation using Python #task
+- [x] Check function generation using Python #task ✅ 2024-02-20
 - [ ] FFT and data logging with Python  #task
 	- [ ] Save binary files 
 
 
-# 18/02/2024
+## Sounding mode
+### 18/02/2024
 
 - Using a new SD card to update the OS. Write speed at image write `~10 MB/s` 
 - It crashed the OS and was not able to boot after 
@@ -69,7 +71,7 @@
 | 15 M | 720 mV | .4 V |
 | 20 M | 640 mV | .4 V |
 |  |  |  |
-### Basic sweep generation 
+#### Basic sweep generation 
 
 - Was able to generate 5-20 M sweep
 - This was designed to be 150 ms and 800 ms delays. measurements are attached below
@@ -86,6 +88,7 @@
 ---
 ## LP mode testing
 
+### 19/02/24
 - basic sweep and triggering signal was build (`../src/lp.py`)
 - Specs specified on RP:
 	- 900 ms (sweep time)
@@ -105,3 +108,4 @@
 	![](res/TEK0000.bmp)
 	- Blue trace: voltage sweep (Analog 3)
 	- yellow trace: trig signal during sweep
+### 20/02/2024
