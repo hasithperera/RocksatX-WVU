@@ -15,4 +15,11 @@
 	- follow tutorial [here](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga2.html)
 - [ ] VHDL components and memory mapping #task
 	- tutorial [here](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/4_lessons/LedCounter.html)
-	
+- [ ] Simulate LFSR in python do a numerical FFT #task 
+	- [x] internal `np.random.rand` gives a flat spectrum
+		![| 300](res/Pasted%20image%2020240226220230.png)
+	- [ ] Confirm this with a LFSR simulation in python #task #help #Nillay 
+		- Initial simulation shows a gaussian spectrum. if this correct ?
+		- Generate sample data using python and calculated the data rates/save capacity
+	- [ ] How to verify once I implement this on RP
+- [ ] internal PWM generation (using python)

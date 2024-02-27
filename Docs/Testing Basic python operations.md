@@ -85,6 +85,14 @@
 	- How has this been done in the past 
 
 
+### 20/02/2024
+
+- LSFR implementation:
+	- [ ] find the bit rate for a 120 ms and the LSFR length
+	- $2^{21}$ numbers will give the required length 
+	- only 16 bits of ADC resolution is available 
+	- write a python simulator for this based on DSP/HW5
+
 ---
 ## LP mode testing
 
@@ -109,3 +117,6 @@
 	- Blue trace: voltage sweep (Analog 3)
 	- yellow trace: trig signal during sweep
 ### 20/02/2024
+- from Bandura:
+	- Sounds like you are on the right track.  For a flat distribution, I’d advise making a much longer LFSR, 64bit+, Making 16 of them, and pulling one bit from each, and have each of them start with a different seed (or really just pull a different bit from each if start from zero.
+	- [ ] Implement and test this #task 
