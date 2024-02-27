@@ -52,5 +52,5 @@
 - `monitor -ams` gives access to internal temp on SoC and internal voltage references 
 - [ ] Find a way to isolate one analog3 Pin from this interface.
 	- alternate methods of DAC for LP may be needed
-	- [ ] Tune python for look dealy to change sweep time for 900 ms. #task #Nilay
+	- [ ] Tune python and look at the internal delay to change sweep time for 900 ms. #task #Nilay
  

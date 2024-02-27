@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Testing Basic python operations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e0e9ec7475ed5b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Docs/FPGA direct programming.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,17 +155,21 @@
       "marp-slides:Show Slide Preview": false
     }
   },
-  "active": "3e0e9ec7475ed5b2",
+  "active": "a13e4f8e31708737",
   "lastOpenFiles": [
-    "Docs/Design Specs.md",
-    "Docs/res/Pasted image 20240226220230.png",
-    "Docs/FPGA direct programming.md",
-    "Docs/Update - Hasith.md",
     "Docs/RP.md",
+    "Docs/FPGA direct programming.md",
+    "Docs/Design Specs.md",
+    "Auto fill lists.md",
+    "Docs/res/Pasted image 20240226220230.png",
     "Docs/Testing Basic python operations.md",
+    "README.md",
+    "src/sim/main.py~",
+    "src/sim/main.py",
+    "src/sim",
+    "Docs/Update - Hasith.md",
     "src/lp.py",
     "Docs/res/TEK0000.bmp",
-    "Auto fill lists.md",
     "Docs/res/TEK00004.png",
     "Docs/res/TEK00003.png",
     "src/rp-mirror/rp_test.py",
@@ -187,13 +178,9 @@
     "src/rp-mirror/rp_hw_profiles.py",
     "src/rp-mirror/rp_hw_calib_test.py",
     "src/rp-mirror/rp_hw_calib.py",
-    "src/rp-mirror/rp_hw.py",
-    "src/rp-mirror/rp_dsp_test.py",
-    "src/rp-mirror/rp_dsp.py",
     "Docs/res/Pasted image 20240213030709.png",
     "Docs/res/Pasted image 20240212235307.png",
     "Docs/Custom FPGA image.md",
-    "Docs/res/Pasted image 20240212121129.png",
-    "README.md"
+    "Docs/res/Pasted image 20240212121129.png"
   ]
 }
