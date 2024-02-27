@@ -8,7 +8,7 @@
 
 - Install **Vivado 2022.1** (this is what I intend to write programs in)
 - Back up of the project generated using 2020.1 is available [in a google drive](https://drive.google.com/drive/folders/1FoSDH7iXBIBz88JlJWhi1wxN-frt9Btz?usp=drive_link)
-- [ ] Test the bin file with SDRLab #task
+- [x] Test the bin file with SDRLab #task ✅ 2024-02-26
 - Commands to generate `bit.bin` files
 	- `echo -n "all:{ red_pitaya_top_Z20.bit }" >  red_pitaya_top_Z20.bif`
 	- `bootgen -image red_pitaya_top_Z20.bif -arch zynq -process_bitstream bin -o red_pitaya_top_Z20.bit.bin -w`
@@ -23,3 +23,20 @@
 		- Generate sample data using python and calculated the data rates/save capacity
 	- [ ] How to verify once I implement this on RP
 - [ ] internal PWM generation (using python)
+
+### 26/02/2024
+
+- Recompiling the project with 2022.1
+- cleaned `impl_1`
+- re-run synthesis and implementation
+- `.dcp` file is the checkpoint and this speeds up the build process. If this is removed implementation needs to be redone
+- [ ] test sequence
+	- make `bif` > `bit.bin` 
+	- scp to RP and program 
+	- `test2.bin`: all functions in `lp.py` works as the same as the default image
+	- `test3.bin`: led_o output pins are isolated from internal image
+	- [ ] Set up a counter with known speed:  at least 80 M
+	- [ ] isolate DAC analog functions
+	- [ ] isolate Digital pins
+	- [ ] work with DMA memory
+- New git repo to keep the FPGA source code [here](https://github.com/hasithperera/Rocksat-FPGA/) (private repo, no intention of collaboration here. purely documentation and recovery)
