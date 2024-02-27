@@ -1,35 +1,52 @@
 {
   "main": {
-    "id": "96882945dfd15537",
+    "id": "7814ac1e446c4b08",
     "type": "split",
     "children": [
       {
-        "id": "6e0290268e3c1bbb",
+        "id": "4680bfb9cd5a3444",
         "type": "tabs",
         "children": [
           {
-            "id": "dcfd2c8275ea4347",
+            "id": "a13e4f8e31708737",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Docs/Testing Basic python operations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e0e9ec7475ed5b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docs/FPGA direct programming.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "e7d02628562aab3f",
+    "id": "574d4cb96fd228c6",
     "type": "split",
     "children": [
       {
-        "id": "f41b4c795513f297",
+        "id": "ae8ed21136aaa9c1",
         "type": "tabs",
         "children": [
           {
-            "id": "12d3c589d3285ea6",
+            "id": "1c29f6e4f7f3b526",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,12 +56,12 @@
             }
           },
           {
-            "id": "86d4e1281055484b",
+            "id": "3ec3794a79308cbe",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Nillay",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,34 +71,34 @@
             }
           },
           {
-            "id": "e118d80012cbfc9f",
+            "id": "a89277a020a96ee9",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "fcfca1328aa6fc71",
+    "id": "5b9d68c5f06b0823",
     "type": "split",
     "children": [
       {
-        "id": "4169ccac32f3b7d2",
+        "id": "cf9f438e085a1a18",
         "type": "tabs",
         "children": [
           {
-            "id": "31b56b88d7df3008",
+            "id": "3e24c4040c33214d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Docs/FPGA direct programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,18 +110,19 @@
             }
           },
           {
-            "id": "8b43aeb6c9bd2bfe",
+            "id": "5c5c1c5ef49a1791",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Docs/FPGA direct programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "70a1907a232b0d66",
+            "id": "800dc2dc6e04b90a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -115,15 +133,17 @@
             }
           },
           {
-            "id": "6a6475f59a67e08d",
+            "id": "f284eae372e9f345",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Docs/FPGA direct programming.md"
+              }
             }
           },
           {
-            "id": "5e0d5efa4a3bcaf9",
+            "id": "ed376b84de597b78",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -135,43 +155,45 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 385.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "marp-slides:Show Slide Preview": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "marp-slides:Show Slide Preview": false
     }
   },
-  "active": "dcfd2c8275ea4347",
+  "active": "3e0e9ec7475ed5b2",
   "lastOpenFiles": [
-    "Docs/Testing Basic python operations.md",
-    "Docs/Update - Hasith.md",
-    "Docs/FPGA direct programming.md",
-    "Docs/RP.md",
     "Docs/Design Specs.md",
     "Docs/res/Pasted image 20240226220230.png",
-    "src/sim/main.py",
-    "src/sim",
+    "Docs/FPGA direct programming.md",
+    "Docs/Update - Hasith.md",
+    "Docs/RP.md",
+    "Docs/Testing Basic python operations.md",
     "src/lp.py",
     "Docs/res/TEK0000.bmp",
+    "Auto fill lists.md",
     "Docs/res/TEK00004.png",
     "Docs/res/TEK00003.png",
+    "src/rp-mirror/rp_test.py",
+    "src/rp-mirror/rp_hw_test.py",
+    "src/rp-mirror/rp_hw_profiles_test.py",
+    "src/rp-mirror/rp_hw_profiles.py",
+    "src/rp-mirror/rp_hw_calib_test.py",
+    "src/rp-mirror/rp_hw_calib.py",
+    "src/rp-mirror/rp_hw.py",
+    "src/rp-mirror/rp_dsp_test.py",
+    "src/rp-mirror/rp_dsp.py",
     "Docs/res/Pasted image 20240213030709.png",
     "Docs/res/Pasted image 20240212235307.png",
+    "Docs/Custom FPGA image.md",
     "Docs/res/Pasted image 20240212121129.png",
-    "src/main.py~",
-    "src/main.py",
-    "src",
-    "Docs/res",
-    "Auto fill lists.md",
-    "Doc/Update - Hasith.md",
-    "README.md",
-    "Doc"
+    "README.md"
   ]
 }

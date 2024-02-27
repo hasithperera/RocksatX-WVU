@@ -44,6 +44,8 @@
 
 - Analog 3: U13 (why two pins)
 - `red_pitaya_pdm` module is setting the outputs
+- Operation of PDM [here](https://www.koheron.com/blog/2016/09/27/pulse-density-modulation.html)
+	- [ ] read and analyze how to break this and implement internal ramp #task #LP
 - [ ] find documentation on operation 
 - [ ] Draw block diagram
 - internal ams commands are based on having this module loaded

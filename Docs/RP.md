@@ -37,6 +37,6 @@
 
 - [ ] confirm the operation of internal API calls without using the network interface #task
 - tutorial [here](https://redpitaya.readthedocs.io/en/latest/appsFeatures/remoteControl/API_scripts.html)
-- [ ] find the current version of the os #task 
-- [ ] Backup the original SD card as it is #task
-- [ ] Evaluate the write speed of USB/SD card. (running a benchmark) #task 
+- [x] find the current version of the os #task ✅ 2024-02-22
+- [x] Backup the original SD card as it is #task ✅ 2024-02-22
+- [ ] Evaluate the write speed of USB/SD card. (running a benchmark) #task
