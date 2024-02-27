@@ -81,7 +81,7 @@
 
 - At .5 s delay a second RP was able to pick up the sweep to verify its operating as we expect it to.
 - Faster sweeps can't be verified due to limitations in triggering and the sync speed. 
-- [ ] search for ways to verify the operation of random noise generation  #task #help #Nillay 
+- [ ] search for ways to verify the operation of random noise generation  #task #help #Nilay 
 	- How has this been done in the past 
 
 

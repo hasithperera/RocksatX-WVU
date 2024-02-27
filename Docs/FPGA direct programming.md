@@ -18,7 +18,7 @@
 - [ ] Simulate LFSR in python do a numerical FFT #task 
 	- [x] internal `np.random.rand` gives a flat spectrum
 		![| 300](res/Pasted%20image%2020240226220230.png)
-	- [ ] Confirm this with a LFSR simulation in python #task #help #Nillay 
+	- [ ] Confirm this with a LFSR simulation in python #task #help #Nilay 
 		- Initial simulation shows a gaussian spectrum. if this correct ?
 		- Generate sample data using python and calculated the data rates/save capacity
 	- [ ] How to verify once I implement this on RP
@@ -40,3 +40,15 @@
 	- [ ] isolate Digital pins
 	- [ ] work with DMA memory
 - New git repo to keep the FPGA source code [here](https://github.com/hasithperera/Rocksat-FPGA/) (private repo, no intention of collaboration here. purely documentation and recovery)
+#### Slow ADC pins
+
+- Analog 3: U13 (why two pins)
+- `red_pitaya_pdm` module is setting the outputs
+- [ ] find documentation on operation 
+- [ ] Draw block diagram
+- internal ams commands are based on having this module loaded
+- `monitor -ams` gives access to internal temp on SoC and internal voltage references 
+- [ ] Find a way to isolate one analog3 Pin from this interface.
+	- alternate methods of DAC for LP may be needed
+	- [ ] Tune python for look dealy to change sweep time for 900 ms. #task #Nilay
+ 
