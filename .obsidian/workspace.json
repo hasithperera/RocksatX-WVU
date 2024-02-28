@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/FPGA direct programming.md",
+                "file": "Docs/Design Specs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docs/FPGA direct programming.md",
+                "file": "Docs/Design Specs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Docs/FPGA direct programming.md",
+                "file": "Docs/Design Specs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Docs/FPGA direct programming.md"
+                "file": "Docs/Design Specs.md"
               }
             }
           },
@@ -157,8 +157,8 @@
   },
   "active": "a13e4f8e31708737",
   "lastOpenFiles": [
-    "Docs/RP.md",
     "Docs/FPGA direct programming.md",
+    "Docs/RP.md",
     "Docs/Design Specs.md",
     "Auto fill lists.md",
     "Docs/res/Pasted image 20240226220230.png",
