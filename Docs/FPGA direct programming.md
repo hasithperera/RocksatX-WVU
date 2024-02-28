@@ -35,9 +35,9 @@
 	- scp to RP and program 
 	- `test2.bin`: all functions in `lp.py` works as the same as the default image
 	- `test3.bin`: led_o output pins are isolated from internal image
-	- [ ] Set up a counter with known speed:  at least 80 M
+	- [x] Set up a counter with known speed:  at least 80 M
 	- [ ] isolate DAC analog functions
-	- [ ] isolate Digital pins
+	- [x] isolate Digital pins
 	- [ ] work with DMA memory
 - New git repo to keep the FPGA source code [here](https://github.com/hasithperera/Rocksat-FPGA/) (private repo, no intention of collaboration here. purely documentation and recovery)
 #### Slow ADC pins
@@ -47,7 +47,7 @@
 - Operation of PDM [here](https://www.koheron.com/blog/2016/09/27/pulse-density-modulation.html)
 	- [ ] read and analyze how to break this and implement internal ramp #task #LP
 - [ ] find documentation on operation 
-- [ ] Draw block diagram
+- [ ] Draw block diagram #task #help 
 - internal ams commands are based on having this module loaded
 - `monitor -ams` gives access to internal temp on SoC and internal voltage references 
 - [ ] Find a way to isolate one analog3 Pin from this interface.
@@ -55,8 +55,19 @@
 	- [ ] Tune python and look at the internal delay to change sweep time for 900 ms. #task #Nilay
 ### 27/02/2024
 
- - [ ] Possible bug in `lp.py`: #task #Nilay #testing
+ - [x] Possible bug in `lp.py`: #task #Nilay #testing ✅ 2024-02-27
 	 - Analog 2: switches very fast 800 us
 		 - use a digital pin to measure. dose having smaller step size make switching time different ?
-	 - Analog 3 sweep is a lot slower. looking at the osc outputs
-### Next
+	 - [x] Analog 3 sweep is a lot slower. looking at the osc outputs
+	- Disable Analog3 from internal python interface
+		![|300](res/F0000TEK.jpg)
+	- No bug found (its working as expected)
+- [x] Make a counter as a frequency divider (Matlab Model composer)
+	- [ ] Get 1 Hz clock for timed events
+	- FPGA choice: from Vivado
+	![400](res/Pasted%20image%2020240227202224.png)
+	- Matlab > Vivado pipeline works
+	- `test6.bin` has a counter to led direct mapping
+	- [ ] Write verification program in any other platform to read digital data (8 bits) + clock(1 bit) as a way to verify operation. #task #testing #fpga
+	
+	￼￼￼￼￼ 
