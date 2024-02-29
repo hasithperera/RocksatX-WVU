@@ -42,3 +42,8 @@ not done
 
 
 
+# Completed tasks
+
+```tasks
+done
+```
