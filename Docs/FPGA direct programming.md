@@ -46,6 +46,7 @@
 - `red_pitaya_pdm` module is setting the outputs
 - Operation of PDM [here](https://www.koheron.com/blog/2016/09/27/pulse-density-modulation.html)
 	- [ ] read and analyze how to break this and implement internal ramp #task #LP
+	- [ ] hey need help #task #ahe
 - [ ] find documentation on operation 
 - [ ] Draw block diagram #task #help 
 - internal ams commands are based on having this module loaded
