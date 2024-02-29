@@ -18,8 +18,8 @@
 - [ ] Simulate LFSR in python do a numerical FFT #task 
 	- [x] internal `np.random.rand` gives a flat spectrum
 		![| 300](res/Pasted%20image%2020240226220230.png)
-	- [ ] Confirm this with a LFSR simulation in python #task #help #Nilay 
-		- Initial simulation shows a gaussian spectrum. if this correct ?
+	- [ ] Confirm this with a LFSR simulation in python #task #help #Nilay
+		- Initial simulation shows a gaussian spectrum. is this correct ?
 		- Generate sample data using python and calculated the data rates/save capacity
 	- [ ] How to verify once I implement this on RP
 - [ ] internal PWM generation (using python)
@@ -36,13 +36,13 @@
 	- `test2.bin`: all functions in `lp.py` works as the same as the default image
 	- `test3.bin`: led_o output pins are isolated from internal image
 	- [x] Set up a counter with known speed:  at least 80 M
-	- [ ] isolate DAC analog functions
+	- [x] isolate DAC analog functions
 	- [x] isolate Digital pins
 	- [ ] work with DMA memory
 - New git repo to keep the FPGA source code [here](https://github.com/hasithperera/Rocksat-FPGA/) (private repo, no intention of collaboration here. purely documentation and recovery)
 #### Slow ADC pins
 
-- Analog 3: U13 (why two pins)
+- Analog 3: U13 
 - `red_pitaya_pdm` module is setting the outputs
 - Operation of PDM [here](https://www.koheron.com/blog/2016/09/27/pulse-density-modulation.html)
 	- [ ] read and analyze how to break this and implement internal ramp #task #LP
