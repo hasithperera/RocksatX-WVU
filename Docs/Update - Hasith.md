@@ -43,7 +43,7 @@
 
 - Get a small ethernet switch. 
 	- Would be good to have since we need to be able to ssh in to the Red-pitaya. And our network is limiting to say the least.
-	- [ ] Wifi dongle #task #order
+	- [x] Wifi dongle #task #order ✅ 2024-02-29
 
 ---
 

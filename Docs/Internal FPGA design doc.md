@@ -3,11 +3,11 @@
 - [ ] Delay N seconds (or ms)  for the complete antenna extension.  Set a 50% duty cycle to hold it in the correct location. (TS1)
 	- Random noise generator.
 	- [ ] Delay implementation 
-	- [ ] PWM Specs needed #Justin 
+	- [ ] PWM Specs needed #Justin
 		- Can the motors be matched to exactly 50% 
-		- What is the freq for the PWM: 
+		- What is the freq for the PWM: 50Hz
 		- What is the duty cycle: 
-			- Extention:
+			- Extension: 
 			- Retraction:
 			- Hold: 
 - [ ] Start LP sweep (TS1)
