@@ -19,4 +19,4 @@ Git is used as the main method of syncing/sharing documentation and progress.
 
 - feel free to use tags. any string followed by a hash. ie. `#help`
 - Check boxes with the tags `#task` is filtered and shown on the auto-fill list. this is a easy way to find changes and this remaining to be worked on. makes collaboration easy 
-- [ ] This is how to ask help #task #help
+- [x] This is how to ask help #task #help ✅ 2024-02-29
