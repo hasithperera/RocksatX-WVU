@@ -1,7 +1,7 @@
 
 ## LP - Probe
 
-- [x] What is the exact sequence need to the probe #task #Dylan #help ✅ 2024-02-29
+- [ ] What is the exact sequence need to the probe #task #Dylan #help
 	- set voltage
 	- do we want to get feed back after the amplification stage for the probe potential
 	- how long and what do we do with the input data.

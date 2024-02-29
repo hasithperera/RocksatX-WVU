@@ -56,7 +56,7 @@
 	- [ ] Tune python and look at the internal delay to change sweep time for 900 ms. #task #Nilay
 ### 27/02/2024
 
- - [x] Possible bug in `lp.py`: #task #Nilay #testing ✅ 2024-02-27
+ - [x] Possible bug in `lp.py`: #task #Hasith  #testing ✅ 2024-02-27
 	 - Analog 2: switches very fast 800 us
 		 - use a digital pin to measure. dose having smaller step size make switching time different ?
 	 - [x] Analog 3 sweep is a lot slower. looking at the osc outputs

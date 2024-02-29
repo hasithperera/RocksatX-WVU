@@ -43,7 +43,23 @@ not done
 
 
 # Completed tasks
-
+## Nilay
 ```tasks
+(tags include #Nilay   ) 
+done
+```
+## Hasith
+```tasks
+(tags include #Hasith   ) 
+done
+```
+## Dylan
+```tasks
+(tags include #Dylan   ) 
+done
+```
+## Justin
+```tasks
+(tags include #Justin   ) 
 done
 ```
