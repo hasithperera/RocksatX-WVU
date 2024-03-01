@@ -32,7 +32,7 @@
 | 4 | Analog | in | 1 | LP current |  | RF in 1 | LP |
 | 5 | Analog | out | 1 | sounding TX to Amp |  |  | S |
 | 6 | Analog | in | 1 | Sounding RX from amp |  |  | S |
-| 7 | Switching for amps | out | 2 | Switch before each antenna |  |  | S |
+| 7 | Analog | out | 2 | Switch component before each antenna |  |  | S |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
 ##  Timing Sequence LP

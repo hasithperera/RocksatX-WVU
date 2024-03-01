@@ -10,9 +10,13 @@
 	- The gear pushing into the rod may be too tight, seems to work fine tho.
 ## Testing Details
 
+- Signal details
+	- We produced a +- 2.5V signal 
+	- Supplied a 5V supply to the servo
+
 - Testing for the PWM duty cycle where the servo is in a no rotation state, I find that 7.21-7.27% there is no rotation for Servo 1
 - At 7% duty cycle, to push a 41" rod, it took 76 sec, which is 0.54" per second
 	- The maximum deployment rate is 1" per second
 - At 7.48% duty cycle, to push 41", it took 41 sec, which is 1" per second #ahe
-- At 6.8% duty cycle, to push a 41" rod, it took 31 sec, which is 1.32" per second #ahe
-- At 6.9% duty cycle, to push a 41" rod, it took 42 sec, which is 0.98" per second
+- At 6.8% duty cycle, to push a 41" rod, it took 31 sec, which is 1.32" per second
+- At 6.9% duty cycle, to push a 41" rod, it took 42 sec, which is 0.98" per second #ahe
