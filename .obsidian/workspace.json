@@ -4,83 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b4394e12e8e15be7",
+        "id": "872e27ae3b7b4b8a",
         "type": "tabs",
         "children": [
           {
-            "id": "1380a15de0ed4d1f",
+            "id": "7d21eed13f29f8e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/General/Design Specs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ace969df64421e30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/General/Design Specs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dde27c73aeabf806",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/General/Update - Justin.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5558c3add11eaa81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/General/Update - Dylan.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea36b0f94c9ac194",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docs/General/Update - Nilay.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e84703db2b08bc42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Auto fill lists.md",
+                "file": "Docs/General/Update - Other.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#task",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Auto fill lists.md",
+                "file": "Docs/General/Update - Other.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Auto fill lists.md",
+                "file": "Docs/General/Update - Other.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Auto fill lists.md"
+                "file": "Docs/General/Update - Other.md"
               }
             }
           },
@@ -203,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 421.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,40 +155,47 @@
       "marp-slides:Show Slide Preview": false
     }
   },
-  "active": "e84703db2b08bc42",
+  "active": "7d21eed13f29f8e9",
   "lastOpenFiles": [
-    "Docs/General/Internal FPGA design doc.md",
-    "Docs/General/Update - Justin.md",
-    "Docs/General/Design Specs.md",
-    "Docs/Old/FPGA direct programming.md",
-    "Docs/General/Update - Dylan.md",
     "Docs/General/Update - Hasith.md",
-    "Auto fill lists.md",
-    "Docs/General/2024-02-29.md",
     "Docs/General/Update - Other.md",
+    "Docs/General/Design Specs.md",
     "Docs/General/Update - Nilay.md",
-    "Docs/Old/RP.md",
-    "Docs/Design Specs 1.md",
-    "Docs/General",
-    "Docs/Old",
+    "Docs/General/Update - Justin.md",
+    "Docs/General/Update - Dylan.md",
+    "Docs/General/Internal FPGA design doc.md",
+    "Auto fill lists.md",
     "README.md",
     "Docs/Old/Testing Basic python operations.md",
+    "Docs/Old/FPGA direct programming.md",
+    "Docs/Old/RP.md",
+    "Docs/FPGA direct programming.md",
+    "Docs/Old",
+    "Docs/General",
+    "Docs/Internal FPGA design doc.md",
+    "Docs/RP.md",
+    "Docs/Testing Basic python operations.md",
+    "Docs/Update - Hasith.md",
+    "Docs/Design Specs.md",
+    "Docs/res/TEK0000.bmp",
+    "Docs/res/TEK00004.png",
+    "Docs/res/Pasted image 20240227202224.png",
+    "Docs/res/Pasted image 20240213030709.png",
+    "Docs/res/Pasted image 20240212121129.png",
+    "Docs/res/F0000TEK.jpg",
+    "Docs/Update - Hasith.html",
+    "Docs/2024-02-29.md",
+    "conflict-files-obsidian-git.md",
+    "Docs/res/Pasted image 20240226220230.png",
+    "src/sim/main.py~",
     "src/sim/main.py",
+    "src/sim",
+    "src/lp.py",
+    "Docs/res/TEK00003.png",
     "src/rp-mirror/rp_test.py",
     "src/rp-mirror/rp_hw_test.py",
     "src/rp-mirror/rp_hw_profiles_test.py",
-    "src/rp-mirror/rp_hw_profiles.py",
-    "src/rp-mirror/rp_hw_calib_test.py",
-    "src/rp-mirror/rp_hw_calib.py",
-    "src/rp-mirror/rp_hw.py",
-    "Docs/res/TEK00004.png",
-    "Docs/res/TEK00003.png",
-    "Docs/res/TEK0000.bmp",
-    "Docs/res/Pasted image 20240227202224.png",
-    "Docs/res/Pasted image 20240226220230.png",
-    "Docs/res/Pasted image 20240213030709.png",
     "Docs/res/Pasted image 20240212235307.png",
-    "Docs/res/Pasted image 20240212121129.png",
-    "Docs/res/F0000TEK.jpg"
+    "Docs/Custom FPGA image.md"
   ]
 }
