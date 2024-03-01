@@ -38,7 +38,6 @@
 		- To find How many ADC's we need at a time 
 
 ---
-
 ### Order list
 
 - Get a small ethernet switch. 
@@ -48,8 +47,6 @@
 ---
 
 <div style="page-break-after: always;"></div>
-
-
 ## LPW - MAVEN
 
 - [x] LPW instrument paper [Anderson 2014](https://link.springer.com/article/10.1007/s11214-015-0194-3)
@@ -67,11 +64,13 @@
 - [ ] #task #read LPW data products[Anderson 2015](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015GL065241)
 
 --- 
-## Random noise generation
+## Random noise generation - with a transistor
 
 - as a simpler option look at the feasibility of using an open collector amplifier to generate noise
 	- from KC3RXZ
 	![|400](res/Pasted%20image%2020240212121129.png)
 	is this a feasible design 
 ---
+
+
 
