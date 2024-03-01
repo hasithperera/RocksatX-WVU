@@ -30,3 +30,4 @@
 - Finalize a requirement and test plan document
 - Testing: can this be done by some one else ? 
 	- I might not have access to all the systems right now.
+- [ ] What Xilinz Zynq do we have on the RP STEM? #task #Dylan 

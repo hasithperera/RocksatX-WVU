@@ -24,13 +24,67 @@
 - LP: langmier probe 
 - Sounding(S): sounding and waves experiment 
 
-| id  | type               | I/O | no of pins    | Descriptions         | ref | FPGA pin | sub block (FPGA) |
-| --- | ------------------ | --- | ------------- | -------------------- | --- | -------- | ---------------- |
-| 1   | Digital            | in  | 1             | TE from Woleps       |     |          | D+               |
-| 2   | Digital            | out | 1 / 3         | PWM (counter)        |     |          | D+               |
-| 3   | Analog             | out | 1 (8 bit DAC) | LP voltage sweep     |     |          | LP               |
-| 4   | Analog             | in  | 1             | LP current           |     | RF in 1  | LP               |
-| 5   | Analog             | out | 1             | sounding TX to Amp   |     |          |                  |
-| 6   | Analog             | in  |               | Sounding RX from amp |     |          |                  |
-| 7   | Switching for amps |     |               |                      |     |          |                  |
-|     |                    |     |               |                      |     |          |                  |
+| id | type | I/O | no of pins | Descriptions | ref | FPGA pin | sub block (FPGA) |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 1 | Digital | in | 1 | TE from Woleps |  |  | D+ |
+| 2 | Digital | out | 3 | PWM (counter) |  |  | D+ |
+| 3 | Analog | out | 1 (8 bit DAC) | LP voltage sweep |  |  | LP |
+| 4 | Analog | in | 1 | LP current |  | RF in 1 | LP |
+| 5 | Analog | out | 1 | sounding TX to Amp |  |  | S |
+| 6 | Analog | in | 1 | Sounding RX from amp |  |  | S |
+| 7 | Switching for amps | out | 2 | Switch before each antenna |  |  | S |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+##  Timing Sequence LP
+
+|  |  |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
+
+##  Timing Sequence S
+
+|  |  |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
+
+##  Timing Sequence Whole Experiment
+
+|  |  |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
+
+##  Timing Sequence LP Testing
+
+|  |  |
+| ---- | ---- |
+|  |  |
+|  |  |
+|  |  |
+
+##  Timing Sequence S Testing
+
+| What we get from Python | Even |
+| ---- | ---- |
+| send a 1 | Activate Noise |
+| send a 2 | Deactivate Noise |
+| send a 3 | Record Data |
+| send a 4 | Stop Recording |
+| send a 5 | Switch antenna TX to RX |
+
+##  Timing Sequence Deployment Testing
+
+| What do we need from python | Event |
+| ---- | ---- |
+| send a 1 | Extend Antenna |
+| send a 2 | Retract Antenna |
+|  |  |
+
+##  Payload Testing Requirements
+- Need a python code to activate the testing sequences listed above
+- 
