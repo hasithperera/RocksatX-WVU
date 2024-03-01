@@ -1,0 +1,8 @@
+*.html
+*.pdf
+
+# remove the workspace file in being there
+.obsidian/workspace.json
+
+#mac internal files
+.DS_Store
