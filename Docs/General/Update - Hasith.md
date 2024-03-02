@@ -72,5 +72,10 @@
 	is this a feasible design 
 ---
 
+## PWM generation 
 
+- From testing requirement is
+	- 50 Hz
+	- 7.2 - 7.6 % Duty cycle
+	- 
 

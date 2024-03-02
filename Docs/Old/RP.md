@@ -1,6 +1,4 @@
-## Ref
 
-- HW pinout : [here](https://redpitaya.readthedocs.io/en/latest/developerGuide/hardware/125-14/extent.html)
 
 ## Basic testing on the RP
 

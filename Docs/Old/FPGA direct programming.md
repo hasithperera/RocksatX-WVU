@@ -1,4 +1,16 @@
 
+## Used Pins
+
+| Pins      | variable name | FPGA pin | voltage level | xdc         |
+| --------- | ------------- | -------- | ------------- | ----------- |
+| E1/DIO0_N |               |          |               |             |
+| E1/DIO1_N | debug_1       | H17      | 3.3 V         | exp_n_io[1] |
+| E1/DIO2_N | debug_2       | H18      | 3.3 V         | exp_n_io[2] |
+|           | PWM1          |          |               |             |
+|           | PWM2          |          |               |             |
+|           | PWM3          |          |               |             |
+|           |               |          |               |             |
+
 ### 22/02/2024
 - Vivado 2020.1 is required. Online installer is not working 
 - https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga1.html
@@ -71,4 +83,23 @@
 	- `test6.bin` has a counter to led direct mapping
 	- [ ] Write verification program in any other platform to read digital data (8 bits) + clock(1 bit) as a way to verify operation. #task #testing #fpga
 	
-	￼￼￼￼￼ 
+## 01/03/2024
+
+- Digital pin outputs:
+	- E1 connector `DIOX_N` pins are tri-state buffers
+	- Documentation [here](https://docs.xilinx.com/r/2022.1-English/ug1353-versal-architecture-ai-libraries/IOBUF)
+	- Python code to set the direction of the tri-state buffer: `pwm.py`
+	- [ ] Isolate Tri-state buffer from python #task #Hasith #low_priority #fpga 
+	- Extract known clock signals from the internal clock;
+	- $f_n = \frac{f_0}{2^{n+1}}$ where $f_0$ is the clock frequency and $n$ is the slice offset from bottom bit in matlab.
+- Design specs to a PWM module:
+	- [x] Exact 50 Hz clock generation
+		- `variable_map.m` Contains configuration variables
+	- 10- bit PWM generator implementation
+		- [ ] Needs testing #task #fpga 
+		- [ ] External commanding interface #task #fpga 
+
+
+
+
+ 
