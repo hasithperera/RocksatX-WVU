@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docs/Update - Hasith.md",
+                "file": "Docs/Old/Junk - random notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Docs/Update - Hasith.md",
+            "file": "Docs/Old/Junk - random notes.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Docs/Update - Hasith.md",
+            "file": "Docs/Old/Junk - random notes.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Docs/Update - Hasith.md"
+            "file": "Docs/Old/Junk - random notes.md"
           }
         }
       },
@@ -141,8 +141,50 @@
   },
   "active": "4dbf78475ca7e418",
   "lastOpenFiles": [
-    "README.md",
-    "Docs/Update - Hasith.md",
-    "Docs"
+    "Auto fill lists.md",
+    "Docs/Old/FPGA direct programming.md",
+    "Docs/Old/Junk - random notes.md",
+    "Docs/res/PXL_20240302_172554384.jpg",
+    "Docs/General/Update - Justin.md",
+    "src/pwm.py",
+    "Docs/General/Quick links.md",
+    "/src/pwm.py",
+    "/Docs/Old/RP.md",
+    "/Docs/Old/FPGA direct programming.md",
+    "/Docs/General/Update - Justin.md",
+    "/Docs/General/Update - Hasith.md",
+    "/Docs/General/Quick links.md",
+    "/Docs/General/Design Specs.md",
+    "Docs/General/Design Specs.md",
+    "Docs/General/Internal FPGA design doc.md",
+    "/Docs/General/Update - Other.md",
+    "/Auto fill lists.md",
+    "Docs/General/Update - Hasith.md",
+    "/Docs/General/Internal FPGA design doc.md",
+    "Docs/Old/Testing Basic python operations.md",
+    "Docs/Old/RP.md",
+    "/Docs/Old/Testing Basic python operations.md",
+    "Docs/General/Update - Other.md",
+    "Docs/General/Update - Nilay.md",
+    "Docs/General/Update - Dylan.md",
+    "/README.md",
+    "/Docs/General/Update - Nilay.md",
+    "Docs/Old",
+    "Docs/General",
+    "/Docs/Old",
+    "/Docs/General",
+    "Docs/res/Pasted image 20240227202224.png",
+    "Docs/res/F0000TEK.jpg",
+    "/Docs/res/Pasted image 20240227202224.png",
+    "/Docs/res/F0000TEK.jpg",
+    "Docs/res/Pasted image 20240226220230.png",
+    "/Docs/res/Pasted image 20240226220230.png",
+    "src/sim/main.py",
+    "src/rp-mirror/rp_test.py",
+    "src/rp-mirror/rp_hw_test.py",
+    "src/rp-mirror/rp_hw_profiles_test.py",
+    "Docs/res/TEK00004.png",
+    "Docs/res/TEK00003.png",
+    "Docs/res/TEK0000.bmp"
   ]
 }
