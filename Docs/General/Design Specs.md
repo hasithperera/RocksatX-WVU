@@ -80,21 +80,23 @@
 
 ##  Timing Sequence S Testing
 
-| What we get from Python | Even |
-| ---- | ---- |
-| send a 1 | Activate Noise |
-| send a 2 | Deactivate Noise |
-| send a 3 | Record Data |
-| send a 4 | Stop Recording |
-| send a 5 | Switch antenna TX to RX |
+| What we get from Python | Even                    | cmd[bit] | [value] |
+| ----------------------- | ----------------------- | -------- | ------- |
+|                         | Activate Noise          | 2        | 1       |
+|                         | Deactivate Noise        | 2        | 0       |
+|                         | Record Data             |          |         |
+|                         | Stop Recording          |          |         |
+|                         | Switch antenna TX to RX |          |         |
 
 ##  Timing Sequence Deployment Testing
 
-| What do we need from python | Event |
-| ---- | ---- |
-| send a 1 | Extend Antenna |
-| send a 2 | Retract Antenna |
-|  |  |
+| What do we need from python | Event             | cmd[bit] | [value] |
+| --------------------------- | ----------------- | -------- | ------- |
+| send `0`                    | Antenna No change | 1,0      | X,0     |
+| send `1`                    | Extend Antenna    | 1,0      | 1,1     |
+| send `2`                    | Retract Antenna   | 1,0      | 0,1     |
+|                             |                   |          |         |
+|                             |                   |          |         |
 
 ##  Payload Testing Requirements
 - Need a python code to activate the testing sequences listed above

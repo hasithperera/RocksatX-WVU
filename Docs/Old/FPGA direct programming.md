@@ -100,6 +100,14 @@
 		- [ ] External commanding interface #task #fpga 
 
 
+## 02/03/2024
 
+- Made basic VHDL files and test benches to test manually written components.
+- Set the top module to be `ahe_tb.vhdl` and run simulation
+- `mux_ahe.vhdl`:  designed to change a 32 bit register by changing states of a two bit signal.
+	![](../res/Pasted%20image%2020240303125806.png)
 
- 
+ - `pwm_ahe.vhd`: A working variable bit size PWM. Tested in simulation
+	 ![](../res/Pasted%20image%2020240303141931.png)
+ - [ ] Pending lab verification for the correct frequency and the duty cycle. #task #testing #fpga 
+ - [ ] 
