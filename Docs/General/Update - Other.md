@@ -18,7 +18,7 @@
 		- LEDs and Digital pins
 		- DAC ramp using (slow pins): we need to resolve the conflict here of why and what should be used. 
 	- FPGA direct
-		- you need 2021.1 to compile source I have upgraded the project to 2022.1
+		- you need 2020.1 to compile source I have upgraded the project to 2022.1
 		- LED access 
 		- Isolate DAC pins. can't drive them yet
 ---

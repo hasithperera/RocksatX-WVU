@@ -24,20 +24,22 @@
 - LP: langmier probe 
 - Sounding(S): sounding and waves experiment 
 
-| id | type | I/O | no of pins | Descriptions | ref | FPGA pin | sub block (FPGA) |  |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 1 | Digital | in | 1 | TE from Woleps |  |  | D+ |  |
-| 2 | Digital | out | 3 | PWM (counter) |  |  | D+ |  |
-| 3 | Analog | out | 1 (8 bit DAC) | LP voltage sweep |  |  | LP |  |
-| 4 | Analog | in | 1 | LP current |  | RF in 1 | LP |  |
-| 5 | Analog | out | 1 | sounding TX to Amp |  |  | S |  |
-| 6 | Analog | in | 1 | Sounding RX from amp |  |  | S |  |
-| 7 | Analog | out | 2 | Switch component before each antenna |  |  | S |  |
-|  |  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |  | 
+| id  | type    | I/O | no of pins    | Descriptions                         | ref | FPGA pin | sub block (FPGA) |     |     |
+| --- | ------- | --- | ------------- | ------------------------------------ | --- | -------- | ---------------- | --- | --- |
+| 1   | Digital | in  | 1             | TE from Woleps                       |     |          | D+               |     |     |
+| 2   | Digital | out | 3             | PWM (counter)                        |     |          | D+               |     |     |
+| 3   | Analog  | out | 1 (8 bit DAC) | LP voltage sweep                     |     |          | LP               |     |     |
+| 4   | Analog  | in  | 1             | LP current                           |     | RF in 1  | LP               |     |     |
+| 5   | Analog  | out | 1             | sounding TX to Amp                   |     |          | S                |     |     |
+| 6   | Analog  | in  | 1             | Sounding RX from amp                 |     |          | S                |     |     |
+| 7   | Analog  | out | 2             | Switch component before each antenna |     |          | S                |     |     |
+|     |         |     |               |                                      |     |          |                  |     |     |
+|     |         |     |               |                                      |     |          |                  |     |     |
+|     |         |     |               |                                      |     |          |                  |     |     |
 
 ##  Timing Sequence Deployment
+
+- [ ] D+ specs #task  #Justin 
 
 | Step | time (ms) | Description |
 | ---- | ---- | ---- |
@@ -48,6 +50,8 @@
 
 ## Timing Sequence LP
 
+- [ ] LP specs #task #Dylan  
+
 | Step | time (ms) | Description |  |
 | ---- | ---- | ---- | ---- |
 | 1 | 1 | Mark time of LP Start Ramp |  |
@@ -55,6 +59,7 @@
 |  |  |  |  |
 
 ##  Timing Sequence S
+- [ ] Sounding spec #task #Justin #Dylan #Nilay 
 
 |  |  |
 | ---- | ---- |
@@ -70,34 +75,33 @@
 |  |  |
 |  |  |
 
-##  Timing Sequence LP Testing
-
-|  |  |
-| ---- | ---- |
-|  |  |
-|  |  |
-|  |  |
-
-##  Timing Sequence S Testing
-
-| What we get from Python | Even                    | cmd[bit] | [value] |
-| ----------------------- | ----------------------- | -------- | ------- |
-|                         | Activate Noise          | 2        | 1       |
-|                         | Deactivate Noise        | 2        | 0       |
-|                         | Record Data             |          |         |
-|                         | Stop Recording          |          |         |
-|                         | Switch antenna TX to RX |          |         |
-
-##  Timing Sequence Deployment Testing
-
-| What do we need from python | Event             | cmd[bit] | [value] |
-| --------------------------- | ----------------- | -------- | ------- |
-| send `0`                    | Antenna No change | 1,0      | X,0     |
-| send `1`                    | Extend Antenna    | 1,0      | 1,1     |
-| send `2`                    | Retract Antenna   | 1,0      | 0,1     |
-|                             |                   |          |         |
-|                             |                   |          |         |
-
 ##  Payload Testing Requirements
 - Need a python code to activate the testing sequences listed above
-- 
+- Currently upto 8 bits are available: 
+- [ ] Check current design spec. #task #Justin #Dylan #fpga #specs
+	- Decided on using the following table. this will allow simultaneous testing to be conducted by using the correct decimal equivalent on python
+
+| 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   | Usage          | fpga   |
+| --- | --- | --- | --- | --- | --- | --- | --- | -------------- | ------ |
+| x   | x   | x   | x   | x   | x   | x   | 1   | en             | tested |
+|     |     |     |     |     | 0   | 0   | 1   | pwm stop       | ?      |
+|     |     |     |     |     | 0   | 1   | 1   | antenna fwd    |        |
+|     |     |     |     |     | 1   | 0   | 1   | antenna rev    |        |
+|     |     |     |     |     | 1   | 1   | 1   | antenna hold   |        |
+| x   | x   | x   | x   | 1   | x   | x   | 1   | LP sweep       |        |
+| x   | x   | x   | 1   | x   | x   | x   | 1   | LP data save   |        |
+| x   | x   | 1   |     |     |     |     | 1   | Rnd generation |        |
+|     | 1   | 1   |     |     |     |     | 1   | Sounding Tx    |        |
+|     | 1   | 0   | x   | x   | x   | x   | 1   | Sounding RX    |        |
+| 1   |     |     |     |     |     |     | 1   | Unused         |        |
+
+### Onboard led specification
+
+- This section shows the usage of the internal LED's of the red pitaya 
+- Depending on the image used refer the correct row for data
+
+| 7       | 6             | 5   | 4   | 3       | 2        | 1      | 0       | image label |
+| ------- | ------------- | --- | --- | ------- | -------- | ------ | ------- | ----------- |
+| clk     | Sounding save | RX  | TX  | LP save | LP sweep | PWM en |         | Production  |
+| clk[28] | 27            | 26  | 25  | 24      | 23       | 22     | clk[21] | test 11     |
+|         |               |     |     |         |          |        |         |             |

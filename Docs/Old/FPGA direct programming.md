@@ -96,8 +96,8 @@
 	- [x] Exact 50 Hz clock generation
 		- `variable_map.m` Contains configuration variables
 	- 10- bit PWM generator implementation
-		- [ ] Needs testing #task #fpga 
-		- [ ] External commanding interface #task #fpga 
+		- [x] Needs testing #task #fpga ✅ 2024-03-03
+		- [x] External commanding interface #task #fpga ✅ 2024-03-03
 
 
 ## 02/03/2024
@@ -116,7 +116,8 @@
 		 - `adc_clk` Routed to U18/U19 
  - [x] Python commands (test toolkit): #task #Hasith ✅ 2024-03-03
 	 - led register is used to set commands
-	 - Design a detailed commanding syntax
+	 - Design a detailed commanding syntax 
+		 ![Design Specs](../General/Design%20Specs.md##Payload%20Testing%20Requirements)
 	 - Basic working version `test10.bin`, python program `test.py`
 		 - last bit is used to enable the counter
 		 - Measured 8th bit: 240 kHz

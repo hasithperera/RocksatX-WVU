@@ -41,7 +41,11 @@ not done
 (tags include #Nilay   ) 
 ```
 
-
+## FPGA
+```tasks
+(tags include #fpga   ) 
+not done
+```
 
 
 # Completed tasks
@@ -50,11 +54,7 @@ not done
 (tags include #Nilay   ) 
 done
 ```
-## Hasith
-```tasks
-(tags include #Hasith   ) 
-done
-```
+
 ## Dylan
 ```tasks
 (tags include #Dylan   ) 
@@ -65,3 +65,9 @@ done
 (tags include #Justin   ) 
 done
 ```
+## Hasith
+```tasks
+(tags include #Hasith   ) 
+done
+```
+
