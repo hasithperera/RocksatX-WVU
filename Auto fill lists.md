@@ -4,7 +4,7 @@ Note: Obsidian-md is **REQUIRED** to render the remaining tasks !
 
 ```tasks
 not done
-(tags does not include #ask ) 
+NOT (tags include Justin) AND NOT (tags include Dylan) AND NOT (tags include Nilay)
 ```
 
 
