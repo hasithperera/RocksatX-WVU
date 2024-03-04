@@ -82,19 +82,19 @@
 - [ ] Check current design spec. #task #Justin #Dylan #fpga #specs
 	- Decided on using the following table. this will allow simultaneous testing to be conducted by using the correct decimal equivalent on python
 
-| 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   | Usage          | fpga   |
-| --- | --- | --- | --- | --- | --- | --- | --- | -------------- | ------ |
-| x   | x   | x   | x   | x   | x   | x   | 1   | en             | tested |
-|     |     |     |     |     | 0   | 0   | 1   | pwm stop       | ?      |
-|     |     |     |     |     | 0   | 1   | 1   | antenna fwd    |        |
-|     |     |     |     |     | 1   | 0   | 1   | antenna rev    |        |
-|     |     |     |     |     | 1   | 1   | 1   | antenna hold   |        |
-| x   | x   | x   | x   | 1   | x   | x   | 1   | LP sweep       |        |
-| x   | x   | x   | 1   | x   | x   | x   | 1   | LP data save   |        |
-| x   | x   | 1   |     |     |     |     | 1   | Rnd generation |        |
-|     | 1   | 1   |     |     |     |     | 1   | Sounding Tx    |        |
-|     | 1   | 0   | x   | x   | x   | x   | 1   | Sounding RX    |        |
-| 1   |     |     |     |     |     |     | 1   | Unused         |        |
+| 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   | Usage          | fpga        |
+| --- | --- | --- | --- | --- | --- | --- | --- | -------------- | ----------- |
+| x   | x   | x   | x   | x   | x   | x   | 1   | en             | tested      |
+|     |     |     |     |     | 0   | 0   | 1   | pwm stop       | ?           |
+|     |     |     |     |     | 0   | 1   | 1   | antenna fwd    |             |
+|     |     |     |     |     | 1   | 0   | 1   | antenna rev    |             |
+|     |     |     |     |     | 1   | 1   | 1   | antenna hold   |             |
+| x   | x   | x   | x   | 1   | x   | x   | 1   | LP sweep       |             |
+| x   | x   | x   | 1   | x   | x   | x   | 1   | LP data save   |             |
+| x   | x   | 1   |     |     |     |     | 1   | Rnd generation | 182         |
+|     | 1   | 1   |     |     |     |     | 1   | Sounding Tx    |             |
+|     | 1   | 0   | x   | x   | x   | x   | 1   | Sounding RX    |             |
+| 1   |     |     |     |     |     |     | 1   | Reset cntr     | implemented |
  
 - [ ] Confirm Ethernet cable can be plugged in during testing at Wollaps #task #Dylan #Justin #testing 
 - [ ] Physical constrains of Ethernet cable is kept clear during the design stage #task #Justin 

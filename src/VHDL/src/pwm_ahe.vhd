@@ -37,7 +37,6 @@ Generic ( n : NATURAL := 32 );
 Port ( 
     clk: in std_logic;
     en: in std_logic;
-    clr: in std_logic;
     duty: in std_logic_vector(n-1 downto 0);
     freq: in std_logic_vector(n-1 downto 0);
     y: out std_logic
@@ -47,16 +46,14 @@ end pwm_ahe;
 
 architecture Behavioral of pwm_ahe is
 
-signal cnt: std_logic_vector(n-1 downto 0);
-signal y_tmp: std_logic;
+signal cnt: std_logic_vector(n-1 downto 0):= (others => '0');
+signal y_tmp: std_logic:='0';
 begin
 
-process(clk,clr,duty,freq)
+process(clk,duty,freq)
 begin
-if clr='1' then
-    cnt <= (others => '0');
-    y_tmp <= '0';
-elsif (clk'event AND clk = '1') then
+
+if (clk'event AND clk = '1') then
         if (cnt < freq) then
             cnt <= cnt + 1;
             if (cnt < duty) then
@@ -70,7 +67,7 @@ elsif (clk'event AND clk = '1') then
 end if;
 
 end process;
-y <= y_tmp and en;
---tmp <=cnt;
+y <= y_tmp;
+
 
 end Behavioral;
