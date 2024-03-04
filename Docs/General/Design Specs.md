@@ -75,7 +75,7 @@
 |  |  |
 |  |  |
 
-##  Payload Testing Requirements
+##  Payload Testing Requirements #testing 
 - Need a python code to activate the testing sequences listed above
 - Currently upto 8 bits are available: 
 - [ ] Check current design spec. #task #Justin #Dylan #fpga #specs
@@ -94,8 +94,10 @@
 |     | 1   | 1   |     |     |     |     | 1   | Sounding Tx    |        |
 |     | 1   | 0   | x   | x   | x   | x   | 1   | Sounding RX    |        |
 | 1   |     |     |     |     |     |     | 1   | Unused         |        |
-
-### Onboard led specification
+ 
+- [ ] Confirm Ethernet cable can be plugged in during testing at Wollaps #task #Dylan #Justin #testing 
+- [ ] Physical constrains of Ethernet cable is kept clear during the design stage #task #Justin 
+### Onboard led specification #testing 
 
 - This section shows the usage of the internal LED's of the red pitaya 
 - Depending on the image used refer the correct row for data
