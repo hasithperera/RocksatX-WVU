@@ -64,12 +64,13 @@
 - [ ] #task #read LPW data products[Anderson 2015](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015GL065241)
 
 --- 
-## Random noise generation - with a transistor
+## ~~Random noise generation - with a transistor~~
 
 - as a simpler option look at the feasibility of using an open collector amplifier to generate noise
 	- from KC3RXZ
 	![|400](res/Pasted%20image%2020240212121129.png)
 	is this a feasible design 
+	- This never worked out during testing
 ---
 
 ## PWM generation 
