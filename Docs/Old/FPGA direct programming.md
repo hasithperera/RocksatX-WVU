@@ -25,16 +25,18 @@
 	- `echo -n "all:{ red_pitaya_top_Z20.bit }" >  red_pitaya_top_Z20.bif`
 	- `bootgen -image red_pitaya_top_Z20.bif -arch zynq -process_bitstream bin -o red_pitaya_top_Z20.bit.bin -w`
 	- follow tutorial [here](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/3_vivado_env/tutorfpga2.html)
-- [ ] VHDL components and memory mapping #task
+- [x] VHDL components and memory mapping #task ✅ 2024-03-03
 	- tutorial [here](https://redpitaya-knowledge-base.readthedocs.io/en/latest/learn_fpga/4_lessons/LedCounter.html)
-- [ ] Simulate LFSR in python do a numerical FFT #task 
+- [ ] Simulate LFSR in python do a numerical FFT #task
 	- [x] internal `np.random.rand` gives a flat spectrum
 		![| 300](res/Pasted%20image%2020240226220230.png)
 	- [ ] Confirm this with a LFSR simulation in python #task #help #Nilay
 		- Initial simulation shows a gaussian spectrum. is this correct ?
 		- Generate sample data using python and calculated the data rates/save capacity
-	- [ ] How to verify once I implement this on RP
-- [ ] internal PWM generation (using python)
+	- How to verify once I implement this on RP
+		- Making an arduino read 8 parallel bits
+		- using the register map that is free `sys[6]` to put values in there
+- internal PWM generation (using python)
 
 ### 26/02/2024
 
@@ -42,7 +44,7 @@
 - cleaned `impl_1`
 - re-run synthesis and implementation
 - `.dcp` file is the checkpoint and this speeds up the build process. If this is removed implementation needs to be redone
-- [ ] test sequence
+- [x] test sequence
 	- make `bif` > `bit.bin` 
 	- scp to RP and program 
 	- `test2.bin`: all functions in `lp.py` works as the same as the default image
@@ -50,20 +52,20 @@
 	- [x] Set up a counter with known speed:  at least 80 M
 	- [x] isolate DAC analog functions
 	- [x] isolate Digital pins
-	- [ ] work with DMA memory
+	- [x] work with DMA memory
 - New git repo to keep the FPGA source code [here](https://github.com/hasithperera/Rocksat-FPGA/) (private repo, no intention of collaboration here. purely documentation and recovery)
 #### Slow ADC pins
 
 - Analog 3: U13 
 - `red_pitaya_pdm` module is setting the outputs
 - Operation of PDM [here](https://www.koheron.com/blog/2016/09/27/pulse-density-modulation.html)
-	- [ ] read and analyze how to break this and implement internal ramp #task #LP
-	- [ ] hey need help #task #ahe
+	- [x] read and analyze how to break this and implement internal ramp #task #LP ✅ 2024-03-03
+	- [x] hey need help #task #ahe ✅ 2024-03-03
 - [ ] find documentation on operation 
-- [ ] Draw block diagram #task #help 
+-  Draw block diagram #task #help 
 - internal ams commands are based on having this module loaded
 - `monitor -ams` gives access to internal temp on SoC and internal voltage references 
-- [ ] Find a way to isolate one analog3 Pin from this interface.
+- [x] Find a way to isolate one analog3 Pin from this interface.
 	- alternate methods of DAC for LP may be needed
 	- [ ] Tune python and look at the internal delay to change sweep time for 900 ms. #task #Nilay
 ### 27/02/2024
@@ -124,4 +126,4 @@
 			 - Base clock is 125 MHz
 - [ ] PWM controller #task #Hasith 
 	- Design the counters 
-	- make Duty cycle switcher using 2 bits
+	- make Duty cycle switcher using 2 bits 
