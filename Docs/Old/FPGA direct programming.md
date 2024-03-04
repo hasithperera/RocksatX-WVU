@@ -105,9 +105,22 @@
 - Made basic VHDL files and test benches to test manually written components.
 - Set the top module to be `ahe_tb.vhdl` and run simulation
 - `mux_ahe.vhdl`:  designed to change a 32 bit register by changing states of a two bit signal.
-	![](../res/Pasted%20image%2020240303125806.png)
+	![300](../res/Pasted%20image%2020240303125806.png)
 
  - `pwm_ahe.vhd`: A working variable bit size PWM. Tested in simulation
-	 ![](../res/Pasted%20image%2020240303141931.png)
- - [ ] Pending lab verification for the correct frequency and the duty cycle. #task #testing #fpga 
- - [ ] 
+	 ![300](../res/Pasted%20image%2020240303141931.png)
+	 - [ ] Pending lab verification for the correct frequency and the duty cycle. #task #testing #fpga
+		 - Got a very large number of Total Negative Slack (TNS). this is undesirable
+		 -  Changing to the `adc_clk` instead of the 50 MHz clock makes this work
+		 - Add `adc_clk` and `fclk[2]` both to the design as inputs to see what happens: This also fails timing 
+		 - `adc_clk` Routed to U18/U19 
+ - [x] Python commands (test toolkit): #task #Hasith ✅ 2024-03-03
+	 - led register is used to set commands
+	 - Design a detailed commanding syntax
+	 - Basic working version `test10.bin`, python program `test.py`
+		 - last bit is used to enable the counter
+		 - Measured 8th bit: 240 kHz
+			 - Base clock is 125 MHz
+- [ ] PWM controller #task #Hasith 
+	- Design the counters 
+	- make Duty cycle switcher using 2 bits

@@ -40,8 +40,8 @@ Port (
     clr: in std_logic;
     duty: in std_logic_vector(n-1 downto 0);
     freq: in std_logic_vector(n-1 downto 0);
-    y: out std_logic;
-    tmp: out std_logic_vector(n-1 downto 0) -- test out
+    y: out std_logic
+   -- tmp: out std_logic_vector(n-1 downto 0) -- test out
 );
 end pwm_ahe;
 
@@ -71,6 +71,6 @@ end if;
 
 end process;
 y <= y_tmp and en;
-tmp <=cnt;
+--tmp <=cnt;
 
 end Behavioral;
