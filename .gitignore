@@ -3,8 +3,12 @@
 
 # remove the workspace file in being there
 .obsidian/workspace.json
-.obsidian/appearance.json  #font size for systems
-.obsidian/plugins/obsidian-git/data.json #git commit string
+
+#font size for systems
+.obsidian/appearance.json  
+
+#git commit string
+.obsidian/plugins/obsidian-git/data.json
 
 #mac internal files
 .DS_Store
