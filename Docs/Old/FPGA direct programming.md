@@ -127,3 +127,10 @@
 - [ ] PWM controller #task #Hasith 
 	- Design the counters 
 	- make Duty cycle switcher using 2 bits 
+## 04/03/2023
+
+- Wrote a test bench for PWM and outputs look good on there.
+- Python commanding was also tested 
+	![](../res/Pasted%20image%2020240304234328.png)
+	- red signal is PWM
+	- yello signal is the python commands sent

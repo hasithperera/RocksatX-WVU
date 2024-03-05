@@ -36,7 +36,7 @@ entity mux_ahe is
 GENERIC ( n : NATURAL := 32 );
 Port ( 
 x0,x1,x2,x3: in std_logic_vector(n-1 downto 0);
-s: in std_logic_vector(2-1 downto 0);
+s: in std_logic_vector(2-1 downto 0):="00";
 en: in std_logic;
 y: out std_logic_vector(n-1 downto 0)
 );

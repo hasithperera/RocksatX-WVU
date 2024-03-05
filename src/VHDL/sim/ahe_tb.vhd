@@ -18,11 +18,9 @@
 -- 
 ----------------------------------------------------------------------------------
 
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-USE ieee.numeric_std.ALL;
-
+USE ieee.std_logic_unsigned.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -51,26 +49,59 @@ architecture Behavioral of ahe_tb is
    signal s: std_logic_vector(2-1 downto 0);
    signal en: std_logic:='0';
    
-   signal en_pwm: std_logic;
-   signal freq_pwm: std_logic_vector(7 downto 0):=X"0f";
-   signal duty_pwm: std_logic_vector(7 downto 0):=x"05";
-   signal y2,clr_pwm: std_logic;
    
    signal tmp_pwm: std_logic_vector(7 downto 0);
+   signal tmp_python: std_logic_vector(7 downto 0);
+   signal p0,p1,p2,p4: std_logic:='0';
+   signal tmp_sim:std_logic_vector(32-1 downto 0);
+   
+component cmd1 is
+Port ( 
+  clk: in std_logic;
+  python_led_data: in std_logic_vector(7 downto 0);
+  led: out std_logic_vector(7 downto 0);
+  pwm0,pwm1,pwm2: out std_logic;
+  tmp: out std_logic_vector(32-1 downto 0)
+ );
+end component;
+
+component pwm_ahe is
+Generic ( n : NATURAL := 32 );
+Port ( 
+    clk: in std_logic;
+    en: in std_logic;
+    duty: in std_logic_vector(n-1 downto 0);
+    freq: in std_logic_vector(n-1 downto 0);
+    y: out std_logic
+   -- tmp: out std_logic_vector(n-1 downto 0) -- test out
+);
+end component;
    
 begin
+
 -- UUT
 
-    uut_1: entity work.mux_ahe
-    port map(
-    x0=>x0,
-    x1=>x1,
-    x2=>x2,x3=>x3,
-    s=>s,
-    en=>en,
-    y=>y
-    );
+--    uut_1: entity work.mux_ahe
+--    port map(
+--    x0=>x0,
+--    x1=>x1,
+--    x2=>x2,x3=>x3,
+--    s=>s,
+--    en=>en,
+--    y=>y
+--    );
     
+    uut_3: entity work.cmd1
+    port map(
+    clk => Clk,
+    python_led_data =>tmp_python,
+    led =>tmp_pwm,
+    pwm0 => p0,
+    pwm1 => p1,
+    pwm2 => p2,
+    tmp => tmp_sim
+    
+    );
     
  -- test PWM module
  
@@ -78,12 +109,10 @@ begin
     generic map(n=>8)
     port map(
     clk=>Clk,
-    en=>en_pwm,
-    clr=>clr_pwm,
-    duty=>duty_pwm,
-    freq=>freq_pwm,
-    tmp=>tmp_pwm,
-    y=>y2
+    en=>'1',
+    duty=>x"0B",
+    freq=>x"0f",
+    y=>p4
     );
     
     
@@ -112,12 +141,12 @@ begin
       
       wait for Clk_period; --clock
       
--- UUT2 test conditions
-        clr_pwm <='1';
-        en_pwm <='1';
-       wait for Clk_period; --clock
-       clr_pwm <='0';
-        
+---- UUT2 test conditions
+--        clr_pwm <='1';
+--        en_pwm <='1';
+--       wait for Clk_period; --clock
+--       clr_pwm <='0';
+--       tmp_python <= "10000011";
       
 -- UUT1 Test conditions
 --      -- en = 1
@@ -138,8 +167,20 @@ begin
 --            en <= '0';  
 --            wait for Clk_period;
           
-       
-      wait;
-   end process;
+-- UUT3 - cmd1 testing
 
+
+     tmp_python <= "10000001";
+      wait for 40*Clk_period;
+     tmp_python <= "10000011";
+      wait for 40*Clk_period;
+     tmp_python <= "10000100";
+      wait for 40*Clk_period;
+     tmp_python <= "10000111";
+
+    
+       
+    wait;
+   end process;
+   
 end Behavioral;
