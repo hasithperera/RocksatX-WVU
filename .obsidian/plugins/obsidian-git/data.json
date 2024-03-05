@@ -1,5 +1,5 @@
 {
-  "commitMessage": "vault backup-Pixel: {{date}}",
+  "commitMessage": "vault backup-FPGA: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
