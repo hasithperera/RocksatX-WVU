@@ -135,7 +135,9 @@
 	- red signal is PWM
 	- yellow signal is the python commands sent
 	- Design was tested on the RP and it works as expected 
-		![300](../res/TEK0000.jpg)
+		![200](../res/TEK0000.jpg)
 		- [ ] Check to drive servo assembly. #task #Justin 
 			- Python: 1,3,4
 			- designed to give 50 Hz but not giving that
+			- [ ] 55,60 Hz signals are measured as 54.05 and 59.03 Hz (there is a possible offset of 1Hz ?? ) #bug #fpga #testing
+			 ![200](../res/TEK0002.jpg)
