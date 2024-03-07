@@ -1,0 +1,5 @@
+- [ ] 3/07/2024
+	- Add SPI DAC and ADC "drivers" (Greg's code from previous usages with Raspberry Pi) 
+	- Redo expected values for currents to be measured 
+	- Fill out RF form 
+	- If we're doing nonlinear sweep through voltage, specify resolutions and intervals of sweeping 

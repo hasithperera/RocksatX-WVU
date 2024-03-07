@@ -19,6 +19,8 @@
 	- 900 ms ramp (TS1.1)
 	- 900 ms RF ADC read + file write
 	- 100 ms data storage (TS1.2)
+- [ ] SPI DAC and ADC for Langmuir Probe
+	- [ ] 
 - [ ] Sounding mode
 
 ## Timing Diagram for whole mission
