@@ -3,3 +3,7 @@
 	- Redo expected values for currents to be measured 
 	- Fill out RF form 
 	- If we're doing nonlinear sweep through voltage, specify resolutions and intervals of sweeping 
+	- Order probe tip; ask Greg what the website is 
+	- What bit values are received data for LP?
+	- Get ahold of Greg to get PCB for LP 
+	- Test out SPI code (with Red Pitaya) in 
