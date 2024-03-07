@@ -1,20 +1,23 @@
 
+
+
 # What needs done?
-## Sounding
 
-
-| id  | type    | I/O | no of pins    | Descriptions                         | ref | FPGA pin | sub block (FPGA) |     |     |
-| --- | ------- | --- | ------------- | ------------------------------------ | --- | -------- | ---------------- | --- | --- |
-| 1   | Digital | in  | 1             | TE from Woleps                       |     |          | D+               |     |     |
-| 2   | Digital | out | 3             | PWM (counter)                        |     |          | D+               |     |     |
-| 3   | Analog  | out | 1 (8 bit DAC) | LP voltage sweep                     |     |          | LP               |     |     |
-| 4   | Analog  | in  | 1             | LP current                           |     | RF in 1  | LP               |     |     |
-| 5   | Analog  | out | 1             | sounding TX to Amp                   |     |          | S                |     |     |
-| 6   | Analog  | in  | 1             | Sounding RX from amp                 |     |          | S                |     |     |
-| 7   | Analog  | out | 2             | Switch component before each antenna |     |          | S                |     |     |
-|     |         |     |               |                                      |     |          |                  |     |     |
-|     |         |     |               |                                      |     |          |                  |     |     |
-|     |         |     |               |                                      |     |          |                  |     |     |
 ## LP
+
 ## Deployment +
+
+- [ ] Final PWM controller and python interface for testing #task #Hasith 📅 2024-03-15 
+- [ ] Make 3 motors + calibration data #task #Justin 📅 2024-03-08 
 ## FPGA
+
+- [ ] SPI simulated device: Temperature probe #task #Dylan  #Hasith 
+- [ ] FPGA-TX module integration #task #fpga #Gabriela 
+	- [ ] Need plots of random numbers to show as verification
+	- [ ] DMA interface backup #task #Hasith 
+
+- [ ] FPGA-RX #task #Hasith 
+	- [ ] Data spec : $\Delta f$, $N_{bits}$
+	- [ ] Complex number spec: simulation and what data rates can be achieved 
+	- [ ] Data write from the ADC
+	- [ ] C interface
