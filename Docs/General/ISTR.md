@@ -9,6 +9,9 @@
 
 - [ ] Final PWM controller and python interface for testing #task #Hasith 📅 2024-03-15 
 - [ ] Make 3 motors + calibration data #task #Justin 📅 2024-03-08 
+- [ ] Auto run program and custom image #task 
+- [ ] Testing PCB for 3 servos #task #Justin 
+	- Add extra 3 pins to osc out puts
 ## FPGA
 
 - [ ] SPI simulated device: Temperature probe #task #Dylan  #Hasith 
