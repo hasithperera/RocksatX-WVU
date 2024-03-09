@@ -41,7 +41,7 @@
 - At 6.72% duty cycle, to push a 41" rod, it took 50 sec, which is 0.82" per second
 - At 6.68% duty cycle, to push a 41" rod, it took 39 sec, which is 1.05" per second #Hasith 
 
-- Varying the frequency from 50 Hz to 49 Hz or 51 Hz causes major variations in the speed of deployment #Hasith 
+- [ ] 🔼 ➕ 2024-03-08 Varying the frequency from 50 Hz to 49 Hz or 51 Hz causes major variations in the speed of deployment #task #Hasith #Issue
 ## Testing Details for Servo 3
 
 - Signal details
