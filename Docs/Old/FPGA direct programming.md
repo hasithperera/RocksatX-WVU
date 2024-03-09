@@ -141,3 +141,36 @@
 			- designed to give 50 Hz but not giving that
 			- [ ] 55,60 Hz signals are measured as 54.05 and 59.03 Hz (there is a possible offset of 1Hz ?? ) #bug #fpga #testing
 			 ![200](../res/TEK0002.jpg)
+
+
+
+
+## 09/03/2024
+
+- [ ] Rethink data storage #task #Nilay #Justin 
+- ADC freq: $f_0 = 125 MHz$
+- buffer size: $16384 = 2^{16}$
+- DFT calculation: to see resolution 
+	- chose to decimation factor: 2
+	- max rate: $f_1 = 62.5 MHz$
+	- $\Delta f = \frac{62.5 \times 10^6}{16384} = 3.8 \times 10^3 Hz$
+	- collection time for the buffer: 
+		- with $f_1$: $1/f_1 * buffer = 0.27 ms$
+- Data storage (theoretical max rates only for sounding):
+	- 16 bit data = 2 bytes
+	- total data for one buffer: $2^{16}* 2 B = 2^{17} / 1000 = 131.07$ kB
+	- for 1 ms of data : $132 * 3$ kB
+	- for 1 s: $396$ MB (the SD card is limited to 15 MB/s on a computer. old card could do 50 MB/s)
+	- for 200 s:  $79.2$ GB (we only have a 50 GB partition for data)
+	  
+	  
+	- **This is what I was afraid of from the start. the data rates are too large in an ideal world**. We need to drop this to at least about  10-20 GB (for Sounding only)
+		- [ ] Modifications to the sounding mode plan. 
+			- sound 16 ms: 
+				- get data during this.
+					- Hasith: still believe this is hard to do on the FPGA end
+			- Get data for 2 ms right after sounding
+			- leave a gap (5-100 ms,also can be varied during the launch)
+			- Get data again for 2 ms
+			- leave a gap (5-100 ms)
+- [ ] Do a similar calculation for LP #task #Dylan 
