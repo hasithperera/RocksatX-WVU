@@ -182,7 +182,8 @@
 	- SDR lab has only one os version. v2-23
 	- [tutorial](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/build/C%26Python_API.html#) is outdated. but make file is working
 	- there are no preprocessor variables 
-	- [ ] C binary write #task #help #Nilay #Hasith  📅 2024-03-17 
-		- [ ] Evaluate time to write by building a program to test this
-		- [ ] python data reading to verify whats saved can be read back in to show original information
+	- [x] C binary write + read #task #help #Nilay #Hasith 📅 2024-03-17 ✅ 2024-03-12
+		- [x] Basic write function 
+		- [x] python data reading to verify whats saved can be read back in to show original information
+	- [ ] Evaluate time to write by building a program to test this #task #rp #testing 
 	- [ ] C data ADC reading program #task #Hasith  
