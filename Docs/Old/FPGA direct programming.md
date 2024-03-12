@@ -157,7 +157,9 @@
 	- collection time for the buffer: 
 		- with $f_1$: $1/f_1 * buffer = 0.27 ms$
 - Data storage (theoretical max rates only for sounding):
-	- 16 bit data = 2 bytes (assuming binary write. if ascii write is done this increases X32 at least assuming XXX data format. this is lossy too)
+	- 16 bit data = 2 bytes
+		- [x] (assuming binary write. if ascii write is done this increases X32 at least assuming XXX data format. this is lossy too)
+		- C binary write takes 4 bytes for each value. (floats are used in C to get register data)
 	- total data for one buffer: $2^{16}* 2 B = 2^{17} / 1000 = 131.07$ kB
 	- for 1 ms of data : $132 * 3$ kB
 	- for 1 s: $396$ MB (the SD card is limited to 15 MB/s on a computer. old card could do 50 MB/s)
@@ -185,5 +187,20 @@
 	- [x] C binary write + read #task #help #Nilay #Hasith 📅 2024-03-17 ✅ 2024-03-12
 		- [x] Basic write function 
 		- [x] python data reading to verify whats saved can be read back in to show original information
-	- [ ] Evaluate time to write by building a program to test this #task #rp #testing 
+	- [x] Evaluate time to write by building a program to test this #task #rp #testing #measurements ✅ 2024-03-12
 	- [ ] C data ADC reading program #task #Hasith  
+## 13/03/24
+
+- C data write speed tests
+	- Worst timing is reported as time
+
+| test id | Description                 | timing         | data location | bin file size | write speed |
+| ------- | --------------------------- | -------------- | ------------- | ------------- | ----------- |
+| 1       | single file open, 10 writes | $0.0073$ s     | out/test1.log | 640 K         |             |
+| 2       | single file open,100 writes | $0.07605200$ s | out/test2.log | 6.3 M         | 82.89 MB/s  |
+| 3       | 1000 writes                 | $0.78047500$ s | out/test3.log | 63 M          | 80.79 MB/s  |
+| 4       | make 100 files              | $0.12319500$ s | out/test4.log |               |             |
+- Scaling is pretty linear for this mode of writing. increased write speed than OS writing
+- Buffer fill time is calculated to be **$0.2$ ms** and write time is $0.7$ ms
+- [ ] multiple files has an overhead. I think making one every second would be acceptable. easy to manage data and post analysis #task #design #D_plus #Dylan #Justin 
+- [ ] Look at ADC data in C #task #Hasith 📅 2024-03-17 

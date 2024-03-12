@@ -14,6 +14,7 @@
 
 - Signal details
 	- We produced a +- 2.5V signal 50 Hz
+		- #Hasith for future testing make this 0-3.5 V this is the signal I am testing with on RP
 	- Supplied a 5V supply to the servo
 ---
 - Testing for the PWM duty cycle where the servo is in a no rotation state, I find that 7.21-7.27% there is no rotation for Servo 1 #Hasith 
@@ -41,7 +42,7 @@
 - At 6.72% duty cycle, to push a 41" rod, it took 50 sec, which is 0.82" per second
 - At 6.68% duty cycle, to push a 41" rod, it took 39 sec, which is 1.05" per second #Hasith 
 
-- [ ] 🔼 ➕ 2024-03-08 Varying the frequency from 50 Hz to 49 Hz or 51 Hz causes major variations in the speed of deployment #task #Hasith #Issue
+- [x] 🔼 ➕ 2024-03-08 Varying the frequency from 50 Hz to 49 Hz or 51 Hz causes major variations in the speed of deployment #task #Hasith #Issue ✅ 2024-03-12
 ## Testing Details for Servo 3
 
 - Signal details
