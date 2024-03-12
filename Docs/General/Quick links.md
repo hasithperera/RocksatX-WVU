@@ -7,6 +7,8 @@
 | Memory Mapping                  | https://redpitaya.readthedocs.io/en/latest/developerGuide/software/build/fpga/regset/in_dev/v0.94.html                 |
 | C api generation and data save  | https://redpitaya.readthedocs.io/en/latest/appsFeatures/examples/acquisition_generation/acq_genRF-exm2.html#code-c-api |
 | c compiling                     | https://redpitaya.readthedocs.io/en/latest/developerGuide/software/build/C%26Python_API.html#comc                      |
+| C API - ref                     | https://redpitaya.readthedocs.io/en/latest/appsFeatures/remoteControl/command_list.html#                               |
+
 
 ## RP configuration
 
