@@ -203,4 +203,6 @@
 - Scaling is pretty linear for this mode of writing. increased write speed than OS writing
 - Buffer fill time is calculated to be **$0.2$ ms** and write time is $0.7$ ms
 - [ ] multiple files has an overhead. I think making one every second would be acceptable. easy to manage data and post analysis #task #design #D_plus #Dylan #Justin 
+	- LP and Sounding data is likely to be done separately 
 - [ ] Look at ADC data in C #task #Hasith 📅 2024-03-17 
+- [ ] Test the Matlab built PWM module for 50 Hz clock #task #testing #fpga 
