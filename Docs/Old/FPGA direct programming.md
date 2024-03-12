@@ -157,7 +157,7 @@
 	- collection time for the buffer: 
 		- with $f_1$: $1/f_1 * buffer = 0.27 ms$
 - Data storage (theoretical max rates only for sounding):
-	- 16 bit data = 2 bytes
+	- 16 bit data = 2 bytes (assuming binary write. if ascii write is done this increases X32 at least assuming XXX data format. this is lossy too)
 	- total data for one buffer: $2^{16}* 2 B = 2^{17} / 1000 = 131.07$ kB
 	- for 1 ms of data : $132 * 3$ kB
 	- for 1 s: $396$ MB (the SD card is limited to 15 MB/s on a computer. old card could do 50 MB/s)
@@ -174,3 +174,15 @@
 			- Get data again for 2 ms
 			- leave a gap (5-100 ms)
 - [ ] Do a similar calculation for LP #task #Dylan 
+
+## 12/03/24
+
+- Tested C programs from the repo and made a working makefile
+	- `Can` gave issues during compilation these were removed from the makefile
+	- SDR lab has only one os version. v2-23
+	- [tutorial](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/build/C%26Python_API.html#) is outdated. but make file is working
+	- there are no preprocessor variables 
+	- [ ] C binary write #task #help #Nilay #Hasith  📅 2024-03-17 
+		- [ ] Evaluate time to write by building a program to test this
+		- [ ] python data reading to verify whats saved can be read back in to show original information
+	- [ ] C data ADC reading program #task #Hasith  

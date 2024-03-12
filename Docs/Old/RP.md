@@ -10,7 +10,8 @@
 - to send files use `scp <src> <destination>` or `rsync`
 - refer doc for user name and password
 - compiling c code from the example failed. Possible missing library/dependencies
-- Setting the time can be done with `data mmddHHMMYYYY`. Note this is in UTC time (EST +5 h) may required to do on restart since NTP is not operational in the current setup
+- Setting the time can be done with `date mmddHHMMYYYY`. Note this is in UTC time (EST +5 h) may required to do on restart since NTP is not operational in the current setup
+- `date -u`: get the UTC time from linux/Mac
 ---
 ### Python
 - 3rd party Wifi Dongle not working (Being detected by device, not connecting, possible driver issue)
