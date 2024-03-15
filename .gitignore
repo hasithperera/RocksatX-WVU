@@ -12,3 +12,6 @@
 
 #mac internal files
 .DS_Store
+
+# c data
+./src/C/data
