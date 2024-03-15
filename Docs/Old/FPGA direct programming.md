@@ -124,7 +124,7 @@
 		 - last bit is used to enable the counter
 		 - Measured 8th bit: 240 kHz
 			 - Base clock is 125 MHz
-- [ ] PWM controller #task #Hasith 
+- [x] PWM controller #task #Hasith ✅ 2024-03-15
 	- Design the counters 
 	- make Duty cycle switcher using 2 bits 
 ## 04/03/2023
@@ -219,7 +219,10 @@
 		 - [ ] 2 gives odd data
 		 - [x] 4,8 - works to give a sin
 	- [ ] evaluate data transfer time to the buffer 
-- [ ] PWM frequency issue #task #Hasith #fpga 
-	- [ ] C reported ADC frequency is: 122880000
-	- [ ] recalculated 50 Hz using this as the clock frequency
+- [x] PWM frequency issue #task #Hasith #fpga ✅ 2024-03-15
+	- [x] C reported ADC frequency is: 122880000
+	- [x] recalculated 50 Hz using this as the clock frequency
+	-  Corrected PWM signal at 50 Hz and required duty cycle
+	- python commanding also works as expected
+	 ![|200](../res/TEK0000%201.jpg)
 - [ ] Get samba working #task #Hasith #D_plus 
