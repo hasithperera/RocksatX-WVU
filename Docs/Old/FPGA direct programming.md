@@ -188,7 +188,7 @@
 		- [x] Basic write function 
 		- [x] python data reading to verify whats saved can be read back in to show original information
 	- [x] Evaluate time to write by building a program to test this #task #rp #testing #measurements ✅ 2024-03-12
-	- [ ] C data ADC reading program #task #Hasith  
+	- [x] C data ADC reading program #task #Hasith ✅ 2024-03-14
 ## 13/03/24
 
 - C data write speed tests
@@ -204,5 +204,22 @@
 - Buffer fill time is calculated to be **$0.2$ ms** and write time is $0.7$ ms
 - [ ] multiple files has an overhead. I think making one every second would be acceptable. easy to manage data and post analysis #task #design #D_plus #Dylan #Justin 
 	- LP and Sounding data is likely to be done separately 
-- [ ] Look at ADC data in C #task #Hasith 📅 2024-03-17 
+- [x] Look at ADC data in C #task #Hasith 📅 2024-03-17 ✅ 2024-03-14
 - [ ] Test the Matlab built PWM module for 50 Hz clock #task #testing #fpga 
+
+## 14/03/24 
+ - ADC data showing a sin generated at 30 MHz/400 mv pk-pk.
+	 - Directly couples via input 1 on SMA
+	 - max the signal generator in hub can go is 35 M on sin
+![200](../res/Pasted%20image%2020240314214530.png)
+ - [ ] Calibration of inputs with frequency and amplitude #task #testing
+ - [ ] Evaluate timing for the following in C #task #testing 
+	 - [x] file write
+	 - [ ] Check delimitation factors
+		 - [ ] 2 gives odd data
+		 - [x] 4,8 - works to give a sin
+	- [ ] evaluate data transfer time to the buffer 
+- [ ] PWM frequency issue #task #Hasith #fpga 
+	- [ ] C reported ADC frequency is: 122880000
+	- [ ] recalculated 50 Hz using this as the clock frequency
+- [ ] Get samba working #task #Hasith #D_plus 

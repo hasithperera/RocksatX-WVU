@@ -19,7 +19,7 @@
 	- [ ] Need plots of random numbers to show as verification
 	- [ ] DMA interface backup #task #Hasith 
 
-- [ ] FPGA-RX #task #Hasith 
+- [x] FPGA-RX #task #Hasith ✅ 2024-03-14
 	- [ ] Data spec : $\Delta f$, $N_{bits}$
 	- [ ] Complex number spec: simulation and what data rates can be achieved 
 	- [ ] Data write from the ADC
