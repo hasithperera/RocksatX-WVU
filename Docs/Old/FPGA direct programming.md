@@ -111,7 +111,7 @@
 
  - `pwm_ahe.vhd`: A working variable bit size PWM. Tested in simulation
 	 ![300](../res/Pasted%20image%2020240303141931.png)
-	 - [ ] Pending lab verification for the correct frequency and the duty cycle. #task #testing #fpga
+	 - [x] Pending lab verification for the correct frequency and the duty cycle. #task #testing #fpga ✅ 2024-03-15
 		 - Got a very large number of Total Negative Slack (TNS). this is undesirable
 		 -  Changing to the `adc_clk` instead of the 50 MHz clock makes this work
 		 - Add `adc_clk` and `fclk[2]` both to the design as inputs to see what happens: This also fails timing 
@@ -136,10 +136,10 @@
 	- yellow signal is the python commands sent
 	- Design was tested on the RP and it works as expected 
 		![200](../res/TEK0000.jpg)
-		- [ ] Check to drive servo assembly. #task #Justin 
+		- [x] Check to drive servo assembly. #task #Justin ✅ 2024-03-15
 			- Python: 1,3,4
 			- designed to give 50 Hz but not giving that
-			- [ ] 55,60 Hz signals are measured as 54.05 and 59.03 Hz (there is a possible offset of 1Hz ?? ) #bug #fpga #testing
+			- [x] 55,60 Hz signals are measured as 54.05 and 59.03 Hz (there is a possible offset of 1Hz ?? ) #bug #fpga #testing
 			 ![200](../res/TEK0002.jpg)
 
 
@@ -205,7 +205,7 @@
 - [ ] multiple files has an overhead. I think making one every second would be acceptable. easy to manage data and post analysis #task #design #D_plus #Dylan #Justin 
 	- LP and Sounding data is likely to be done separately 
 - [x] Look at ADC data in C #task #Hasith 📅 2024-03-17 ✅ 2024-03-14
-- [ ] Test the Matlab built PWM module for 50 Hz clock #task #testing #fpga 
+- ~~Test the Matlab built PWM module for 50 Hz clock~~ Not needed since the PWM module bug was fixed 
 
 ## 14/03/24 
  - ADC data showing a sin generated at 30 MHz/400 mv pk-pk.
@@ -224,5 +224,9 @@
 	- [x] recalculated 50 Hz using this as the clock frequency
 	-  Corrected PWM signal at 50 Hz and required duty cycle
 	- python commanding also works as expected
-	 ![|200](../res/TEK0000%201.jpg)
+	 
 - [ ] Get samba working #task #Hasith #D_plus 
+### PWM module testing
+- Generated signal was confirmed according to spec
+	![|200](../res/TEK0000%201.jpg)
+	

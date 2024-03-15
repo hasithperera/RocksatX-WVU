@@ -8,11 +8,12 @@
 ## Deployment +
 
 - [x] Final PWM controller and python interface for testing #task #Hasith 📅 2024-03-15 ✅ 2024-03-15
-- [x] Make 3 motors + calibration data #task #Justin 📅 2024-03-08 ✅ 2024-03-08
+      ![FPGA direct programming](../Old/FPGA%20direct%20programming.md#PWM%20Module%20testing )
+- [x] Make 3 motors + calibration data #task #Justin 📅 2024-03-08 ✅ 2024-03-15
 - [ ] Auto run program and custom image #task #Hasith 
 - [x] Testing PCB for 3 servos #task #Justin ✅ 2024-03-15
 	- Add extra 3 pins to osc out puts
-	- Did not build a PCB made a usable setup
+	- Did not build a PCB. made a usable setup
 ## FPGA
 
 - [ ] SPI simulated device: Temperature probe #task #Dylan  #Hasith 
