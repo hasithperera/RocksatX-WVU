@@ -1,15 +1,25 @@
 
 ## Used Pins
 
-| Pins      | variable name | FPGA pin | voltage level | xdc         |
-| --------- | ------------- | -------- | ------------- | ----------- |
-| E1/DIO0_N |               |          |               |             |
-| E1/DIO1_N | debug_1       | H17      | 3.3 V         | exp_n_io[1] |
-| E1/DIO2_N | debug_2       | H18      | 3.3 V         | exp_n_io[2] |
-|           | PWM1          |          |               |             |
-|           | PWM2          |          |               |             |
-|           | PWM3          |          |               |             |
-|           |               |          |               |             |
+| Pins      | variable name     | FPGA pin | voltage level | xdc         | Comment |
+| --------- | ----------------- | -------- | ------------- | ----------- | ------- |
+| E1/DIO0_N |                   |          |               |             |         |
+| E1/DIO1_N | debug_1           | H17      | 3.3 V         | exp_n_io[1] |         |
+| E1/DIO2_N | debug_2           | H18      | 3.3 V         | exp_n_io[2] |         |
+| E1/DIO3_N | PWM1              |          |               |             | #task   |
+| E1/DIO4_N | PWM2              |          |               |             |         |
+| E1/DIO5_N | PWM3              |          |               |             |         |
+|           |                   |          |               |             |         |
+| E1/DOI0_P | Ext Trig internal |          |               |             |         |
+| E1/DIO1_P | CS_Greg1          |          |               |             |         |
+| E1/DIO2_P | Busy_ADC          |          |               |             | input   |
+| E1/DIO3_P | Timed event       |          | 3.3 V         |             | input   |
+| E1/DIO4_P | Ant switch        |          |               |             | out     |
+| E1/DIO5_P |                   |          |               |             |         |
+| E1/DIO6_P |                   |          |               |             |         |
+| E1/DIO7_P |                   |          |               |             |         |
+| E1/DIO8_P |                   |          |               |             |         |
+|           |                   |          |               |             |         |
 
 ### 22/02/2024
 - Vivado 2020.1 is required. Online installer is not working 
@@ -211,7 +221,7 @@
  - ADC data showing a sin generated at 30 MHz/400 mv pk-pk.
 	 - Directly couples via input 1 on SMA
 	 - max the signal generator in hub can go is 35 M on sin
-![200](../res/Pasted%20image%2020240314214530.png)
+![400](../res/Pasted%20image%2020240314214530.png)
  - [ ] Calibration of inputs with frequency and amplitude #task #testing
  - [ ] Evaluate timing for the following in C #task #testing 
 	 - [x] file write
