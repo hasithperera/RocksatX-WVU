@@ -255,24 +255,24 @@
 | PWM2 | 2BCCC | 2A2E1 |     |
 
 - To-do before testing on 20/04/2024
-	- [x] independent PWM module drive 
+	- [x] independent PWM module drive #task ✅ 2024-04-20
 		- [x] test20.bin: shows the same duty cycle
-	- [x] Test script for deployment
+	- [x] Test script for deployment #task ✅ 2024-04-20
 		- [ ] Deploy servo
 		- [ ] stop deployment
-
-- [ ] read the Dcd /etc/systemd/system/NA from python/C
-	- [ ] Modify the DNA in Xilinx
+	- [x] Auto start up on power on #task ✅ 2024-04-20
+	- [ ] read the DNA from python/C
+		- [ ] Modify the DNA in Xilinx
 		- [ ] DNA = 57'h0823456789AAAAA
 		- Modified in `red_pitaya_hk.v`
 	- [ ] Check SPI operation
-	- [ ] Check Data rates and savinf
+	- [ ] Check Data rates and save
 	- [ ] Full experiment code
 	- [ ] Handel Timed events
 
 ## Power on autostart 
 #startup #systemd 
-- [ ] Disable nginx 
+- [x] Disable nginx 
 	- `systemctl disable redpitaya_nginx.service`
 	- `systemctl disable jupyter.service`
 -  installed new service at  `/etc/systemd/system/`
@@ -282,8 +282,8 @@
 	- Commands
 		- `systemd-analyze plot > systemd_rp_3.svg`
 -  Old `Redpitaya_startup`
-```
-	[Unit]
+	- New modifications were added to execute it without network availability
+```	[Unit]
 	Description=Service for startup script Red Pitaya
 	After=network.target
 	Before=redpitaya_nginx.service
@@ -296,13 +296,12 @@
 	
 	[Install]
 	WantedBy=multi-user.target 
-	
 ```
-
 - In the current startup this is executed after my service causing v0.94 to be reprogrammed
 - move this before my service 
 	![](../res/Pasted%20image%2020240420012819.png)
 - Now its been even killed faster. 
 - Try to move it fully after `redpitaya_startup`
-- 
+	- This did not work. ahe.service is redudednt
+	- write any startup scripts in `/opt/redpitaya/sbin/startup.sh` 
 
