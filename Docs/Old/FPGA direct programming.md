@@ -1,25 +1,26 @@
 
+
 ## Used Pins
 
-| Pins      | variable name     | FPGA pin | voltage level | xdc         | Comment |
-| --------- | ----------------- | -------- | ------------- | ----------- | ------- |
-| E1/DIO0_N |                   |          |               |             |         |
-| E1/DIO1_N | debug_1           | H17      | 3.3 V         | exp_n_io[1] |         |
-| E1/DIO2_N | debug_2           | H18      | 3.3 V         | exp_n_io[2] |         |
-| E1/DIO3_N | PWM1              |          |               |             | #task   |
-| E1/DIO4_N | PWM2              |          |               |             |         |
-| E1/DIO5_N | PWM3              |          |               |             |         |
-|           |                   |          |               |             |         |
-| E1/DOI0_P | Ext Trig internal |          |               |             |         |
-| E1/DIO1_P | CS_Greg1          |          |               |             |         |
-| E1/DIO2_P | Busy_ADC          |          |               |             | input   |
-| E1/DIO3_P | Timed event       |          | 3.3 V         |             | input   |
-| E1/DIO4_P | Ant switch        |          |               |             | out     |
-| E1/DIO5_P |                   |          |               |             |         |
-| E1/DIO6_P |                   |          |               |             |         |
-| E1/DIO7_P |                   |          |               |             |         |
-| E1/DIO8_P |                   |          |               |             |         |
-|           |                   |          |               |             |         |
+| Pins      | variable name     | FPGA pin | voltage level | xdc         | Comment       |
+| --------- | ----------------- | -------- | ------------- | ----------- | ------------- |
+| E1/DIO0_N |                   |          |               |             |               |
+| E1/DIO1_N | PWM1              | H17      | 3.3 V         | exp_n_io[1] | exp_n_out_ahe |
+| E1/DIO2_N | PWM2              | H18      | 3.3 V         | exp_n_io[2] | exp_n_out_ahe |
+| E1/DIO3_N | PWM3              |          |               |             | exp_n_out_ahe |
+| E1/DIO4_N |                   |          |               |             |               |
+| E1/DIO5_N |                   |          |               |             |               |
+|           |                   |          |               |             |               |
+| E1/DOI0_P | Ext Trig internal |          |               |             |               |
+| E1/DIO1_P | CS_Greg1          |          |               |             |               |
+| E1/DIO2_P | Busy_ADC          |          |               |             | input         |
+| E1/DIO3_P | Timed event       |          | 3.3 V         |             | input         |
+| E1/DIO4_P | Ant switch        |          |               |             | out           |
+| E1/DIO5_P |                   |          |               |             |               |
+| E1/DIO6_P |                   |          |               |             |               |
+| E1/DIO7_P |                   |          |               |             |               |
+| E1/DIO8_P |                   |          |               |             |               |
+|           |                   |          |               |             |               |
 
 ### 22/02/2024
 - Vivado 2020.1 is required. Online installer is not working 
@@ -67,6 +68,8 @@
 #### Slow ADC pins
 
 - Analog 3: U13 
+
+
 - `red_pitaya_pdm` module is setting the outputs
 - Operation of PDM [here](https://www.koheron.com/blog/2016/09/27/pulse-density-modulation.html)
 	- [x] read and analyze how to break this and implement internal ramp #task #LP ✅ 2024-03-03
@@ -240,3 +243,66 @@
 - Generated signal was confirmed according to spec
 	![|200](../res/TEK0000%201.jpg)
 	
+## 04/19/2024
+
+- Final spec for the PWM controller. From experiments (Rev measurements are not provided)
+- These need to be tested with the actual antennas
+
+|      | FWD   | STOP  | REV |
+| ---- | ----- | ----- | --- |
+| PWM0 | 2CE14 | 2B70A |     |
+| PWM1 | 2B70A | 2A000 |     |
+| PWM2 | 2BCCC | 2A2E1 |     |
+
+- To-do before testing on 20/04/2024
+	- [x] independent PWM module drive 
+		- [x] test20.bin: shows the same duty cycle
+	- [x] Test script for deployment
+		- [ ] Deploy servo
+		- [ ] stop deployment
+
+- [ ] read the Dcd /etc/systemd/system/NA from python/C
+	- [ ] Modify the DNA in Xilinx
+		- [ ] DNA = 57'h0823456789AAAAA
+		- Modified in `red_pitaya_hk.v`
+	- [ ] Check SPI operation
+	- [ ] Check Data rates and savinf
+	- [ ] Full experiment code
+	- [ ] Handel Timed events
+
+## Power on autostart 
+#startup #systemd 
+- [ ] Disable nginx 
+	- `systemctl disable redpitaya_nginx.service`
+	- `systemctl disable jupyter.service`
+-  installed new service at  `/etc/systemd/system/`
+	-  update systemctl: `network-pre.target` : this partially works (it runs for a little time)
+	- I think its been reprogrammed by the standard image after network start up. 
+	- retry without network: same result its been over written by some thing.
+	- Commands
+		- `systemd-analyze plot > systemd_rp_3.svg`
+-  Old `Redpitaya_startup`
+```
+	[Unit]
+	Description=Service for startup script Red Pitaya
+	After=network.target
+	Before=redpitaya_nginx.service
+	
+	[Service]
+	Type=simple
+	Environment=PATH_REDPITAYA=/opt/redpitaya
+	Environment=LD_LIBRARY_PATH=/opt/redpitaya/lib PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/redpitaya/sbin:/opt/redpitaya/bin
+	ExecStart=/bin/sh -c '/opt/redpitaya/sbin/startup.sh'
+	
+	[Install]
+	WantedBy=multi-user.target 
+	
+```
+
+- In the current startup this is executed after my service causing v0.94 to be reprogrammed
+- move this before my service 
+	![](../res/Pasted%20image%2020240420012819.png)
+- Now its been even killed faster. 
+- Try to move it fully after `redpitaya_startup`
+- 
+
