@@ -55,3 +55,24 @@
 - At 6.75% duty cycle, to push a 41" rod, it took 48 sec, which is 0.85" per second
 - At 6.73% duty cycle, to push a 41" rod, it took 46 sec, which is 0.89" per second
 - At 6.70% duty cycle, to push a 41" rod, it took 39 sec, which is 1.05" per second #Hasith 
+
+# 04/01/2024
+## General Update
+- The first draft of the transmitter and receiver circuit has been designed
+---
+
+# 04/24/2024
+
+## General Update
+- The Preamp is partially working!
+- What is right with it
+	- We are able to get a gain of about 13x for the transmitting part of the preamp!
+	- The voltage converter gets a steady -5V
+	- Filtering of the Transmitting portion works well, need to characterize
+- What is wrong
+	- The receiving portion of the Preamp does not work
+	- The signal coming into the log amp goes through a capacitor which acts as a low pass filter, damping out the frequency range we care about
+		- Need to replace C6 and C4 with wire 
+	- Maybe we don't need the log amp?
+	- Wrong connections in design for the Active Low pass filter
+	- Enable pin needs to be held high not low
