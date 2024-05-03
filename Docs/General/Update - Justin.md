@@ -76,3 +76,9 @@
 	- Maybe we don't need the log amp?
 	- Wrong connections in design for the Active Low pass filter
 	- Enable pin needs to be held high not low
+
+---
+# 05/03/2024
+
+## General Update
+- The Preamp is generating a signal noise around 31 MHz, likely from the DC-DC converter.
