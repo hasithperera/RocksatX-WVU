@@ -2,25 +2,30 @@
 
 ## Used Pins
 
-| Pins      | variable name     | FPGA pin | voltage level | xdc         | Comment       |
-| --------- | ----------------- | -------- | ------------- | ----------- | ------------- |
-| E1/DIO0_N |                   |          |               |             |               |
-| E1/DIO1_N | PWM1              | H17      | 3.3 V         | exp_n_io[1] | exp_n_out_ahe |
-| E1/DIO2_N | PWM2              | H18      | 3.3 V         | exp_n_io[2] | exp_n_out_ahe |
-| E1/DIO3_N | PWM3              |          |               |             | exp_n_out_ahe |
-| E1/DIO4_N |                   |          |               |             |               |
-| E1/DIO5_N |                   |          |               |             |               |
-|           |                   |          |               |             |               |
-| E1/DOI0_P | Ext Trig internal |          |               |             |               |
-| E1/DIO1_P | CS_Greg1          |          |               |             |               |
-| E1/DIO2_P | Busy_ADC          |          |               |             | input         |
-| E1/DIO3_P | Timed event       |          | 3.3 V         |             | input         |
-| E1/DIO4_P | Ant switch        |          |               |             | out           |
-| E1/DIO5_P |                   |          |               |             |               |
-| E1/DIO6_P |                   |          |               |             |               |
-| E1/DIO7_P |                   |          |               |             |               |
-| E1/DIO8_P |                   |          |               |             |               |
-|           |                   |          |               |             |               |
+| Pins       | variable name     | FPGA pin | voltage level | xdc         | Comment          |
+| ---------- | ----------------- | -------- | ------------- | ----------- | ---------------- |
+| E1/DIO0_N  |                   |          |               |             |                  |
+| E1/DIO1_N  | PWM1              | H17      | 3.3 V         | exp_n_io[1] | exp_n_out_ahe    |
+| E1/DIO2_N  | PWM2              | H18      | 3.3 V         | exp_n_io[2] | exp_n_out_ahe    |
+| E1/DIO3_N  | PWM3              |          |               |             | exp_n_out_ahe    |
+| E1/DIO4_N  | Limit_low_0       |          |               |             | for pwm Limit sw |
+| E1/DIO5_N  | Limit_low_1       |          |               |             | for pwm Limit sw |
+| E1/DIO6_N  | Limit_low_2       |          |               |             | for pwm Limit sw |
+| E1/DIO7_N  | Limit_high_0      |          |               |             | for pwm Limit sw |
+| E1/DIO8_N  | Limit_high_1      |          |               |             | for pwm Limit sw |
+| E1/DIO9_N  | Limit_high_2      |          |               |             | for pwm Limit sw |
+| E1/DIO10_N |                   |          |               |             | for pwm Limit sw |
+|            |                   |          |               |             |                  |
+| E1/DOI0_P  | Ext Trig internal |          |               |             |                  |
+| E1/DIO1_P  | CS_Greg1          |          |               |             |                  |
+| E1/DIO2_P  | Busy_ADC          |          |               |             | input            |
+| E1/DIO3_P  | Timed event       |          | 3.3 V         |             | input            |
+| E1/DIO4_P  | Ant switch        |          |               |             | out              |
+| E1/DIO5_P  |                   |          |               |             |                  |
+| E1/DIO6_P  |                   |          |               |             |                  |
+| E1/DIO7_P  |                   |          |               |             |                  |
+| E1/DIO8_P  |                   |          |               |             |                  |
+|            |                   |          |               |             |                  |
 
 ### 22/02/2024
 - Vivado 2020.1 is required. Online installer is not working 
@@ -305,3 +310,4 @@
 	- This did not work. ahe.service is redudednt
 	- write any startup scripts in `/opt/redpitaya/sbin/startup.sh` 
 
+---
