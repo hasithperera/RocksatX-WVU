@@ -31,3 +31,44 @@
 - Testing: can this be done by some one else ? 
 	- I might not have access to all the systems right now.
 - [ ] What Xilinz Zynq do we have on the RP STEM? #task #Dylan 
+
+
+## Things to be done
+- Integration testing
+- Red Pitaya Testing
+	- Processing of saved data
+		- How are we viewing the saved data from the Red Pitaya
+	- Preamp Testing
+		- implement way to characterize preamps in the code
+	- Sweep
+		- Frequency Sweep too slow, switch to C?
+		- Calibrate Frequency Sweep after preamp?
+		- Evaluate Sweep time, rate, save data simultaneously?
+	- Random Noise
+		- Casper
+			- Can we generate PWM signals?
+			- Software controlled Antenna?
+			- Can we control GPIO pins?
+			- Can we communicate in SPI?
+			- Can we save ADC data to file?
+			- Python API?
+	- Main Code
+		- Write a main code in C
+	- Deployment Limit Switches
+- Tx/Rx Preamp
+	- Build
+	- Test
+		- VNA
+		- Construct in parts to see where noise comes in
+- LP
+	- SPI
+		- How quick is the sweep?
+		- What is the step size?
+	- Get shop to build peek plastic ends
+	- Construct full Antenna
+- Deployment
+	- Mount Deployment to Payload deck
+	- Test distance of antenna deployment and proper extension and retraction
+	- Ensure gears do not slip
+- File Formatting
+	- What data products do we want?

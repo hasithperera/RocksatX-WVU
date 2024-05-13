@@ -82,3 +82,29 @@
 
 ## General Update
 - The Preamp is generating a signal noise around 31 MHz, likely from the DC-DC converter.
+
+---
+
+# 05/07/2024
+
+## General Update
+- Frequencies around 48 MHz are filtered down to noise on RP Rx. I changed C11 from a 40 pF capacitor to an 80 pF capacitor. Will investigate the use of ~200 pF capacitor.
+
+## Measurements from the RP-RX
+
+- Connected an external low pass with 100 $\ohm$ , 79 pf after amplification
+
+| freq | input pk-pk | out pk-pk |
+| :--- | ----------- | --------- |
+| 19 M | 10 m        | 490 m     |
+| 19 M | 5 m         | 270 m     |
+| 18 M | 10 m        | 480 m     |
+| 16 M | 10 m        | 440 m     |
+| 14 M | 10 m        | 410 m     |
+| 12 M | 10 m        | 400 m     |
+| 10 M | 10 m        | 390 m     |
+| 6 M  | 10 m        | 390 m     |
+| 2 M  | 10 m        | 420 m     |
+| 1 M  | 10 m        |           |
+|      |             |           |
+
