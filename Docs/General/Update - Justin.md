@@ -121,6 +121,8 @@
 
 ## PreAmp Two Stage Update
 - The two stage mode of the preamp gets rid of the 180 MHz noise from the DC-DC converter
+- At 25 mV Pk-Pk harmonics are much stronger, we get a Pk-Pk output of 4.54 V @ 10MHz
+- At values beyond 33 mV Pk-Pk the output does not rise past a Pk-Pk of 5.6 V @ 10 MHz
 
 | freq   | input A1 [pk-pk] | output Rp-Rx [pk-pk] | dB    |
 | :----- | ---------------- | -------------------- | ----- |
