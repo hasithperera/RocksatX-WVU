@@ -94,30 +94,64 @@
 
 - Connected an external low pass with 100 $\ohm$ , 79 pf after amplification
 
-| freq | input pk-pk | out pk-pk |
-| :--- | ----------- | --------- |
-| 19 M | 10 m        | 490 m     |
-| 19 M | 5 m         | 270 m     |
-| 18 M | 10 m        | 480 m     |
-| 16 M | 10 m        | 440 m     |
-| 14 M | 10 m        | 410 m     |
-| 12 M | 10 m        | 400 m     |
-| 10 M | 10 m        | 390 m     |
-| 6 M  | 10 m        | 390 m     |
-| 2 M  | 10 m        | 420 m     |
-| 1 M  | 10 m        |           |
-|      |             |           |
+| freq | input pk-pk | out pk-pk |     |
+| :--- | ----------- | --------- | --- |
+| 19 M | 10 m        | 490 m     |     |
+| 19 M | 5 m         | 270 m     |     |
+| 18 M | 10 m        | 480 m     |     |
+| 16 M | 10 m        | 440 m     |     |
+| 14 M | 10 m        | 410 m     |     |
+| 12 M | 10 m        | 400 m     |     |
+| 10 M | 10 m        | 390 m     |     |
+| 6 M  | 10 m        | 390 m     |     |
+| 2 M  | 10 m        | 420 m     |     |
+| 1 M  | 10 m        |           |     |
+|      |             |           |     |
+|      |             |           |     |
 
 ---
 # 05/13/2024
 
-## General Update
+## PreAmp Single Stage Update
 - Getting a frequency of ~180 MHz when connected to DC-DC converter. Otherwise no apparent noise
 - When attached to both Antenna and transmitting we are picking up many high frequency bands
 
 ---
-# 05/13/2024
+# 05/14/2024
 
-## General Update
-- Getting a frequency of ~180 MHz when connected to DC-DC converter. Otherwise no apparent noise
-- When attached to Antenna we are picking up many high frequency bands
+## PreAmp Two Stage Update
+- The two stage mode of the preamp gets rid of the 180 MHz noise from the DC-DC converter
+
+| freq   | input A1 [pk-pk] | output Rp-Rx [pk-pk] | dB    |
+| :----- | ---------------- | -------------------- | ----- |
+| 25 M   | 10 m             | 200 m                | 20    |
+| 24 M   | 10 m             | 220 m                | 22    |
+| 23 M   | 10 m             | 252 m                | 25.2  |
+| 22 M   | 10 m             | 296 m                | 29.6  |
+| 21 M   | 10 m             | 342 m                | 34.2  |
+| 20 M   | 10 m             | 400 m                | 40    |
+| 19 M   | 10 m             | 476 m                | 47.6  |
+| 18 M   | 10 m             | 572 m                | 57.2  |
+| 17 M   | 10 m             | 692 m                | 69.2  |
+| 16 M   | 10 m             | 848 m                | 84.8  |
+| 15 M   | 10 m             | 1025 m               | 102.5 |
+| 14 M   | 10 m             | 1230 m               | 123   |
+| 13 M   | 10 m             | 1410 m               | 141   |
+| 12 M   | 10 m             | 1575 m               | 157.5 |
+| 11 M   | 10 m             | 1730 m               | 173   |
+| 10 M   | 10 m             | 1830 m               | 183   |
+| 9 M    | 10 m             | 1890 m               | 189   |
+| 8 M    | 10 m             | 1890 m               | 189   |
+| 7 M    | 10 m             | 1890 m               | 189   |
+| 6 M    | 10 m             | 1890 m               | 189   |
+| 5 M    | 10 m             | 1890 m               | 189   |
+| 4 M    | 10 m             | 1880 m               | 188   |
+| 3 M    | 10 m             | 1850 m               | 185   |
+| 2 M    | 10 m             | 1670 m               | 167   |
+| 1 M    | 10 m             | 1010 m               | 101   |
+| 0.75 M | 10 m             | 672 m                | 67.2  |
+| 0.5 M  | 10 m             | 326 m                | 32.6  |
+| 0.25 M | 10 m             | 76 m                 | 7.6   |
+| 0.1 M  | 10 m             | 44 m                 | 4.4   |
+|        |                  |                      |       |
+![](../res/Pasted%20image%2020240514140633.png)
