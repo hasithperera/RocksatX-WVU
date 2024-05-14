@@ -161,13 +161,13 @@
 ![](../res/Pasted%20image%2020240514140633.png)
 
 ## PreAmp Two Stage + RP Update
-- Performed Frequency Sweep at 5 Vpp from 1-25 MHz for 140 Seconds using signal generator and BNC Banana Plugs as a dipole Antenna.
+- Performed sine wave Frequency Sweep at 5 Vpp from 1-25 MHz for 140 Seconds using signal generator and BNC Banana Plugs as a dipole Antenna.
 	- Red Pitaya was connected to PreAmp in Two Stage amp mode with the amp connected to black antenna (https://www.pasternack.com/3.5-dbi-rubber-duck-antenna-136-174-mhz-bnc-male-connector-peanrbd1034-p.aspx)
 
 ![](../res/1000004150.jpg) 
 
 ---
-- Signal Generator emitting at 3 Vpp with cut version of LP antenna, grounded using BNC to alligator clips
+- Signal Generator emitting at 3 Vpp with cut version of LP antenna (https://www.pasternack.com/3.5-dbi-rubber-duck-antenna-136-174-mhz-bnc-male-connector-peanrbd1032-p.aspx), grounded using BNC to alligator clips
 
 ![](../res/1000004154.jpg) 
 
