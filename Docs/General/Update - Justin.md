@@ -157,3 +157,17 @@
 | 0.1 M  | 10 m             | 44 m                 | 4.4   |
 |        |                  |                      |       |
 ![](../res/Pasted%20image%2020240514140633.png)
+
+## PreAmp Two Stage + RP Update
+- Performed Frequency Sweep at 5 Vpp from 1-25 MHz using signal generator and BNC Banana Plugs as a dipole Antenna.
+	- Red Pitaya was connected to PreAmp in Two Stage amp mode with the amp connected to black antenna
+
+![](../res/1000004150.jpg) 
+
+---
+- Signal Generator Emitting at 3 Vpp
+
+![](../res/1000004154.jpg) 
+
+---
+- Signal Generator Emitting at 1.5 Vpp
