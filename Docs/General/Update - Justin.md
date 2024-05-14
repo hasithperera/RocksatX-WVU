@@ -108,3 +108,10 @@
 | 1 M  | 10 m        |           |
 |      |             |           |
 
+---
+
+# 05/13/2024
+
+## General Update
+- Getting a frequency of ~180 MHz when connected to DC-DC converter. Otherwise no apparent noise
+- When attached to Antenna we are picking up many high frequency bands
