@@ -177,3 +177,6 @@
 ![](../res/1000004156.jpg)
 - Justin's Feet
 ![](../res/IMG_6065.jpg)
+
+## Changes to design
+- Changed the 105 Ohm resistors on the 20 MHz Low Pass Filter to a 50 Ohm Resistor
