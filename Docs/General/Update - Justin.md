@@ -171,3 +171,5 @@
 
 ---
 - Signal Generator Emitting at 1.5 Vpp
+
+![](../res/1000004156.jpg)
