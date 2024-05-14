@@ -123,6 +123,8 @@
 - The two stage mode of the preamp gets rid of the 180 MHz noise from the DC-DC converter
 - At 25 mV Pk-Pk harmonics are much stronger, we get a Pk-Pk output of 4.54 V @ 10MHz
 - At values beyond 33 mV Pk-Pk the output does not rise past a Pk-Pk of 5.6 V @ 10 MHz
+- The current draw is around 0.21 Amps
+- When Hasith Computer connected to Red Pitaya, the connection is lost after 2.9 minutes
 
 | freq   | input A1 [pk-pk] | output Rp-Rx [pk-pk] | dB    |
 | :----- | ---------------- | -------------------- | ----- |
@@ -159,7 +161,7 @@
 ![](../res/Pasted%20image%2020240514140633.png)
 
 ## PreAmp Two Stage + RP Update
-- Performed Frequency Sweep at 5 Vpp from 1-25 MHz using signal generator and BNC Banana Plugs as a dipole Antenna.
+- Performed Frequency Sweep at 5 Vpp from 1-25 MHz for 140 Seconds using signal generator and BNC Banana Plugs as a dipole Antenna.
 	- Red Pitaya was connected to PreAmp in Two Stage amp mode with the amp connected to black antenna (https://www.pasternack.com/3.5-dbi-rubber-duck-antenna-136-174-mhz-bnc-male-connector-peanrbd1034-p.aspx)
 
 ![](../res/1000004150.jpg) 
@@ -173,3 +175,5 @@
 - Signal Generator Emitting at 1.5 Vpp
 
 ![](../res/1000004156.jpg)
+- Justin's Feet
+![](../res/IMG_6065.jpg)
