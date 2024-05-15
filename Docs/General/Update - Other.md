@@ -54,7 +54,11 @@
 			- Python API?
 	- Main Code
 		- Write a main code in C
-	- Deployment Limit Switches
+	- [x] Deployment Limit Switches #task #Hasith ✅ 2024-05-14
+		- [ ] Made a new bin `test23.bin` available with gpio input `Limit_low_0`
+		- Needs tested if the led 7 is indicating the switch status of the pin
+		- Mods to the stop value to be a 50% PWM
+		- let Hasith know if it works. upload instructions can be found 
 - Tx/Rx Preamp
 	- Build
 	- Test

@@ -11,6 +11,18 @@
 - compiling c code from the example failed. Possible missing library/dependencies
 - Setting the time can be done with `date mmddHHMMYYYY`. Note this is in UTC time (EST +5 h) may required to do on restart since NTP is not operational in the current setup
 - `date -u`: get the UTC time from linux/Mac
+
+---
+## Programming FPGA
+
+- log in to the rp: `ssh root@<ip>`
+- FPGA custom images are stored in `/opt/data/bin`
+- Each of the files here correspond to some version of an FPGA image that had been used. select what you are testing and reprogram it to start testing.
+- To reprogram use `/opt/redpitaya/bin/fpgautil -b <bin file>`
+- Most of the FPGA programs written here requires a python/c program to be running in order to operate as expected
+- Note: test21.bin is currently set to autoload.
+
+
 ---
 ### Python
 - 3rd party Wifi Dongle not working (Being detected by device, not connecting, possible driver issue)
