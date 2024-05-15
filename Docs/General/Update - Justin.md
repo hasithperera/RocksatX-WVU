@@ -180,3 +180,4 @@
 
 ## Changes to design
 - Changed the 105 Ohm resistors on the 20 MHz Low Pass Filter to a 50 Ohm Resistor
+	- Changing the 105 Ohm Resistors to 50 Ohms Resistors made everything grounded? Reverting back to 105 Ohm fixed this. Changing R23 to 50 Ohm from 105 Ohm grounded the RP-Rx port also.
