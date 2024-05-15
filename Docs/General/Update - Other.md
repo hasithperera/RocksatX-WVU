@@ -52,9 +52,10 @@
 			- Can we communicate in SPI?
 			- Can we save ADC data to file?
 			- Python API?
-	- Main Code
-		- Write a main code in C
-	- [x] Deployment Limit Switches #task #Hasith ✅ 2024-05-14
+- [ ] Main Code #task 
+		- Write a main code in C: Started with basic io
+		- located in `/opt/data/rocksat_main`
+- [x] Deployment Limit Switches #task #Hasith ✅ 2024-05-15
 		- [x] Made a new bin `test23.bin` available with gpio input `Limit_low_0`
 			- Needs tested if the led 7 is indicating the switch status of the pin - This worked. 
 				- Grounding make the signal low
