@@ -55,10 +55,12 @@
 	- Main Code
 		- Write a main code in C
 	- [x] Deployment Limit Switches #task #Hasith ✅ 2024-05-14
-		- [ ] Made a new bin `test23.bin` available with gpio input `Limit_low_0`
-		- Needs tested if the led 7 is indicating the switch status of the pin
-		- Mods to the stop value to be a 50% PWM
-		- let Hasith know if it works. upload instructions can be found 
+		- [x] Made a new bin `test23.bin` available with gpio input `Limit_low_0`
+			- Needs tested if the led 7 is indicating the switch status of the pin - This worked. 
+				- Grounding make the signal low
+				- looks like there is an internal pull up attached
+		- [ ] Mods to the stop value to be a 50% PWM #task #testing 
+	
 - Tx/Rx Preamp
 	- Build
 	- Test
