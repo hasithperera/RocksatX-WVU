@@ -186,4 +186,4 @@
 ## **Thoughts about RockSatX**
 
 - What if we inverted the Tx signal back into the Rx, so that the induced signal on Rx by Tx is canceled out. This of course would also lower the signal on Rx, because Rx also induces on Tx and since we are inverting and recombining the Tx signal on Rx, we will then eliminate a portion of the signal we care about.
-- Despite the loss in Rx, I think this could make the Sounding instrument a viable measurment again.
+- Despite the loss in Rx, I think this could make the Sounding instrument a viable measurement again.
