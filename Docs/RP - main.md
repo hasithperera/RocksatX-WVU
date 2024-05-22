@@ -18,3 +18,12 @@ To up date the fpga program
 - page 25: this is the configuration currently in use. need to find a correct spi mode for this
 - DAC: uses the external CS pin
 - ADC: has the internal pin
+
+
+## SPI documentation
+
+### 22/05/2024
+
+- Based on the documentation [here](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/other_info/spi/spi.html) there are two axi locations for spi
+	![](res/Pasted%20image%2020240522002631.png)
+- this file contains the axi interface spec. may help with dma
