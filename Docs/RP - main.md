@@ -27,3 +27,16 @@ To up date the fpga program
 - Based on the documentation [here](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/other_info/spi/spi.html) there are two axi locations for spi
 	![](res/Pasted%20image%2020240522002631.png)
 - this file contains the axi interface spec. may help with dma
+
+## New alternate documentation 
+
+- https://www.controlpaths.com/2023/10/14/getting-started-with-zynq/
+- Looked at IP cores used for the SDR
+	- DAC output is only supporting Sin waves
+	- This is also consistent with AX4 slave found in the Freq counter project
+	
+	![](res/Pasted%20image%2020240523214710.png)
+	- This could explain the observations I am seeing when I do the ramping 
+	- Test the same function with the STEMlab
+		- The DSO is allowed to generate DC,Ramps and square waves. This makes me think random number generation is not possible by design on a SDR lab. Since it will be filtered out by the high pass filter
+	
