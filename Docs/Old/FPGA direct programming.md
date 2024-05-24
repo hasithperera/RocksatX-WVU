@@ -339,8 +339,8 @@
 ![bg right:55% width:600](../res/Pasted%20image%2020240524014552.png)
 
 - Direct output measure by a 2nd red pitaya shows a good flat spectrum.
-- its flat even above $65$ MHz. 
+- its flat above $40$ MHz. 
 - On and off events are clearly visible in the waterfall
-- [ ] Evaluate the TX amps for this signal needs to be done. #task
+- [ ] Evaluate the TX amps for this signal needs to be done. #task 
 
 ---
