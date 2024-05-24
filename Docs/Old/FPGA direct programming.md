@@ -314,9 +314,10 @@
 ## 05/23/2024
 
 
-- Tested the ramp in STEM lab
+- Tested a ramp in STEM lab
 	![bg right width:550](../res/TEK0000%201.bmp)
 - This signal is consistent with $2^{14} \times \frac{1}{125{M}} = 7630 K$
+- The same is not working on a SDR lab. likely due to the DC cut off
 ---
 ### STEM Lab
 - [x] Implement an 16 bit LFSR #task ✅ 2024-05-24
@@ -333,5 +334,13 @@
 
 ---
 
-### Look at the spectrum 
+### DFT spectrum
 
+![bg right:55% width:600](../res/Pasted%20image%2020240524014552.png)
+
+- Direct output measure by a 2nd red pitaya shows a good flat spectrum.
+- its flat even above $65$ MHz. 
+- On and off events are clearly visible in the waterfall
+- [ ] Evaluate the TX amps for this signal needs to be done. #task
+
+---
