@@ -311,3 +311,27 @@
 	- write any startup scripts in `/opt/redpitaya/sbin/startup.sh` 
 
 ---
+## 05/23/2024
+
+
+- Tested the ramp in STEM lab
+	![bg right width:550](../res/TEK0000%201.bmp)
+- This signal is consistent with $2^{14} \times \frac{1}{125{M}} = 7630 K$
+---
+### STEM Lab
+- [x] Implement an 16 bit LFSR #task ✅ 2024-05-24
+- [ ] Need to verify this by using a better scope #task 
+	 ![bg left width:550](../res/TEK0002.bmp)
+---
+
+- [x] Test this is the SDR lab #task ✅ 2024-05-24
+- Matlab based basic LFSR was implemented and tested.
+- Spectrum need to be measured
+- Python commanding was added. Setting bit 5 to 1 turns on noise and resetting that turns it off 
+  
+![bg left width:550](../res/TEK0003.bmp)
+
+---
+
+### Look at the spectrum 
+
