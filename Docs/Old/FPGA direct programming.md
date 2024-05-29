@@ -311,20 +311,22 @@
 	- write any startup scripts in `/opt/redpitaya/sbin/startup.sh` 
 
 ---
-## 05/23/2024
-
+# 05/23/2024
+## STEM lab - Ramp
 
 - Tested a ramp in STEM lab
 	![bg right width:550](../res/TEK0000%201.bmp)
 - This signal is consistent with $2^{14} \times \frac{1}{125{M}} = 7630 K$
 - The same is not working on a SDR lab. likely due to the DC cut off
 ---
-### STEM Lab
+## STEM Lab
 - [x] Implement an 16 bit LFSR #task ✅ 2024-05-24
 - [ ] Need to verify this by using a better scope #task 
-	 ![bg left width:550](../res/TEK0002.bmp)
----
 
+![bg left width:550](../res/TEK0002.bmp)
+
+---
+## SDR lab
 - [x] Test this is the SDR lab #task ✅ 2024-05-24
 - Matlab based basic LFSR was implemented and tested.
 - Spectrum need to be measured
@@ -334,8 +336,7 @@
 
 ---
 
-### DFT spectrum
-
+## DFT spectrum
 ![bg right:55% width:600](../res/Pasted%20image%2020240524014552.png)
 
 - Direct output measure by a 2nd red pitaya shows a good flat spectrum.
@@ -344,3 +345,21 @@
 - [ ] Evaluate the TX amps for this signal needs to be done. #task
 
 ---
+# New LP DAC
+
+![bg left width:600](../res/TEK0005.bmp)
+
+- This follows the packet Greg specified. 24 bit data (0, 16 bit data)
+- DAC_set()
+
+---
+## Rebuilding FPGA image to a Z10 (STEM lab)
+
+- [ ] Python cmd syntax
+- [ ] LED pins
+- [ ] EXP_n pin isolation
+- [ ] PWM drivers
+- [ ] PWM frequency correction for the new Clock
+- [ ] Random number generation and Matlab project import
+
+
