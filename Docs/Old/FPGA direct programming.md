@@ -364,10 +364,21 @@
 - [ ] Random number generation and Matlab project import
 
 ---
-## Testing Needed (FPGA)
+## Pending - Specs and testing
 
-- [ ] LP - DAC
-- [ ] limit switches
-- [ ] CPU loading when data saving
-- [ ] CPU loading on SPI
-- [ ] File system: speed and max size
+- [ ] LP - DAC #high_priority
+	- [ ] SPI testing
+	- [ ] sweep specification 
+- [ ] Sounding: #low_priority 
+	- unless we can calibrate the gain and the coupling of the op-amps accurately I don't think working on this is useful.
+	- [ ] data saving
+	- [ ] limit switches needed testing
+- [ ] CPU loading #high_priority 
+	- [ ] Evaluate the internal delay accuracy when the AXI interface is being used
+		- Any internal timing events would be dependent on sw timing
+		- CPU load will change the delays
+	- [ ] when data saving
+	- [ ] on SPI sweep
+- [ ] File system: #high_priority 
+	- [ ] write speed and max size
+	- [ ] file specification: for LP and sounding
