@@ -367,7 +367,7 @@
 ## Pending - Specs and testing
 
 - [ ] LP - DAC #high_priority
-	- [ ] SPI testing
+	- [x] SPI testing
 	- [ ] sweep specification 
 - [ ] Sounding: #low_priority 
 	- unless we can calibrate the gain and the coupling of the op-amps accurately I don't think working on this is useful.
@@ -380,5 +380,6 @@
 	- [ ] when data saving
 	- [ ] on SPI sweep
 - [ ] File system: #high_priority 
-	- [ ] write speed and max size
+	- [ ] write speed 
+	- [ ] Data partition size. (Can we read/write on all the 50 GB of space)
 	- [ ] file specification: for LP and sounding
