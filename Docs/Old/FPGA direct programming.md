@@ -355,11 +355,19 @@
 ---
 ## Rebuilding FPGA image to a Z10 (STEM lab)
 
-- [ ] Python cmd syntax
-- [ ] LED pins
-- [ ] EXP_n pin isolation
-- [ ] PWM drivers
+- [x] Python cmd syntax
+- [x] LED pins
+- [x] EXP_n pin isolation
+- [x] PWM drivers
 - [ ] PWM frequency correction for the new Clock
+	- Measured freq is at $50.92$ Hz
 - [ ] Random number generation and Matlab project import
 
+---
+## Testing Needed (FPGA)
 
+- [ ] LP - DAC
+- [ ] limit switches
+- [ ] CPU loading when data saving
+- [ ] CPU loading on SPI
+- [ ] File system: speed and max size
