@@ -22,10 +22,14 @@ Sequence for Main Code
 	- Enter into Loop Code after deployment has finished
 		- Set LED 2 as high after deployment is finished
 - Loop Code (if no transmit)
-	- Begin LP Sweep
+	- LP Sweep
 	- Listen On Antenna
-	- Transmit On Antenna
+		- Listen Antenna 1
+		- Listen Antenna 2
+	- Listen and LP Sweep
+		- 
 - Loop Code (if transmit)
+	- 
 
 ## Deployment +
 - [ ] Observe full Individual Antenna Extension and Retraction to ~18"
