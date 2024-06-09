@@ -96,8 +96,8 @@
 |     | 1   | 0   | x   | x   | x   | x   | 1   | Sounding RX    |             |
 | 1   |     |     |     |     |     |     | 1   | Reset cntr     | implemented |
  
-- [ ] Confirm Ethernet cable can be plugged in during testing at Wollaps #task #Dylan #Justin #testing 
-- [ ] Physical constrains of Ethernet cable is kept clear during the design stage #task #Justin 
+- [x] Confirm Ethernet cable can be plugged in during testing at Wollaps #task #Dylan #Justin #testing ✅ 2024-06-09
+- [x] Physical constrains of Ethernet cable is kept clear during the design stage #task #Justin ✅ 2024-06-09
 ### Onboard led specification #testing 
 
 - This section shows the usage of the internal LED's of the red pitaya 

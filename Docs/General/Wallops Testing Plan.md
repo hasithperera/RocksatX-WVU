@@ -3,7 +3,7 @@ Sequence for Main Code
 	- Blink LED 1 to indicate we are in wait mode
 	- Wait until a high is received on pin __
 		- When high is received hold LED 1 high
-		- When high is received start Deploy Code
+		- When high is received start Deploy Code after checking startup file
 	- While waiting, create/write to a Startup Data File the reset iteration
 		- Check for a startup file
 			- if no file
@@ -17,10 +17,15 @@ Sequence for Main Code
 	- Send PWM to all three antenna to deploy
 		- PWM signals will be sent for remainder of deployment time
 		- As the PWMs are deployed write to a file every half second how long the PWM signals have been sent
-			- every 0.5 sec write the read deployment time +0.5 until deployment time >= 18 sec
-		- 
-- Loop Code
-	- 
+			- every 0.5 sec increment deployment time by +0.5 sec and write the new deployment time to the startup file
+		- When Deployment has finished write to the startup file the deployment time
+	- Enter into Loop Code after deployment has finished
+		- Set LED 2 as high after deployment is finished
+- Loop Code (if no transmit)
+	- Begin LP Sweep
+	- Listen On Antenna
+	- Transmit On Antenna
+- Loop Code (if transmit)
 
 ## Deployment +
 - [ ] Observe full Individual Antenna Extension and Retraction to ~18"
