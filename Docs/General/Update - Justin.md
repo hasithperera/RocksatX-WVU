@@ -1,4 +1,4 @@
-# 02/29/2024
+	# 02/29/2024
 ## General Updates
 - Servo 1 is now converted into a continuous servo that we can vary the speed of rotation
 	- This was done by removing the pin attached to the inner brass gear, cutting away the plastic connector to the brass gear that connected it to the potentiometer, and glueing the potentiometer to be as close to center as possible.

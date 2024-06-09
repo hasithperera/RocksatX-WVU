@@ -8,11 +8,11 @@ Sequence for Main Code
 - [ ] Test Start Code
 	- [ ] On startup the RP should be in wait mode
 		- [ ]  LED 1 is lit
-		- [ ] Startup file should be written and contain nothing
+		- [ ] Startup Data file should be written to/created and contain the restart iteration
 	- [ ] Ensure the TE signal is being received by the RP
 		- [ ] LED 2 is lit
 		- [ ] Antenna Extension has begun
-		- [ ] Startup file should be written with value of time after start of extension until set value
+		- [ ] Startup Data file should be written with value of time after start of extension until set value and the reset iteration
 		- [ ] Test power restart during deployment to see if deployment continues where it left off
 	- [ ] Ensure the new image is loaded onto the RP after extension
 		- [ ] LED 3 is lit
