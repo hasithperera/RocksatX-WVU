@@ -1,1 +1,1 @@
-scp root@rp:/opt/data/Rocksat-main/src/testing/out/* ./data/
+rsync -av root@rp3:/opt/data/out/*.bin ./data/

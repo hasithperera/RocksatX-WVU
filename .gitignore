@@ -16,3 +16,5 @@
 # c data
 ./src/C/data
 ./src/data-processing/data
+
+*.bin

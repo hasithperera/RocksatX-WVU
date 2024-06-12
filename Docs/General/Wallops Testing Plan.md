@@ -1,16 +1,17 @@
 Sequence for Main Code
 - Wait Code
-	- Blink LED 1 to indicate we are in wait mode
-	- Wait until a high is received on pin __
-		- When high is received hold LED 1 high
-		- When high is received start Deploy Code after checking startup file
-	- While waiting, create/write to a Startup Data File the reset iteration
-		- Check for a startup file
+	- ~~Blink LED~~ 1 to indicate we are in wait mode
+		- LED's are not visible: writing a time stamp in the log file
+	- [x] Wait until a high is received on pin __ 
+		- When high is received hold ~~LED 1 high~~
+		- [x] When high is received start Deploy Code after checking startup file
+	- [x] While waiting, create/write to a Startup Data File the reset iteration
+		- [x] Check for a startup file
 			- if no file
 				- create one and write to it the reset iteration, code version, and deployment time = 0
 			- if there is a startup file
 				- read the reset iteration value and increment that value by one, write this to the startup file
-- Deploy Code
+- [x] Deploy Code
 	- While in Deploy code Blink LED 2
 	- Check Startup file for deployment time 
 		- subtract (18 sec) - (deployment time) to get time left for deployment
@@ -21,7 +22,7 @@ Sequence for Main Code
 		- When Deployment has finished write to the startup file the deployment time
 	- Enter into Loop Code after deployment has finished
 		- Set LED 2 as high after deployment is finished
-- Loop Code (if no transmit)
+- [ ] Loop Code (if no transmit)
 	- LP Sweep
 	- Listen On Antenna
 		- Listen Antenna 1
